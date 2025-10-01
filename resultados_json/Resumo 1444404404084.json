@@ -1,0 +1,21 @@
+{
+    "matricula": "61.080",
+    "cartorio": "2º Ofício do Registro de Imóveis Zona Norte",
+    "ordem": "61.080",
+    "data_abertura": "25 de setembro de 2002",
+    "imovel": {
+        "tipo": "UNIDADE sob n.º 601, do Condomínio Residencial EDIFÍCIO SÂNDALOS",
+        "endereco": "Rua Major Salustiano Ribeiro, n.º 125, no bairro de Tambauzinho",
+        "areas": {
+            "privativa": 117.24,
+            "uso_comum": 90.05,
+            "total": 207.29,
+            "fração_ideal": 0.0625,
+            "cota_terreno": 49.0
+        }
+    },
+    "proprietario_inicial": {
+        "nome": "Firma GRADIENTE CONSTRUÇÕES CIVIS E TERRAPLENAGEM LTDA.",
+        "identificador_tipo": "CGC 08.950.749/0001-43"
+    }
+}
