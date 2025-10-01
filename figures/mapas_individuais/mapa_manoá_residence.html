@@ -1,0 +1,3428 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fd142b3f8d9f2c5cac9b9c07a639891f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fd142b3f8d9f2c5cac9b9c07a639891f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fd142b3f8d9f2c5cac9b9c07a639891f = L.map(
+                "map_fd142b3f8d9f2c5cac9b9c07a639891f",
+                {
+                    center: [-7.0830449, -34.840366],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0c9175f15c503fdf32581a985b187fb8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0c9175f15c503fdf32581a985b187fb8.addTo(map_fd142b3f8d9f2c5cac9b9c07a639891f);
+        
+    
+            var marker_70b9548ea251090f29a316d36b77afaa = L.marker(
+                [-7.0830449, -34.840366],
+                {
+}
+            ).addTo(map_fd142b3f8d9f2c5cac9b9c07a639891f);
+        
+    
+            var icon_671017af23dc3581e6596d7b5d5057f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ced994573875b35f96e70c022e2dc7d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a5d1a2615a27cbcfcd71e83eb0490c6b = $(`<div id="html_a5d1a2615a27cbcfcd71e83eb0490c6b" style="width: 100.0%; height: 100.0%;">RESIDÊNCIA: <b>Manoá Residence</b><br>Endereço: R. Bacharel José de Oliveira Curchatuz, 527 - Jardim Oceania, João Pessoa - PB, 58037-432, Brasil</div>`)[0];
+                popup_ced994573875b35f96e70c022e2dc7d9.setContent(html_a5d1a2615a27cbcfcd71e83eb0490c6b);
+            
+        
+
+        marker_70b9548ea251090f29a316d36b77afaa.bindPopup(popup_ced994573875b35f96e70c022e2dc7d9)
+        ;
+
+        
+    
+    
+                marker_70b9548ea251090f29a316d36b77afaa.setIcon(icon_671017af23dc3581e6596d7b5d5057f3);
+            
+    
+            var feature_group_a2128527d37a4458969188741ae595a9 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_a2128527d37a4458969188741ae595a9.addTo(map_fd142b3f8d9f2c5cac9b9c07a639891f);
+        
+    
+            var feature_group_be6d8287e7ee7508da6df76371ead020 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_5175b67f18f12a278d574292cb43ad87 = L.marker(
+                [-7.0883105, -34.8387138],
+                {
+}
+            ).addTo(feature_group_be6d8287e7ee7508da6df76371ead020);
+        
+    
+            var icon_71cc8a970175e48a619ba337231b0260 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_80b75caf7b92323040fb7be30b599346 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a752a5bd6f81f740009ada876d101807 = $(`<div id="html_a752a5bd6f81f740009ada876d101807" style="width: 100.0%; height: 100.0%;">             <b>Farmácia Pague Menos</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: R. Bacharel José de Oliveira Curchatuz, 20 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_80b75caf7b92323040fb7be30b599346.setContent(html_a752a5bd6f81f740009ada876d101807);
+            
+        
+
+        marker_5175b67f18f12a278d574292cb43ad87.bindPopup(popup_80b75caf7b92323040fb7be30b599346)
+        ;
+
+        
+    
+    
+                marker_5175b67f18f12a278d574292cb43ad87.setIcon(icon_71cc8a970175e48a619ba337231b0260);
+            
+    
+            var marker_a214ace845924565940113556e6a5e56 = L.marker(
+                [-7.0914525, -34.8356872],
+                {
+}
+            ).addTo(feature_group_be6d8287e7ee7508da6df76371ead020);
+        
+    
+            var icon_e69c40d79b813235fd93ab2e8909b513 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c5e664507d9301c11eae109ec53d256 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f060034bd7cbc1ed6b0b5e0d5420596a = $(`<div id="html_f060034bd7cbc1ed6b0b5e0d5420596a" style="width: 100.0%; height: 100.0%;">             <b>Farmácia Pague Menos</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: Av. Fernando Luiz Henriques dos Santos, 645 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_3c5e664507d9301c11eae109ec53d256.setContent(html_f060034bd7cbc1ed6b0b5e0d5420596a);
+            
+        
+
+        marker_a214ace845924565940113556e6a5e56.bindPopup(popup_3c5e664507d9301c11eae109ec53d256)
+        ;
+
+        
+    
+    
+                marker_a214ace845924565940113556e6a5e56.setIcon(icon_e69c40d79b813235fd93ab2e8909b513);
+            
+    
+            var marker_2fcd15ab666331770f6a6adea350d22f = L.marker(
+                [-7.076123099999999, -34.8407719],
+                {
+}
+            ).addTo(feature_group_be6d8287e7ee7508da6df76371ead020);
+        
+    
+            var icon_f6841a1427c9a6733d06ba01fc55eb6d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e8cd27577df3f16f9564e7307a7b449d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d9f9e95f808188c9c4d771922d044d38 = $(`<div id="html_d9f9e95f808188c9c4d771922d044d38" style="width: 100.0%; height: 100.0%;">             <b>Farmácia Pague Menos</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: R. Gilberto Stuckert, 270 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_e8cd27577df3f16f9564e7307a7b449d.setContent(html_d9f9e95f808188c9c4d771922d044d38);
+            
+        
+
+        marker_2fcd15ab666331770f6a6adea350d22f.bindPopup(popup_e8cd27577df3f16f9564e7307a7b449d)
+        ;
+
+        
+    
+    
+                marker_2fcd15ab666331770f6a6adea350d22f.setIcon(icon_f6841a1427c9a6733d06ba01fc55eb6d);
+            
+    
+            var marker_0c0dc516a2a183f441cf71eeab28c2ed = L.marker(
+                [-7.0836923, -34.8396932],
+                {
+}
+            ).addTo(feature_group_be6d8287e7ee7508da6df76371ead020);
+        
+    
+            var icon_232241cafe61956a9148101aeb8a2b64 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f5e9c23c43af9ff091787b5abc2cd49d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e298c06f30e0fe91764cc64e84076501 = $(`<div id="html_e298c06f30e0fe91764cc64e84076501" style="width: 100.0%; height: 100.0%;">             <b>Drogasil</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: R. Antônio de Souza Leão, 234 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_f5e9c23c43af9ff091787b5abc2cd49d.setContent(html_e298c06f30e0fe91764cc64e84076501);
+            
+        
+
+        marker_0c0dc516a2a183f441cf71eeab28c2ed.bindPopup(popup_f5e9c23c43af9ff091787b5abc2cd49d)
+        ;
+
+        
+    
+    
+                marker_0c0dc516a2a183f441cf71eeab28c2ed.setIcon(icon_232241cafe61956a9148101aeb8a2b64);
+            
+    
+            var marker_ca801808b07f4f1c12eb5ddd9faabe7b = L.marker(
+                [-7.084378300000001, -34.8402045],
+                {
+}
+            ).addTo(feature_group_be6d8287e7ee7508da6df76371ead020);
+        
+    
+            var icon_ec01ca81d313ac7f354aa21ab66c499b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_31961b9896c6e8fa310b401d0e93ac3c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b42abc447728247a147108c9602bfa74 = $(`<div id="html_b42abc447728247a147108c9602bfa74" style="width: 100.0%; height: 100.0%;">             <b>Farmácia Francy</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: R. Francisco Leocádio Ribeiro Coutinho, 55 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_31961b9896c6e8fa310b401d0e93ac3c.setContent(html_b42abc447728247a147108c9602bfa74);
+            
+        
+
+        marker_ca801808b07f4f1c12eb5ddd9faabe7b.bindPopup(popup_31961b9896c6e8fa310b401d0e93ac3c)
+        ;
+
+        
+    
+    
+                marker_ca801808b07f4f1c12eb5ddd9faabe7b.setIcon(icon_ec01ca81d313ac7f354aa21ab66c499b);
+            
+    
+            var marker_7e4ca797eb78088dae1fa17d7a33fbc5 = L.marker(
+                [-7.0855846, -34.840293],
+                {
+}
+            ).addTo(feature_group_be6d8287e7ee7508da6df76371ead020);
+        
+    
+            var icon_3722643879f2ffe37c5dda482dd4cfff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_87f56abda57af3cd28a90eb8c12de1de = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_88dee7ab9c34c93c0316c53aceb89cb0 = $(`<div id="html_88dee7ab9c34c93c0316c53aceb89cb0" style="width: 100.0%; height: 100.0%;">             <b>Farmácia Pague Menos</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: R. Dep. Antônio de Pádua Carvalho, 17 - Aeroclube, João Pessoa<br>             </div>`)[0];
+                popup_87f56abda57af3cd28a90eb8c12de1de.setContent(html_88dee7ab9c34c93c0316c53aceb89cb0);
+            
+        
+
+        marker_7e4ca797eb78088dae1fa17d7a33fbc5.bindPopup(popup_87f56abda57af3cd28a90eb8c12de1de)
+        ;
+
+        
+    
+    
+                marker_7e4ca797eb78088dae1fa17d7a33fbc5.setIcon(icon_3722643879f2ffe37c5dda482dd4cfff);
+            
+    
+            var marker_5e895b51fd2cdeef1c450b3712b6d4a0 = L.marker(
+                [-7.085079899999999, -34.8435881],
+                {
+}
+            ).addTo(feature_group_be6d8287e7ee7508da6df76371ead020);
+        
+    
+            var icon_174cee53eba68adb7a2f42326cb87379 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_109590014bf5b96a7efe8b920c474c17 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_38bccf969eb9c8fabced677dcd71264f = $(`<div id="html_38bccf969eb9c8fabced677dcd71264f" style="width: 100.0%; height: 100.0%;">             <b>Farmácia Pague Menos</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: Rua Francisco Leocário, Ribeiro Coutinho, s/n - Aeroclube, João Pessoa<br>             </div>`)[0];
+                popup_109590014bf5b96a7efe8b920c474c17.setContent(html_38bccf969eb9c8fabced677dcd71264f);
+            
+        
+
+        marker_5e895b51fd2cdeef1c450b3712b6d4a0.bindPopup(popup_109590014bf5b96a7efe8b920c474c17)
+        ;
+
+        
+    
+    
+                marker_5e895b51fd2cdeef1c450b3712b6d4a0.setIcon(icon_174cee53eba68adb7a2f42326cb87379);
+            
+    
+            var marker_563b1836026021a27cdb67f052f48e09 = L.marker(
+                [-7.084434, -34.8456158],
+                {
+}
+            ).addTo(feature_group_be6d8287e7ee7508da6df76371ead020);
+        
+    
+            var icon_36a5d5d3b43cb8d441289561a531d7a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0fd90b7568b4fa888a5f944d25e10ca6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_487a7f0a3d5db6949ffeaa2658ee0cf1 = $(`<div id="html_487a7f0a3d5db6949ffeaa2658ee0cf1" style="width: 100.0%; height: 100.0%;">             <b>Linda Farma</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: R. Francisco Leocádio Ribeiro Coutinho, 630 - lj 101 - Aeroclube, João Pessoa<br>             </div>`)[0];
+                popup_0fd90b7568b4fa888a5f944d25e10ca6.setContent(html_487a7f0a3d5db6949ffeaa2658ee0cf1);
+            
+        
+
+        marker_563b1836026021a27cdb67f052f48e09.bindPopup(popup_0fd90b7568b4fa888a5f944d25e10ca6)
+        ;
+
+        
+    
+    
+                marker_563b1836026021a27cdb67f052f48e09.setIcon(icon_36a5d5d3b43cb8d441289561a531d7a5);
+            
+    
+            var marker_69e9923699eaef1110fab51c8d5faf75 = L.marker(
+                [-7.077522300000001, -34.8317612],
+                {
+}
+            ).addTo(feature_group_be6d8287e7ee7508da6df76371ead020);
+        
+    
+            var icon_e24efd56ac09a87f8d66f0e534c279c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f82f25712f142cbb503d0ed7255cf97a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a59579c1845639ac32538695dea9702b = $(`<div id="html_a59579c1845639ac32538695dea9702b" style="width: 100.0%; height: 100.0%;">             <b>Doc Farma</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: Av. Fernando Luiz Henriques dos Santos, 2245 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_f82f25712f142cbb503d0ed7255cf97a.setContent(html_a59579c1845639ac32538695dea9702b);
+            
+        
+
+        marker_69e9923699eaef1110fab51c8d5faf75.bindPopup(popup_f82f25712f142cbb503d0ed7255cf97a)
+        ;
+
+        
+    
+    
+                marker_69e9923699eaef1110fab51c8d5faf75.setIcon(icon_e24efd56ac09a87f8d66f0e534c279c7);
+            
+    
+            var marker_7047ceebc4bc6522f17e4fed4ff035e1 = L.marker(
+                [-7.084810999999999, -34.842805],
+                {
+}
+            ).addTo(feature_group_be6d8287e7ee7508da6df76371ead020);
+        
+    
+            var icon_0da9b0422d0ae6fcc666f0fff2ce02f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1a659a96f250d2c0780e6969b56ee10e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e751f8d3164e3772ea9caced379f4f66 = $(`<div id="html_e751f8d3164e3772ea9caced379f4f66" style="width: 100.0%; height: 100.0%;">             <b>redepharma fl 60</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: R. Geraldo Marquês Azevedo, 293 - Aeroclube, João Pessoa<br>             </div>`)[0];
+                popup_1a659a96f250d2c0780e6969b56ee10e.setContent(html_e751f8d3164e3772ea9caced379f4f66);
+            
+        
+
+        marker_7047ceebc4bc6522f17e4fed4ff035e1.bindPopup(popup_1a659a96f250d2c0780e6969b56ee10e)
+        ;
+
+        
+    
+    
+                marker_7047ceebc4bc6522f17e4fed4ff035e1.setIcon(icon_0da9b0422d0ae6fcc666f0fff2ce02f4);
+            
+    
+            feature_group_be6d8287e7ee7508da6df76371ead020.addTo(map_fd142b3f8d9f2c5cac9b9c07a639891f);
+        
+    
+            var feature_group_67d24daf955f1374a71783b4ff4f4989 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_67d24daf955f1374a71783b4ff4f4989.addTo(map_fd142b3f8d9f2c5cac9b9c07a639891f);
+        
+    
+            var feature_group_916d47f9638b664c028a33c22c3c7b92 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_f4910317701e1767df951a4617b1e7ed = L.marker(
+                [-7.072953399999999, -34.8480955],
+                {
+}
+            ).addTo(feature_group_916d47f9638b664c028a33c22c3c7b92);
+        
+    
+            var icon_d08be5a43b35b64699e8ff00023bfcb3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_11432a51d4e352b33bd065613cea5b4e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cfea869a0b4a339f98bb4e45b514786a = $(`<div id="html_cfea869a0b4a339f98bb4e45b514786a" style="width: 100.0%; height: 100.0%;">             <b>ESC MUNICIPAL PROFESSORA MARIA DAS GRAÇAS CARLOS REZENDE</b><br>             Tipo: Educação (school)<br>             Endereço: R. Severino Luís de França, SN - Jardim America, Cabedelo<br>             </div>`)[0];
+                popup_11432a51d4e352b33bd065613cea5b4e.setContent(html_cfea869a0b4a339f98bb4e45b514786a);
+            
+        
+
+        marker_f4910317701e1767df951a4617b1e7ed.bindPopup(popup_11432a51d4e352b33bd065613cea5b4e)
+        ;
+
+        
+    
+    
+                marker_f4910317701e1767df951a4617b1e7ed.setIcon(icon_d08be5a43b35b64699e8ff00023bfcb3);
+            
+    
+            var marker_e3d8e91c45e2666f2c61ac8b73c9afa3 = L.marker(
+                [-7.0740086, -34.8393345],
+                {
+}
+            ).addTo(feature_group_916d47f9638b664c028a33c22c3c7b92);
+        
+    
+            var icon_022fb95a83c2e28fb96837c7853d634b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_25cbfe85652d7a9f3be535e4e8dcacee = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_be4a838a54e9bd1f70818e4b1b9e673b = $(`<div id="html_be4a838a54e9bd1f70818e4b1b9e673b" style="width: 100.0%; height: 100.0%;">             <b>EMEF CHICO XAVIER</b><br>             Tipo: Educação (school)<br>             Endereço: R. Telegrafista Elesbão Santiago, S/N - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_25cbfe85652d7a9f3be535e4e8dcacee.setContent(html_be4a838a54e9bd1f70818e4b1b9e673b);
+            
+        
+
+        marker_e3d8e91c45e2666f2c61ac8b73c9afa3.bindPopup(popup_25cbfe85652d7a9f3be535e4e8dcacee)
+        ;
+
+        
+    
+    
+                marker_e3d8e91c45e2666f2c61ac8b73c9afa3.setIcon(icon_022fb95a83c2e28fb96837c7853d634b);
+            
+    
+            var marker_0445a618c916977a9db639006e272e9a = L.marker(
+                [-7.0759272, -34.8501481],
+                {
+}
+            ).addTo(feature_group_916d47f9638b664c028a33c22c3c7b92);
+        
+    
+            var icon_13c56ec1de3c9f83142468caac1b0bbc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_89f52c45989c4176a5a9f34a0f59e5ab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e8c8ef4ece3e601c247ab29e39729deb = $(`<div id="html_e8c8ef4ece3e601c247ab29e39729deb" style="width: 100.0%; height: 100.0%;">             <b>ESC MUL PROFª ELIZABETH FERREIRA DA SILVA</b><br>             Tipo: Educação (school)<br>             Endereço: R. Nova Esperança, SN - Renascer, Cabedelo<br>             </div>`)[0];
+                popup_89f52c45989c4176a5a9f34a0f59e5ab.setContent(html_e8c8ef4ece3e601c247ab29e39729deb);
+            
+        
+
+        marker_0445a618c916977a9db639006e272e9a.bindPopup(popup_89f52c45989c4176a5a9f34a0f59e5ab)
+        ;
+
+        
+    
+    
+                marker_0445a618c916977a9db639006e272e9a.setIcon(icon_13c56ec1de3c9f83142468caac1b0bbc);
+            
+    
+            var marker_edff213487aaa189f4fe8581b90f68c5 = L.marker(
+                [-7.083316399999999, -34.8397906],
+                {
+}
+            ).addTo(feature_group_916d47f9638b664c028a33c22c3c7b92);
+        
+    
+            var icon_0f835def2cc2a6b9e50a51e9062a02b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3954b05c2ce306a65c640d202e582d9f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0e1d8852e23639c1108499ce2ca98eca = $(`<div id="html_0e1d8852e23639c1108499ce2ca98eca" style="width: 100.0%; height: 100.0%;">             <b>EMEIEF EM TEMPO INTEGRAL FREI ALBINO</b><br>             Tipo: Educação (school)<br>             Endereço: R. João Batista de Menezes, 245 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_3954b05c2ce306a65c640d202e582d9f.setContent(html_0e1d8852e23639c1108499ce2ca98eca);
+            
+        
+
+        marker_edff213487aaa189f4fe8581b90f68c5.bindPopup(popup_3954b05c2ce306a65c640d202e582d9f)
+        ;
+
+        
+    
+    
+                marker_edff213487aaa189f4fe8581b90f68c5.setIcon(icon_0f835def2cc2a6b9e50a51e9062a02b0);
+            
+    
+            var marker_1eb04d5df19c4f6a9cf8b207c7c966b0 = L.marker(
+                [-7.085515500000001, -34.8333006],
+                {
+}
+            ).addTo(feature_group_916d47f9638b664c028a33c22c3c7b92);
+        
+    
+            var icon_0a5c70050947215ac1ac4ab84cdca991 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8062934646d8a797974a644498856788 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a28ed87f060353fee7890f013ef6cefd = $(`<div id="html_a28ed87f060353fee7890f013ef6cefd" style="width: 100.0%; height: 100.0%;">             <b>Colégio 1° Mundo</b><br>             Tipo: Educação (school)<br>             Endereço: Av. Gov. Argemiro de Figueiredo, 3047 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_8062934646d8a797974a644498856788.setContent(html_a28ed87f060353fee7890f013ef6cefd);
+            
+        
+
+        marker_1eb04d5df19c4f6a9cf8b207c7c966b0.bindPopup(popup_8062934646d8a797974a644498856788)
+        ;
+
+        
+    
+    
+                marker_1eb04d5df19c4f6a9cf8b207c7c966b0.setIcon(icon_0a5c70050947215ac1ac4ab84cdca991);
+            
+    
+            var marker_5be687e84375e6fd157b9215afa2c7be = L.marker(
+                [-7.0769658, -34.8417198],
+                {
+}
+            ).addTo(feature_group_916d47f9638b664c028a33c22c3c7b92);
+        
+    
+            var icon_9fd87800cef0dbf898299d2d1e7acbb6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_69b36080d36461a09e3b7fba3bcf682b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a78f71584c27f7a8f8b328cfc7478fa6 = $(`<div id="html_a78f71584c27f7a8f8b328cfc7478fa6" style="width: 100.0%; height: 100.0%;">             <b>Colégio Pio XI</b><br>             Tipo: Educação (school)<br>             Endereço: R. Philadelpho Pinto de Carvalho, 135 - Aeroclube, João Pessoa<br>             </div>`)[0];
+                popup_69b36080d36461a09e3b7fba3bcf682b.setContent(html_a78f71584c27f7a8f8b328cfc7478fa6);
+            
+        
+
+        marker_5be687e84375e6fd157b9215afa2c7be.bindPopup(popup_69b36080d36461a09e3b7fba3bcf682b)
+        ;
+
+        
+    
+    
+                marker_5be687e84375e6fd157b9215afa2c7be.setIcon(icon_9fd87800cef0dbf898299d2d1e7acbb6);
+            
+    
+            var marker_0669b34fa3450a1d168e36f3203055b8 = L.marker(
+                [-7.0723455, -34.8427635],
+                {
+}
+            ).addTo(feature_group_916d47f9638b664c028a33c22c3c7b92);
+        
+    
+            var icon_44f148ef08bd8e59fea85075b536c2dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f0ca3be83677c821844c51451dfd38b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_58d85d1c161424388ddb24c9a3c66fd0 = $(`<div id="html_58d85d1c161424388ddb24c9a3c66fd0" style="width: 100.0%; height: 100.0%;">             <b>CREI PROFESSORA ANTONIETA ARANHA DE MACEDO</b><br>             Tipo: Educação (school)<br>             Endereço: R. Irmão Antônio Reginaldo, s/n - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_1f0ca3be83677c821844c51451dfd38b.setContent(html_58d85d1c161424388ddb24c9a3c66fd0);
+            
+        
+
+        marker_0669b34fa3450a1d168e36f3203055b8.bindPopup(popup_1f0ca3be83677c821844c51451dfd38b)
+        ;
+
+        
+    
+    
+                marker_0669b34fa3450a1d168e36f3203055b8.setIcon(icon_44f148ef08bd8e59fea85075b536c2dc);
+            
+    
+            var marker_c35be905d657d35735eb3e3b8e2d8cb3 = L.marker(
+                [-7.0756921, -34.851227],
+                {
+}
+            ).addTo(feature_group_916d47f9638b664c028a33c22c3c7b92);
+        
+    
+            var icon_ca51cef8923502c00fe053ae61d46296 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4ea2d0e72d1bcb074d79e5e4e484963c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_27a63880f903f64344a2458a4d44bf97 = $(`<div id="html_27a63880f903f64344a2458a4d44bf97" style="width: 100.0%; height: 100.0%;">             <b>Escola Estadual Abreu e Lima</b><br>             Tipo: Educação (school)<br>             Endereço: Lot. Parque Esperanca, Cabedelo<br>             </div>`)[0];
+                popup_4ea2d0e72d1bcb074d79e5e4e484963c.setContent(html_27a63880f903f64344a2458a4d44bf97);
+            
+        
+
+        marker_c35be905d657d35735eb3e3b8e2d8cb3.bindPopup(popup_4ea2d0e72d1bcb074d79e5e4e484963c)
+        ;
+
+        
+    
+    
+                marker_c35be905d657d35735eb3e3b8e2d8cb3.setIcon(icon_ca51cef8923502c00fe053ae61d46296);
+            
+    
+            var marker_b41e36d82accec3e3e2ccb05f9ed387d = L.marker(
+                [-7.0759064, -34.8339126],
+                {
+}
+            ).addTo(feature_group_916d47f9638b664c028a33c22c3c7b92);
+        
+    
+            var icon_4003d6569da0f4d52c9bc3f806129248 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_199baafa18d06a623f96286854ac87b9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2ecb6c01ece53d15e7696aba992ef698 = $(`<div id="html_2ecb6c01ece53d15e7696aba992ef698" style="width: 100.0%; height: 100.0%;">             <b>ISO Colégio e Cursos - Unidade Fundamental</b><br>             Tipo: Educação (school)<br>             Endereço: Rua Prefeito Joaquim Gonçalves de Assis, 56 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_199baafa18d06a623f96286854ac87b9.setContent(html_2ecb6c01ece53d15e7696aba992ef698);
+            
+        
+
+        marker_b41e36d82accec3e3e2ccb05f9ed387d.bindPopup(popup_199baafa18d06a623f96286854ac87b9)
+        ;
+
+        
+    
+    
+                marker_b41e36d82accec3e3e2ccb05f9ed387d.setIcon(icon_4003d6569da0f4d52c9bc3f806129248);
+            
+    
+            var marker_f0dd6e7a20847c282aac6a50f251ddf1 = L.marker(
+                [-7.0925251, -34.8348497],
+                {
+}
+            ).addTo(feature_group_916d47f9638b664c028a33c22c3c7b92);
+        
+    
+            var icon_190bb62f70318ec838bb529b3c632544 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_46a92095c7f9f9b2fead6a9ffe62d446 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_51f9f79f2f784374fa4d5b3ee8da6479 = $(`<div id="html_51f9f79f2f784374fa4d5b3ee8da6479" style="width: 100.0%; height: 100.0%;">             <b>ISO Colégio e Cursos</b><br>             Tipo: Educação (school)<br>             Endereço: Av. Gov. Argemiro de Figueiredo, 477 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_46a92095c7f9f9b2fead6a9ffe62d446.setContent(html_51f9f79f2f784374fa4d5b3ee8da6479);
+            
+        
+
+        marker_f0dd6e7a20847c282aac6a50f251ddf1.bindPopup(popup_46a92095c7f9f9b2fead6a9ffe62d446)
+        ;
+
+        
+    
+    
+                marker_f0dd6e7a20847c282aac6a50f251ddf1.setIcon(icon_190bb62f70318ec838bb529b3c632544);
+            
+    
+            var marker_52aed455636676ee6a1e1c148511f4e3 = L.marker(
+                [-7.083406399999999, -34.8456825],
+                {
+}
+            ).addTo(feature_group_916d47f9638b664c028a33c22c3c7b92);
+        
+    
+            var icon_3a4edb4daa2fe61adcd834716ed0bc69 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_03ebf3034cbee55f1b32b4637f628ff3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_df0f33b8723bb9553e60318a11774d5b = $(`<div id="html_df0f33b8723bb9553e60318a11774d5b" style="width: 100.0%; height: 100.0%;">             <b>Exato Colégio e Cursos</b><br>             Tipo: Educação (school)<br>             Endereço: R. Agente Fiscal Amadeu de Castro, 313 - Aeroclube, João Pessoa<br>             </div>`)[0];
+                popup_03ebf3034cbee55f1b32b4637f628ff3.setContent(html_df0f33b8723bb9553e60318a11774d5b);
+            
+        
+
+        marker_52aed455636676ee6a1e1c148511f4e3.bindPopup(popup_03ebf3034cbee55f1b32b4637f628ff3)
+        ;
+
+        
+    
+    
+                marker_52aed455636676ee6a1e1c148511f4e3.setIcon(icon_3a4edb4daa2fe61adcd834716ed0bc69);
+            
+    
+            var marker_903562c853ac60f6b58f5f6c4e9e219c = L.marker(
+                [-7.0847535, -34.834375],
+                {
+}
+            ).addTo(feature_group_916d47f9638b664c028a33c22c3c7b92);
+        
+    
+            var icon_9beefd9b73b28e036af740cb57396258 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_645a2f3a0a30d15e743be961ca6d660e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_843de2494ac4d57bd9a327a825841ada = $(`<div id="html_843de2494ac4d57bd9a327a825841ada" style="width: 100.0%; height: 100.0%;">             <b>Escola Ecoville</b><br>             Tipo: Educação (school)<br>             Endereço: Av. Fernando Luiz Henriques dos Santos, 1385 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_645a2f3a0a30d15e743be961ca6d660e.setContent(html_843de2494ac4d57bd9a327a825841ada);
+            
+        
+
+        marker_903562c853ac60f6b58f5f6c4e9e219c.bindPopup(popup_645a2f3a0a30d15e743be961ca6d660e)
+        ;
+
+        
+    
+    
+                marker_903562c853ac60f6b58f5f6c4e9e219c.setIcon(icon_9beefd9b73b28e036af740cb57396258);
+            
+    
+            var marker_72f9f217231c4dcc7dd885a007d6342f = L.marker(
+                [-7.0895785, -34.83874309999999],
+                {
+}
+            ).addTo(feature_group_916d47f9638b664c028a33c22c3c7b92);
+        
+    
+            var icon_881556468894b94f158935455cc1eea6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9a5a98d4a86a939db7a0168e1d527a66 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cae954399e41fc0eaf946473b2e0a911 = $(`<div id="html_cae954399e41fc0eaf946473b2e0a911" style="width: 100.0%; height: 100.0%;">             <b>Cidade Viva Escola Internacional</b><br>             Tipo: Educação (school)<br>             Endereço: R. Profa. Luzia Simões Bartolini, 50 - Aeroclube, João Pessoa<br>             </div>`)[0];
+                popup_9a5a98d4a86a939db7a0168e1d527a66.setContent(html_cae954399e41fc0eaf946473b2e0a911);
+            
+        
+
+        marker_72f9f217231c4dcc7dd885a007d6342f.bindPopup(popup_9a5a98d4a86a939db7a0168e1d527a66)
+        ;
+
+        
+    
+    
+                marker_72f9f217231c4dcc7dd885a007d6342f.setIcon(icon_881556468894b94f158935455cc1eea6);
+            
+    
+            var marker_632c3e393cc3cfc91d90be0dcc5d8685 = L.marker(
+                [-7.0805019, -34.8373713],
+                {
+}
+            ).addTo(feature_group_916d47f9638b664c028a33c22c3c7b92);
+        
+    
+            var icon_65bc7c233e111fb5d567adca3f15f135 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_157b056aa109ec5b799b2664086932e6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_063b65c821ffac19d149fb736f3f46ae = $(`<div id="html_063b65c821ffac19d149fb736f3f46ae" style="width: 100.0%; height: 100.0%;">             <b>Colégio Meta II</b><br>             Tipo: Educação (school)<br>             Endereço: R. José Ferreira Ramos, 35 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_157b056aa109ec5b799b2664086932e6.setContent(html_063b65c821ffac19d149fb736f3f46ae);
+            
+        
+
+        marker_632c3e393cc3cfc91d90be0dcc5d8685.bindPopup(popup_157b056aa109ec5b799b2664086932e6)
+        ;
+
+        
+    
+    
+                marker_632c3e393cc3cfc91d90be0dcc5d8685.setIcon(icon_65bc7c233e111fb5d567adca3f15f135);
+            
+    
+            var marker_54166aaee88d1bbc8721e5c85472234f = L.marker(
+                [-7.076248499999999, -34.8433865],
+                {
+}
+            ).addTo(feature_group_916d47f9638b664c028a33c22c3c7b92);
+        
+    
+            var icon_0f399c708d32fdecd5f5ee7bc0ef47bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_29a74c77b146dd9bdebe62101eba40bb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_99b1e49b0720cb73bc4a7eb65b4a5303 = $(`<div id="html_99b1e49b0720cb73bc4a7eb65b4a5303" style="width: 100.0%; height: 100.0%;">             <b>Atos Kids Bessa</b><br>             Tipo: Educação (school)<br>             Endereço: R. Dr. Aírton Cordeiro, 103 - Aeroclube, João Pessoa<br>             </div>`)[0];
+                popup_29a74c77b146dd9bdebe62101eba40bb.setContent(html_99b1e49b0720cb73bc4a7eb65b4a5303);
+            
+        
+
+        marker_54166aaee88d1bbc8721e5c85472234f.bindPopup(popup_29a74c77b146dd9bdebe62101eba40bb)
+        ;
+
+        
+    
+    
+                marker_54166aaee88d1bbc8721e5c85472234f.setIcon(icon_0f399c708d32fdecd5f5ee7bc0ef47bc);
+            
+    
+            var marker_4999c71944cc94ecfbf87955cd3525c5 = L.marker(
+                [-7.0745771, -34.84094049999999],
+                {
+}
+            ).addTo(feature_group_916d47f9638b664c028a33c22c3c7b92);
+        
+    
+            var icon_065098a2e19e3d8eb074ec4821bdb43d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a13871c56c9a56c010dc73977334509 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_52c23db75a0eadd3f42cb87ceb9c0175 = $(`<div id="html_52c23db75a0eadd3f42cb87ceb9c0175" style="width: 100.0%; height: 100.0%;">             <b>Colégio Exato Kids Bilíngue</b><br>             Tipo: Educação (school)<br>             Endereço: Av. Campos Sales, 879 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_7a13871c56c9a56c010dc73977334509.setContent(html_52c23db75a0eadd3f42cb87ceb9c0175);
+            
+        
+
+        marker_4999c71944cc94ecfbf87955cd3525c5.bindPopup(popup_7a13871c56c9a56c010dc73977334509)
+        ;
+
+        
+    
+    
+                marker_4999c71944cc94ecfbf87955cd3525c5.setIcon(icon_065098a2e19e3d8eb074ec4821bdb43d);
+            
+    
+            var marker_cf39ddfa00153132db79764042539d03 = L.marker(
+                [-7.0839934, -34.8407009],
+                {
+}
+            ).addTo(feature_group_916d47f9638b664c028a33c22c3c7b92);
+        
+    
+            var icon_e60fb6d59ddba364bf00eb08b98f1fb6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_09eb80729c46671944ff5832b28f3d19 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_251cfaad78f6c902ace98cba451ec7d0 = $(`<div id="html_251cfaad78f6c902ace98cba451ec7d0" style="width: 100.0%; height: 100.0%;">             <b>Faculdade de Ensino Superior da Paraíba</b><br>             Tipo: Educação (university)<br>             Endereço: R. Francisco Leocádio Ribeiro Coutinho, 68 - Aeroclube, João Pessoa<br>             </div>`)[0];
+                popup_09eb80729c46671944ff5832b28f3d19.setContent(html_251cfaad78f6c902ace98cba451ec7d0);
+            
+        
+
+        marker_cf39ddfa00153132db79764042539d03.bindPopup(popup_09eb80729c46671944ff5832b28f3d19)
+        ;
+
+        
+    
+    
+                marker_cf39ddfa00153132db79764042539d03.setIcon(icon_e60fb6d59ddba364bf00eb08b98f1fb6);
+            
+    
+            var marker_cf340afd5c6a27003e38d0dc3a92fe0c = L.marker(
+                [-7.0938729, -34.8497644],
+                {
+}
+            ).addTo(feature_group_916d47f9638b664c028a33c22c3c7b92);
+        
+    
+            var icon_507bf61c91bbdd8b8694d544142b5d55 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_891406b04e927e21903b29be2d3f756b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_69068ecc95e908fbf271227508a75a84 = $(`<div id="html_69068ecc95e908fbf271227508a75a84" style="width: 100.0%; height: 100.0%;">             <b>CCF - Centro de Ciências Farmacêuticas da UNIESP</b><br>             Tipo: Educação (university)<br>             Endereço: W542+F3 - Jacaré, Cabedelo<br>             </div>`)[0];
+                popup_891406b04e927e21903b29be2d3f756b.setContent(html_69068ecc95e908fbf271227508a75a84);
+            
+        
+
+        marker_cf340afd5c6a27003e38d0dc3a92fe0c.bindPopup(popup_891406b04e927e21903b29be2d3f756b)
+        ;
+
+        
+    
+    
+                marker_cf340afd5c6a27003e38d0dc3a92fe0c.setIcon(icon_507bf61c91bbdd8b8694d544142b5d55);
+            
+    
+            var marker_9a1084efd4ac61cab5774b2ba5d946b1 = L.marker(
+                [-7.092474500000001, -34.8509828],
+                {
+}
+            ).addTo(feature_group_916d47f9638b664c028a33c22c3c7b92);
+        
+    
+            var icon_92fa1ac4e8797acd87935b5d7d70f9fc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e523c5fc12c25ff45264b446255b8d63 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e4f280d802ef26660da3e8e4f9830dca = $(`<div id="html_e4f280d802ef26660da3e8e4f9830dca" style="width: 100.0%; height: 100.0%;">             <b>Bloco G - UNIESP</b><br>             Tipo: Educação (university)<br>             Endereço: R. Marcos São Alençar, 120 - Lot. Morada Nova, Cabedelo<br>             </div>`)[0];
+                popup_e523c5fc12c25ff45264b446255b8d63.setContent(html_e4f280d802ef26660da3e8e4f9830dca);
+            
+        
+
+        marker_9a1084efd4ac61cab5774b2ba5d946b1.bindPopup(popup_e523c5fc12c25ff45264b446255b8d63)
+        ;
+
+        
+    
+    
+                marker_9a1084efd4ac61cab5774b2ba5d946b1.setIcon(icon_92fa1ac4e8797acd87935b5d7d70f9fc);
+            
+    
+            var marker_f9a7cc1715acba374a18c4f9eaac2d29 = L.marker(
+                [-7.093065699999999, -34.8507571],
+                {
+}
+            ).addTo(feature_group_916d47f9638b664c028a33c22c3c7b92);
+        
+    
+            var icon_582d4852d79e37c335bce985588e8022 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_47acbfb3b543828d0e10895865308f41 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6d662b2fef37e845a466f8bbb199f9ec = $(`<div id="html_6d662b2fef37e845a466f8bbb199f9ec" style="width: 100.0%; height: 100.0%;">             <b>Bloco F - UNIESP</b><br>             Tipo: Educação (university)<br>             Endereço: W44X+QM - Jacaré, Cabedelo<br>             </div>`)[0];
+                popup_47acbfb3b543828d0e10895865308f41.setContent(html_6d662b2fef37e845a466f8bbb199f9ec);
+            
+        
+
+        marker_f9a7cc1715acba374a18c4f9eaac2d29.bindPopup(popup_47acbfb3b543828d0e10895865308f41)
+        ;
+
+        
+    
+    
+                marker_f9a7cc1715acba374a18c4f9eaac2d29.setIcon(icon_582d4852d79e37c335bce985588e8022);
+            
+    
+            var marker_93543f282f13df68e0f0c28ff7cd576b = L.marker(
+                [-7.0936074, -34.8502657],
+                {
+}
+            ).addTo(feature_group_916d47f9638b664c028a33c22c3c7b92);
+        
+    
+            var icon_2c7686d3e75769e20d0e54a16606e704 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c6efbda9af734691f236b47faeabd612 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1e4b76b1d5215bd8f3fb5a2bd4feab99 = $(`<div id="html_1e4b76b1d5215bd8f3fb5a2bd4feab99" style="width: 100.0%; height: 100.0%;">             <b>Bloco Central - UNIESP</b><br>             Tipo: Educação (university)<br>             Endereço: BR-230, Km 14 - s/n - Morada Nova, Cabedelo<br>             </div>`)[0];
+                popup_c6efbda9af734691f236b47faeabd612.setContent(html_1e4b76b1d5215bd8f3fb5a2bd4feab99);
+            
+        
+
+        marker_93543f282f13df68e0f0c28ff7cd576b.bindPopup(popup_c6efbda9af734691f236b47faeabd612)
+        ;
+
+        
+    
+    
+                marker_93543f282f13df68e0f0c28ff7cd576b.setIcon(icon_2c7686d3e75769e20d0e54a16606e704);
+            
+    
+            var marker_b1baaa0e0c7a1eee1c002d5d0fc8d868 = L.marker(
+                [-7.082618200000001, -34.8319444],
+                {
+}
+            ).addTo(feature_group_916d47f9638b664c028a33c22c3c7b92);
+        
+    
+            var icon_1c3aad89efccaa4ac8d7a3e863decfe0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9a3d123d6dc9bec141c1e614bf44f28f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_93fbe9d48bd005a58628080f19acbfd8 = $(`<div id="html_93fbe9d48bd005a58628080f19acbfd8" style="width: 100.0%; height: 100.0%;">             <b>Local de estudo</b><br>             Tipo: Educação (university)<br>             Endereço: Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_9a3d123d6dc9bec141c1e614bf44f28f.setContent(html_93fbe9d48bd005a58628080f19acbfd8);
+            
+        
+
+        marker_b1baaa0e0c7a1eee1c002d5d0fc8d868.bindPopup(popup_9a3d123d6dc9bec141c1e614bf44f28f)
+        ;
+
+        
+    
+    
+                marker_b1baaa0e0c7a1eee1c002d5d0fc8d868.setIcon(icon_1c3aad89efccaa4ac8d7a3e863decfe0);
+            
+    
+            feature_group_916d47f9638b664c028a33c22c3c7b92.addTo(map_fd142b3f8d9f2c5cac9b9c07a639891f);
+        
+    
+            var feature_group_9016d2d4a3397d9c3e46a7d0b368ce43 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_d6630593deb1e3cb2544ca7d4a576a9a = L.marker(
+                [-7.0899398, -34.8387488],
+                {
+}
+            ).addTo(feature_group_9016d2d4a3397d9c3e46a7d0b368ce43);
+        
+    
+            var icon_36217ae05de61ea6ab0d805281360d4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ea20ba27a34010af9acab96fca51c77c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eb6185349b037fc52325cc95b15f3ed8 = $(`<div id="html_eb6185349b037fc52325cc95b15f3ed8" style="width: 100.0%; height: 100.0%;">             <b>BeMais Aeroclube</b><br>             Tipo: Comércio (supermarket)<br>             Endereço: R. Profa. Luzia Simões Bartolini, 55 - Aeroclube, João Pessoa<br>             </div>`)[0];
+                popup_ea20ba27a34010af9acab96fca51c77c.setContent(html_eb6185349b037fc52325cc95b15f3ed8);
+            
+        
+
+        marker_d6630593deb1e3cb2544ca7d4a576a9a.bindPopup(popup_ea20ba27a34010af9acab96fca51c77c)
+        ;
+
+        
+    
+    
+                marker_d6630593deb1e3cb2544ca7d4a576a9a.setIcon(icon_36217ae05de61ea6ab0d805281360d4d);
+            
+    
+            var marker_f8cffe8705d33358a6241e91ba643497 = L.marker(
+                [-7.0858525, -34.8464553],
+                {
+}
+            ).addTo(feature_group_9016d2d4a3397d9c3e46a7d0b368ce43);
+        
+    
+            var icon_b719a4f33a7168e303360582e066bb7c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9a5c1cbc5e9c16533a00ecd678a17865 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a707c3f7235851cf1b4a28755e5e5064 = $(`<div id="html_a707c3f7235851cf1b4a28755e5e5064" style="width: 100.0%; height: 100.0%;">             <b>Carrefour Hypermarket Joao Pessoa</b><br>             Tipo: Comércio (supermarket)<br>             Endereço: Rua Bacharel Irenaldo de Albuquerque Chaves, s/n Bessa - Aeroclube, João Pessoa<br>             </div>`)[0];
+                popup_9a5c1cbc5e9c16533a00ecd678a17865.setContent(html_a707c3f7235851cf1b4a28755e5e5064);
+            
+        
+
+        marker_f8cffe8705d33358a6241e91ba643497.bindPopup(popup_9a5c1cbc5e9c16533a00ecd678a17865)
+        ;
+
+        
+    
+    
+                marker_f8cffe8705d33358a6241e91ba643497.setIcon(icon_b719a4f33a7168e303360582e066bb7c);
+            
+    
+            var marker_8cf9110d778d371d9075a71e920b8411 = L.marker(
+                [-7.0851207, -34.8455221],
+                {
+}
+            ).addTo(feature_group_9016d2d4a3397d9c3e46a7d0b368ce43);
+        
+    
+            var icon_38d41e48dfb61d68ce3abcab9729e554 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_59b063aaa119240957e32b61ef1f8a74 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6e327ebfbea812966f3d691b35fc85d6 = $(`<div id="html_6e327ebfbea812966f3d691b35fc85d6" style="width: 100.0%; height: 100.0%;">             <b>RedeCompras - Aeroclube</b><br>             Tipo: Comércio (supermarket)<br>             Endereço: R. Francisco Leocádio Ribeiro Coutinho, 601 - Aeroclube, João Pessoa<br>             </div>`)[0];
+                popup_59b063aaa119240957e32b61ef1f8a74.setContent(html_6e327ebfbea812966f3d691b35fc85d6);
+            
+        
+
+        marker_8cf9110d778d371d9075a71e920b8411.bindPopup(popup_59b063aaa119240957e32b61ef1f8a74)
+        ;
+
+        
+    
+    
+                marker_8cf9110d778d371d9075a71e920b8411.setIcon(icon_38d41e48dfb61d68ce3abcab9729e554);
+            
+    
+            var marker_2315ed860105b6df4ef678cb2535fe1d = L.marker(
+                [-7.091081399999999, -34.8465638],
+                {
+}
+            ).addTo(feature_group_9016d2d4a3397d9c3e46a7d0b368ce43);
+        
+    
+            var icon_f37b99c1337a868484901631627016b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ffad4dc9fda481a1ee2e947be87d5968 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_db60a959ce4a595111ca818c32cc7565 = $(`<div id="html_db60a959ce4a595111ca818c32cc7565" style="width: 100.0%; height: 100.0%;">             <b>Sam's Club Bessa</b><br>             Tipo: Comércio (supermarket)<br>             Endereço: Rua Edgar Sales de Miranda Henrique, 400 - Aeroclube, João Pessoa<br>             </div>`)[0];
+                popup_ffad4dc9fda481a1ee2e947be87d5968.setContent(html_db60a959ce4a595111ca818c32cc7565);
+            
+        
+
+        marker_2315ed860105b6df4ef678cb2535fe1d.bindPopup(popup_ffad4dc9fda481a1ee2e947be87d5968)
+        ;
+
+        
+    
+    
+                marker_2315ed860105b6df4ef678cb2535fe1d.setIcon(icon_f37b99c1337a868484901631627016b0);
+            
+    
+            var marker_fcb76b08be5008794d51700b6b85e055 = L.marker(
+                [-7.0764781, -34.8391887],
+                {
+}
+            ).addTo(feature_group_9016d2d4a3397d9c3e46a7d0b368ce43);
+        
+    
+            var icon_4d92ec89c02b4bcf91c1a9880562bdd6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c2d9f394c7640a7d38196a09a3ae150b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_18a17f95d598303f75e55685d2d8cec6 = $(`<div id="html_18a17f95d598303f75e55685d2d8cec6" style="width: 100.0%; height: 100.0%;">             <b>Super Box Brasil</b><br>             Tipo: Comércio (supermarket)<br>             Endereço: R. Themístocles da Costa Brito, 77 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_c2d9f394c7640a7d38196a09a3ae150b.setContent(html_18a17f95d598303f75e55685d2d8cec6);
+            
+        
+
+        marker_fcb76b08be5008794d51700b6b85e055.bindPopup(popup_c2d9f394c7640a7d38196a09a3ae150b)
+        ;
+
+        
+    
+    
+                marker_fcb76b08be5008794d51700b6b85e055.setIcon(icon_4d92ec89c02b4bcf91c1a9880562bdd6);
+            
+    
+            feature_group_9016d2d4a3397d9c3e46a7d0b368ce43.addTo(map_fd142b3f8d9f2c5cac9b9c07a639891f);
+        
+    
+            var feature_group_92c244887f80ee9211cb27e836430f46 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_3f3d57288b70a86db894489c1d20977a = L.marker(
+                [-7.089156399999999, -34.8353911],
+                {
+}
+            ).addTo(feature_group_92c244887f80ee9211cb27e836430f46);
+        
+    
+            var icon_5d4efadc66fcb47d202d04668561f39c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_35a106dd2087951a5bcaf89c4ef96a73 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8439bb327df28abb2ebb47853610a1e1 = $(`<div id="html_8439bb327df28abb2ebb47853610a1e1" style="width: 100.0%; height: 100.0%;">             <b>Posto Shell</b><br>             Tipo: Serviços (gas_station)<br>             Endereço: Av. Fernando Luiz Henriques dos Santos, 909 - 101 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_35a106dd2087951a5bcaf89c4ef96a73.setContent(html_8439bb327df28abb2ebb47853610a1e1);
+            
+        
+
+        marker_3f3d57288b70a86db894489c1d20977a.bindPopup(popup_35a106dd2087951a5bcaf89c4ef96a73)
+        ;
+
+        
+    
+    
+                marker_3f3d57288b70a86db894489c1d20977a.setIcon(icon_5d4efadc66fcb47d202d04668561f39c);
+            
+    
+            var marker_94a89faa9ddd17d1df7e782e84462168 = L.marker(
+                [-7.077424199999999, -34.8497054],
+                {
+}
+            ).addTo(feature_group_92c244887f80ee9211cb27e836430f46);
+        
+    
+            var icon_10c9c054b3f89d7ff79bcfde62b12700 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a599559f675feecd297e289296f369a4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6fd78811b7ab90b1963d9a1a891b5e48 = $(`<div id="html_6fd78811b7ab90b1963d9a1a891b5e48" style="width: 100.0%; height: 100.0%;">             <b>Posto São Luiz IV</b><br>             Tipo: Serviços (gas_station)<br>             Endereço: BR-230, KM 13 - S/N - Lot. Parque Esperanca, Cabedelo<br>             </div>`)[0];
+                popup_a599559f675feecd297e289296f369a4.setContent(html_6fd78811b7ab90b1963d9a1a891b5e48);
+            
+        
+
+        marker_94a89faa9ddd17d1df7e782e84462168.bindPopup(popup_a599559f675feecd297e289296f369a4)
+        ;
+
+        
+    
+    
+                marker_94a89faa9ddd17d1df7e782e84462168.setIcon(icon_10c9c054b3f89d7ff79bcfde62b12700);
+            
+    
+            var marker_dce41b8e24a54009c9e21e513bc8d9fb = L.marker(
+                [-7.0845435, -34.8458576],
+                {
+}
+            ).addTo(feature_group_92c244887f80ee9211cb27e836430f46);
+        
+    
+            var icon_470818a21250e1104b7739ce82cd94af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_09c03f613977b5532ed7d0ee29f49e40 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_36f282b15804fabf5cda5459cd91c3a1 = $(`<div id="html_36f282b15804fabf5cda5459cd91c3a1" style="width: 100.0%; height: 100.0%;">             <b>Posto Ipiranga</b><br>             Tipo: Serviços (gas_station)<br>             Endereço: Rua Bel Irenaldo - R. Bacharel Irenaldo de Albuquerque Chaves, 30 - Aeroclube, João Pessoa<br>             </div>`)[0];
+                popup_09c03f613977b5532ed7d0ee29f49e40.setContent(html_36f282b15804fabf5cda5459cd91c3a1);
+            
+        
+
+        marker_dce41b8e24a54009c9e21e513bc8d9fb.bindPopup(popup_09c03f613977b5532ed7d0ee29f49e40)
+        ;
+
+        
+    
+    
+                marker_dce41b8e24a54009c9e21e513bc8d9fb.setIcon(icon_470818a21250e1104b7739ce82cd94af);
+            
+    
+            var marker_919a2ff6ef00e0e554b63b102b2f228c = L.marker(
+                [-7.084789199999999, -34.8419363],
+                {
+}
+            ).addTo(feature_group_92c244887f80ee9211cb27e836430f46);
+        
+    
+            var icon_b0001932c77e3d18f05eaf39ff0143d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ca20334ec298898055b8c699b2be79f5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_25f3d806fee427e170fb5bea0b0ec975 = $(`<div id="html_25f3d806fee427e170fb5bea0b0ec975" style="width: 100.0%; height: 100.0%;">             <b>Posto Ipiranga</b><br>             Tipo: Serviços (gas_station)<br>             Endereço: R. Francisco Leocádio Ribeiro Coutinho, 209 - Sl 104 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_ca20334ec298898055b8c699b2be79f5.setContent(html_25f3d806fee427e170fb5bea0b0ec975);
+            
+        
+
+        marker_919a2ff6ef00e0e554b63b102b2f228c.bindPopup(popup_ca20334ec298898055b8c699b2be79f5)
+        ;
+
+        
+    
+    
+                marker_919a2ff6ef00e0e554b63b102b2f228c.setIcon(icon_b0001932c77e3d18f05eaf39ff0143d4);
+            
+    
+            var marker_61f6e712e6659c20ec830ff8ba5e3988 = L.marker(
+                [-7.0776483, -34.8489829],
+                {
+}
+            ).addTo(feature_group_92c244887f80ee9211cb27e836430f46);
+        
+    
+            var icon_44b2ad2e94fcc53a9addf29211944f55 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_596fb2443ab3504d91c485194ba16c64 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d67e67694353837cd0045119ff4c393e = $(`<div id="html_d67e67694353837cd0045119ff4c393e" style="width: 100.0%; height: 100.0%;">             <b>Posto Ipiranga</b><br>             Tipo: Serviços (gas_station)<br>             Endereço: R. Hortência Helena Amorim Brito, 895 - BR-230, Km 12 - Jardim America, Cabedelo<br>             </div>`)[0];
+                popup_596fb2443ab3504d91c485194ba16c64.setContent(html_d67e67694353837cd0045119ff4c393e);
+            
+        
+
+        marker_61f6e712e6659c20ec830ff8ba5e3988.bindPopup(popup_596fb2443ab3504d91c485194ba16c64)
+        ;
+
+        
+    
+    
+                marker_61f6e712e6659c20ec830ff8ba5e3988.setIcon(icon_44b2ad2e94fcc53a9addf29211944f55);
+            
+    
+            var marker_d41ab3e72622ec20353f0ffcccc9a200 = L.marker(
+                [-7.0860884, -34.8482494],
+                {
+}
+            ).addTo(feature_group_92c244887f80ee9211cb27e836430f46);
+        
+    
+            var icon_d683b5a10de5230e152213d496545454 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c715584e2c728ea8b6708a0ea557e6e4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f75d70218b912b4bcca01949146a74d1 = $(`<div id="html_f75d70218b912b4bcca01949146a74d1" style="width: 100.0%; height: 100.0%;">             <b>Posto de Combustíveis Carrefour João Pessoa</b><br>             Tipo: Serviços (gas_station)<br>             Endereço: Avenida Hortência Helena Amorim Brito, s/n - Aeroclube, Cabedelo<br>             </div>`)[0];
+                popup_c715584e2c728ea8b6708a0ea557e6e4.setContent(html_f75d70218b912b4bcca01949146a74d1);
+            
+        
+
+        marker_d41ab3e72622ec20353f0ffcccc9a200.bindPopup(popup_c715584e2c728ea8b6708a0ea557e6e4)
+        ;
+
+        
+    
+    
+                marker_d41ab3e72622ec20353f0ffcccc9a200.setIcon(icon_d683b5a10de5230e152213d496545454);
+            
+    
+            var marker_0a4c8533261d4cdf76676d16e64dcc32 = L.marker(
+                [-7.0845256, -34.8483782],
+                {
+}
+            ).addTo(feature_group_92c244887f80ee9211cb27e836430f46);
+        
+    
+            var icon_9f17dff21a1f37370449ecc4c6f6e16d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e5bd35c4b2964963e4ef2f628aa5cd08 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4eda42b92b7f472da9e4b26641b37882 = $(`<div id="html_4eda42b92b7f472da9e4b26641b37882" style="width: 100.0%; height: 100.0%;">             <b>Posto Opção - Bessa BR</b><br>             Tipo: Serviços (gas_station)<br>             Endereço: BR-230, 13 - KM 13,2, Cabedelo<br>             </div>`)[0];
+                popup_e5bd35c4b2964963e4ef2f628aa5cd08.setContent(html_4eda42b92b7f472da9e4b26641b37882);
+            
+        
+
+        marker_0a4c8533261d4cdf76676d16e64dcc32.bindPopup(popup_e5bd35c4b2964963e4ef2f628aa5cd08)
+        ;
+
+        
+    
+    
+                marker_0a4c8533261d4cdf76676d16e64dcc32.setIcon(icon_9f17dff21a1f37370449ecc4c6f6e16d);
+            
+    
+            var marker_6f81849b0dc7498cb01ebe8c172ee440 = L.marker(
+                [-7.076734699999999, -34.8378641],
+                {
+}
+            ).addTo(feature_group_92c244887f80ee9211cb27e836430f46);
+        
+    
+            var icon_df82a3091edbeb3f8d05f427d75f851f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_001670b86ecf1cd7dcd4608e7ebdd2ac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bd42e8f0f27b11b85157fd88162e1720 = $(`<div id="html_bd42e8f0f27b11b85157fd88162e1720" style="width: 100.0%; height: 100.0%;">             <b>Posto da Serra II</b><br>             Tipo: Serviços (gas_station)<br>             Endereço: R. Severino Nicolau de Melo, S/N - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_001670b86ecf1cd7dcd4608e7ebdd2ac.setContent(html_bd42e8f0f27b11b85157fd88162e1720);
+            
+        
+
+        marker_6f81849b0dc7498cb01ebe8c172ee440.bindPopup(popup_001670b86ecf1cd7dcd4608e7ebdd2ac)
+        ;
+
+        
+    
+    
+                marker_6f81849b0dc7498cb01ebe8c172ee440.setIcon(icon_df82a3091edbeb3f8d05f427d75f851f);
+            
+    
+            var marker_27f59a2e37efa527c3c5b5d3cb400b58 = L.marker(
+                [-7.077287999999999, -34.8496475],
+                {
+}
+            ).addTo(feature_group_92c244887f80ee9211cb27e836430f46);
+        
+    
+            var icon_0d75f95f8b56fa5e1aacc261fe82dbde = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_00af1a38a1f96c06862d0749a8dc19d4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7586c609df889a2ea38d4d25573be17a = $(`<div id="html_7586c609df889a2ea38d4d25573be17a" style="width: 100.0%; height: 100.0%;">             <b>PETROBRAS</b><br>             Tipo: Serviços (gas_station)<br>             Endereço: R. Quatrocentos e Setenta e Cinco - Lot. Parque Esperanca, Cabedelo<br>             </div>`)[0];
+                popup_00af1a38a1f96c06862d0749a8dc19d4.setContent(html_7586c609df889a2ea38d4d25573be17a);
+            
+        
+
+        marker_27f59a2e37efa527c3c5b5d3cb400b58.bindPopup(popup_00af1a38a1f96c06862d0749a8dc19d4)
+        ;
+
+        
+    
+    
+                marker_27f59a2e37efa527c3c5b5d3cb400b58.setIcon(icon_0d75f95f8b56fa5e1aacc261fe82dbde);
+            
+    
+            var marker_ca5b9ff43484de348de3532f360d8a61 = L.marker(
+                [-7.0846949, -34.8484928],
+                {
+}
+            ).addTo(feature_group_92c244887f80ee9211cb27e836430f46);
+        
+    
+            var icon_7462a5a4385729153a7d419af173be17 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aa6faf7b79a618ca376e365a4deb96c5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_db19dad9960f381139025d198229d388 = $(`<div id="html_db19dad9960f381139025d198229d388" style="width: 100.0%; height: 100.0%;">             <b>PETROBRAS</b><br>             Tipo: Serviços (gas_station)<br>             Endereço: R. Edgar Sáles Miranda Henriques - Lot. Morada Nova, Cabedelo<br>             </div>`)[0];
+                popup_aa6faf7b79a618ca376e365a4deb96c5.setContent(html_db19dad9960f381139025d198229d388);
+            
+        
+
+        marker_ca5b9ff43484de348de3532f360d8a61.bindPopup(popup_aa6faf7b79a618ca376e365a4deb96c5)
+        ;
+
+        
+    
+    
+                marker_ca5b9ff43484de348de3532f360d8a61.setIcon(icon_7462a5a4385729153a7d419af173be17);
+            
+    
+            var marker_b48168a06e3c55b6fb56e2915621153d = L.marker(
+                [-7.086073, -34.848247],
+                {
+}
+            ).addTo(feature_group_92c244887f80ee9211cb27e836430f46);
+        
+    
+            var icon_170b1df3a029b28d17b4b1f2eda0b368 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e8aef783da18dce13b778f3d01c0cc71 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_66ad87c7618930496e109ee42f6a197b = $(`<div id="html_66ad87c7618930496e109ee42f6a197b" style="width: 100.0%; height: 100.0%;">             <b>Shell</b><br>             Tipo: Serviços (gas_station)<br>             Endereço: R. Hortência Helena Amorim Brito - Aeroclube, Cabedelo<br>             </div>`)[0];
+                popup_e8aef783da18dce13b778f3d01c0cc71.setContent(html_66ad87c7618930496e109ee42f6a197b);
+            
+        
+
+        marker_b48168a06e3c55b6fb56e2915621153d.bindPopup(popup_e8aef783da18dce13b778f3d01c0cc71)
+        ;
+
+        
+    
+    
+                marker_b48168a06e3c55b6fb56e2915621153d.setIcon(icon_170b1df3a029b28d17b4b1f2eda0b368);
+            
+    
+            feature_group_92c244887f80ee9211cb27e836430f46.addTo(map_fd142b3f8d9f2c5cac9b9c07a639891f);
+        
+    
+            var feature_group_a18d7e21a3f6a6661f5d7b27e486828e = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_e297a3177e477deccdd0708da596fd80 = L.marker(
+                [-7.0897228, -34.8370488],
+                {
+}
+            ).addTo(feature_group_a18d7e21a3f6a6661f5d7b27e486828e);
+        
+    
+            var icon_06ce9c65526acecf40b5498c4817481d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_136c8431f0e43186a61710bd2a7d5296 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eb04d18bbb361725dc5f0641b0714a32 = $(`<div id="html_eb04d18bbb361725dc5f0641b0714a32" style="width: 100.0%; height: 100.0%;">             <b>Academia Korpus Bessa</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: R. Telegrafista Deusdedit José de Carvalho, 33 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_136c8431f0e43186a61710bd2a7d5296.setContent(html_eb04d18bbb361725dc5f0641b0714a32);
+            
+        
+
+        marker_e297a3177e477deccdd0708da596fd80.bindPopup(popup_136c8431f0e43186a61710bd2a7d5296)
+        ;
+
+        
+    
+    
+                marker_e297a3177e477deccdd0708da596fd80.setIcon(icon_06ce9c65526acecf40b5498c4817481d);
+            
+    
+            var marker_83075133c57d8d3393e07d29ee3eccf9 = L.marker(
+                [-7.0812206, -34.8362098],
+                {
+}
+            ).addTo(feature_group_a18d7e21a3f6a6661f5d7b27e486828e);
+        
+    
+            var icon_e4adb04fa3fb2d54352edda7c5257984 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b8105ec073f1939f630ff02daf5a75bf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_883c737165351c2c50e1f46f6c7a61b4 = $(`<div id="html_883c737165351c2c50e1f46f6c7a61b4" style="width: 100.0%; height: 100.0%;">             <b>UP Academia - Unidade Bessa</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: 344, Rua Poeta Luiz Raimundo Batista de Carvalho, 302 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_b8105ec073f1939f630ff02daf5a75bf.setContent(html_883c737165351c2c50e1f46f6c7a61b4);
+            
+        
+
+        marker_83075133c57d8d3393e07d29ee3eccf9.bindPopup(popup_b8105ec073f1939f630ff02daf5a75bf)
+        ;
+
+        
+    
+    
+                marker_83075133c57d8d3393e07d29ee3eccf9.setIcon(icon_e4adb04fa3fb2d54352edda7c5257984);
+            
+    
+            var marker_dc696e008e6937e10147cc0ef7a408b3 = L.marker(
+                [-7.0804841, -34.8394114],
+                {
+}
+            ).addTo(feature_group_a18d7e21a3f6a6661f5d7b27e486828e);
+        
+    
+            var icon_bd2fc55d30e7aa63d988a13c70efb122 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b579587a513430d74db117c36d99cfd1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_37ae0d0e55aca2f92ad9dfc86f79687a = $(`<div id="html_37ae0d0e55aca2f92ad9dfc86f79687a" style="width: 100.0%; height: 100.0%;">             <b>Selfit Academias Bessa</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: R. Bacharel José de Oliveira Curchatuz, 542 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_b579587a513430d74db117c36d99cfd1.setContent(html_37ae0d0e55aca2f92ad9dfc86f79687a);
+            
+        
+
+        marker_dc696e008e6937e10147cc0ef7a408b3.bindPopup(popup_b579587a513430d74db117c36d99cfd1)
+        ;
+
+        
+    
+    
+                marker_dc696e008e6937e10147cc0ef7a408b3.setIcon(icon_bd2fc55d30e7aa63d988a13c70efb122);
+            
+    
+            var marker_9910044543ab83ad625bd0e48dce9239 = L.marker(
+                [-7.084193699999999, -34.843367],
+                {
+}
+            ).addTo(feature_group_a18d7e21a3f6a6661f5d7b27e486828e);
+        
+    
+            var icon_00f5862be752cb6ac9a672b757cc4524 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_30ae56c09ab5c560c9a3fac159f9da87 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_af8dc12c9349f17792b8f36a76b6947c = $(`<div id="html_af8dc12c9349f17792b8f36a76b6947c" style="width: 100.0%; height: 100.0%;">             <b>Dinâmica Academia</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: R. Francisco Feitosa Palitot, 99 - Aeroclube, João Pessoa<br>             </div>`)[0];
+                popup_30ae56c09ab5c560c9a3fac159f9da87.setContent(html_af8dc12c9349f17792b8f36a76b6947c);
+            
+        
+
+        marker_9910044543ab83ad625bd0e48dce9239.bindPopup(popup_30ae56c09ab5c560c9a3fac159f9da87)
+        ;
+
+        
+    
+    
+                marker_9910044543ab83ad625bd0e48dce9239.setIcon(icon_00f5862be752cb6ac9a672b757cc4524);
+            
+    
+            var marker_7b82eebf7dc57b79f3d77b1fa3427ef3 = L.marker(
+                [-7.0815221, -34.8478038],
+                {
+}
+            ).addTo(feature_group_a18d7e21a3f6a6661f5d7b27e486828e);
+        
+    
+            var icon_9ae1554c1f9880928685758a61fb2f14 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_808448898727ce7e6c0d678cc9a5214f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_256edbc420343dd342355002bca1d217 = $(`<div id="html_256edbc420343dd342355002bca1d217" style="width: 100.0%; height: 100.0%;">             <b>Box10 CrossFit Bessa</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Rua Hortência Helena de Amorim Brito, BR-230, Km 13 - 13008 - 10 - Bessa, Cabedelo<br>             </div>`)[0];
+                popup_808448898727ce7e6c0d678cc9a5214f.setContent(html_256edbc420343dd342355002bca1d217);
+            
+        
+
+        marker_7b82eebf7dc57b79f3d77b1fa3427ef3.bindPopup(popup_808448898727ce7e6c0d678cc9a5214f)
+        ;
+
+        
+    
+    
+                marker_7b82eebf7dc57b79f3d77b1fa3427ef3.setIcon(icon_9ae1554c1f9880928685758a61fb2f14);
+            
+    
+            var marker_17ecdb0baa84aa30e3e81792102f814b = L.marker(
+                [-7.088095099999999, -34.83531070000001],
+                {
+}
+            ).addTo(feature_group_a18d7e21a3f6a6661f5d7b27e486828e);
+        
+    
+            var icon_cbf3fc3e1d7013d1cdf536c662272d5b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f42901ba15ed6b2243989153d67dca03 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_127c3203f5f5dec537c00d71c9afb082 = $(`<div id="html_127c3203f5f5dec537c00d71c9afb082" style="width: 100.0%; height: 100.0%;">             <b>Formula Academia</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Fernando Luiz Henriques dos Santos, 1041 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_f42901ba15ed6b2243989153d67dca03.setContent(html_127c3203f5f5dec537c00d71c9afb082);
+            
+        
+
+        marker_17ecdb0baa84aa30e3e81792102f814b.bindPopup(popup_f42901ba15ed6b2243989153d67dca03)
+        ;
+
+        
+    
+    
+                marker_17ecdb0baa84aa30e3e81792102f814b.setIcon(icon_cbf3fc3e1d7013d1cdf536c662272d5b);
+            
+    
+            var marker_24b63a3a35d8a304efbe5a3b875943b5 = L.marker(
+                [-7.0779745, -34.8516402],
+                {
+}
+            ).addTo(feature_group_a18d7e21a3f6a6661f5d7b27e486828e);
+        
+    
+            var icon_53ed953558452d0cd02c40864b08142f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d8c78f7daf07cb011dda4503a2b262d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4f6dfe73bee1c589df165f027d217b4c = $(`<div id="html_4f6dfe73bee1c589df165f027d217b4c" style="width: 100.0%; height: 100.0%;">             <b>Proforma Academia</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: R. Santo Antônio, 442 - Renascer, Cabedelo<br>             </div>`)[0];
+                popup_7d8c78f7daf07cb011dda4503a2b262d.setContent(html_4f6dfe73bee1c589df165f027d217b4c);
+            
+        
+
+        marker_24b63a3a35d8a304efbe5a3b875943b5.bindPopup(popup_7d8c78f7daf07cb011dda4503a2b262d)
+        ;
+
+        
+    
+    
+                marker_24b63a3a35d8a304efbe5a3b875943b5.setIcon(icon_53ed953558452d0cd02c40864b08142f);
+            
+    
+            var marker_c4e5c5f94553201bc98db9798bbe000b = L.marker(
+                [-7.078621800000001, -34.8368763],
+                {
+}
+            ).addTo(feature_group_a18d7e21a3f6a6661f5d7b27e486828e);
+        
+    
+            var icon_d692769afe673abcf665436ac07c2a34 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f37e10ff4eeea68e1ede5dac7f45d691 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a222b1100b3bca35d22a4dbc617fe900 = $(`<div id="html_a222b1100b3bca35d22a4dbc617fe900" style="width: 100.0%; height: 100.0%;">             <b>Academia Kay France</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: R. Oceano Ártico, 21 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_f37e10ff4eeea68e1ede5dac7f45d691.setContent(html_a222b1100b3bca35d22a4dbc617fe900);
+            
+        
+
+        marker_c4e5c5f94553201bc98db9798bbe000b.bindPopup(popup_f37e10ff4eeea68e1ede5dac7f45d691)
+        ;
+
+        
+    
+    
+                marker_c4e5c5f94553201bc98db9798bbe000b.setIcon(icon_d692769afe673abcf665436ac07c2a34);
+            
+    
+            var marker_b17a8e6bec63b8b9c936550db927adbf = L.marker(
+                [-7.0868281, -34.8390992],
+                {
+}
+            ).addTo(feature_group_a18d7e21a3f6a6661f5d7b27e486828e);
+        
+    
+            var icon_b326fb4f9927ba70ec4b062186981121 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8891e5f28df0a4013f1d534e41a1fae9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9439a98485f9372c4f0c1c738bdc9fb4 = $(`<div id="html_9439a98485f9372c4f0c1c738bdc9fb4" style="width: 100.0%; height: 100.0%;">             <b>FYB Academia</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: R. Juíz João Navarro Filho, 141 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_8891e5f28df0a4013f1d534e41a1fae9.setContent(html_9439a98485f9372c4f0c1c738bdc9fb4);
+            
+        
+
+        marker_b17a8e6bec63b8b9c936550db927adbf.bindPopup(popup_8891e5f28df0a4013f1d534e41a1fae9)
+        ;
+
+        
+    
+    
+                marker_b17a8e6bec63b8b9c936550db927adbf.setIcon(icon_b326fb4f9927ba70ec4b062186981121);
+            
+    
+            var marker_4033ad25a789c22324715b6cbd47221b = L.marker(
+                [-7.0936564, -34.8353883],
+                {
+}
+            ).addTo(feature_group_a18d7e21a3f6a6661f5d7b27e486828e);
+        
+    
+            var icon_3ef4d0b3eb665c3db7fd7d92ebaee3ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f3a2595f1338994de8e6de6ae349b9c8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_84b6ccc2e4a7931bca1b67413d1d1e99 = $(`<div id="html_84b6ccc2e4a7931bca1b67413d1d1e99" style="width: 100.0%; height: 100.0%;">             <b>HL Studio Fit</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Fernando Luiz Henriques dos Santos, 420 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_f3a2595f1338994de8e6de6ae349b9c8.setContent(html_84b6ccc2e4a7931bca1b67413d1d1e99);
+            
+        
+
+        marker_4033ad25a789c22324715b6cbd47221b.bindPopup(popup_f3a2595f1338994de8e6de6ae349b9c8)
+        ;
+
+        
+    
+    
+                marker_4033ad25a789c22324715b6cbd47221b.setIcon(icon_3ef4d0b3eb665c3db7fd7d92ebaee3ac);
+            
+    
+            var marker_d3a12ba872610a12003ac58b6111cfef = L.marker(
+                [-7.081249499999999, -34.8315152],
+                {
+}
+            ).addTo(feature_group_a18d7e21a3f6a6661f5d7b27e486828e);
+        
+    
+            var icon_d27b5fe2b1c8fd014633cf6dd68e3761 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_90a37e58a0f8d53043c782b648b95cf7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5e62f8be1595654c3c50c0aa2506af5f = $(`<div id="html_5e62f8be1595654c3c50c0aa2506af5f" style="width: 100.0%; height: 100.0%;">             <b>CT Letsvibe Bessa 24h</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Gov. Argemiro de Figueiredo, 1816 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_90a37e58a0f8d53043c782b648b95cf7.setContent(html_5e62f8be1595654c3c50c0aa2506af5f);
+            
+        
+
+        marker_d3a12ba872610a12003ac58b6111cfef.bindPopup(popup_90a37e58a0f8d53043c782b648b95cf7)
+        ;
+
+        
+    
+    
+                marker_d3a12ba872610a12003ac58b6111cfef.setIcon(icon_d27b5fe2b1c8fd014633cf6dd68e3761);
+            
+    
+            var marker_c535028fc904d63f35bc302cf1beddeb = L.marker(
+                [-7.0816279, -34.8401364],
+                {
+}
+            ).addTo(feature_group_a18d7e21a3f6a6661f5d7b27e486828e);
+        
+    
+            var icon_5ce81d280f32e5f1b4b8b3cd3e2b7854 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b50b3bf8f973017dae2c7daad22debe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_76f7f12db6686d328647645264c811e7 = $(`<div id="html_76f7f12db6686d328647645264c811e7" style="width: 100.0%; height: 100.0%;">             <b>Natalia Rondon Pilates Funcional</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: R. Poetisa Violeta Formiga, 50 - Aeroclube, João Pessoa<br>             </div>`)[0];
+                popup_4b50b3bf8f973017dae2c7daad22debe.setContent(html_76f7f12db6686d328647645264c811e7);
+            
+        
+
+        marker_c535028fc904d63f35bc302cf1beddeb.bindPopup(popup_4b50b3bf8f973017dae2c7daad22debe)
+        ;
+
+        
+    
+    
+                marker_c535028fc904d63f35bc302cf1beddeb.setIcon(icon_5ce81d280f32e5f1b4b8b3cd3e2b7854);
+            
+    
+            var marker_70180f367a960a629af72283ce19302a = L.marker(
+                [-7.082829599999999, -34.8332863],
+                {
+}
+            ).addTo(feature_group_a18d7e21a3f6a6661f5d7b27e486828e);
+        
+    
+            var icon_260993eb3fdb33c672c95c083b1e9a0c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_30ee302b858047022cbc7334f2fbaed7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d9c5bc52e6107d45006f1851484b4ee3 = $(`<div id="html_d9c5bc52e6107d45006f1851484b4ee3" style="width: 100.0%; height: 100.0%;">             <b>Box Manaíra</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Fernando Luiz Henriques dos Santos, 1650 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_30ee302b858047022cbc7334f2fbaed7.setContent(html_d9c5bc52e6107d45006f1851484b4ee3);
+            
+        
+
+        marker_70180f367a960a629af72283ce19302a.bindPopup(popup_30ee302b858047022cbc7334f2fbaed7)
+        ;
+
+        
+    
+    
+                marker_70180f367a960a629af72283ce19302a.setIcon(icon_260993eb3fdb33c672c95c083b1e9a0c);
+            
+    
+            var marker_edb34d39764b3b1c161c1ae559b59681 = L.marker(
+                [-7.0902502, -34.838434],
+                {
+}
+            ).addTo(feature_group_a18d7e21a3f6a6661f5d7b27e486828e);
+        
+    
+            var icon_d2819ccfd3722c82576993d4fd31336c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fa9e4e1c30e15c528998946509b29285 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3a4202d2a2dfddb404492df3b17678c8 = $(`<div id="html_3a4202d2a2dfddb404492df3b17678c8" style="width: 100.0%; height: 100.0%;">             <b>Stúdio Vida Ativa</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Empresarial Oceania - R. Mírian Barreto Rabelo, 831 - Sala 108 - Aeroclube, João Pessoa<br>             </div>`)[0];
+                popup_fa9e4e1c30e15c528998946509b29285.setContent(html_3a4202d2a2dfddb404492df3b17678c8);
+            
+        
+
+        marker_edb34d39764b3b1c161c1ae559b59681.bindPopup(popup_fa9e4e1c30e15c528998946509b29285)
+        ;
+
+        
+    
+    
+                marker_edb34d39764b3b1c161c1ae559b59681.setIcon(icon_d2819ccfd3722c82576993d4fd31336c);
+            
+    
+            var marker_04572c28f771b609baa32924d6dae694 = L.marker(
+                [-7.090046699999999, -34.8384658],
+                {
+}
+            ).addTo(feature_group_a18d7e21a3f6a6661f5d7b27e486828e);
+        
+    
+            var icon_802a5423c814d4ca84ea1e8e94d538f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_760604932c99661a7344876b7e10c5a7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c6f799d0bddfcbce78c9fde1c0f0d18d = $(`<div id="html_c6f799d0bddfcbce78c9fde1c0f0d18d" style="width: 100.0%; height: 100.0%;">             <b>Fluir Pilates e Saúde</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: R. Mírian Barreto Rabelo, 831 - Aeroclube, João Pessoa<br>             </div>`)[0];
+                popup_760604932c99661a7344876b7e10c5a7.setContent(html_c6f799d0bddfcbce78c9fde1c0f0d18d);
+            
+        
+
+        marker_04572c28f771b609baa32924d6dae694.bindPopup(popup_760604932c99661a7344876b7e10c5a7)
+        ;
+
+        
+    
+    
+                marker_04572c28f771b609baa32924d6dae694.setIcon(icon_802a5423c814d4ca84ea1e8e94d538f3);
+            
+    
+            var marker_4cfc8bca835dc2bafa29c9206ac31d8e = L.marker(
+                [-7.074374199999999, -34.83202],
+                {
+}
+            ).addTo(feature_group_a18d7e21a3f6a6661f5d7b27e486828e);
+        
+    
+            var icon_6d6990fb3ca2874fd155c9ab245fe08f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_865983edd7b70077d5369833e2a10428 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_62b21832a73ec20cbfa9a54743a558da = $(`<div id="html_62b21832a73ec20cbfa9a54743a558da" style="width: 100.0%; height: 100.0%;">             <b>HARMONIC STUDIO PILATES E FISIOTERAPIA</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Fernando Luiz Henriques dos Santos, 2145 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_865983edd7b70077d5369833e2a10428.setContent(html_62b21832a73ec20cbfa9a54743a558da);
+            
+        
+
+        marker_4cfc8bca835dc2bafa29c9206ac31d8e.bindPopup(popup_865983edd7b70077d5369833e2a10428)
+        ;
+
+        
+    
+    
+                marker_4cfc8bca835dc2bafa29c9206ac31d8e.setIcon(icon_6d6990fb3ca2874fd155c9ab245fe08f);
+            
+    
+            feature_group_a18d7e21a3f6a6661f5d7b27e486828e.addTo(map_fd142b3f8d9f2c5cac9b9c07a639891f);
+        
+    
+            var feature_group_f565405a2ea43b6afcac880c5f9edc72 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_69adfd2d008f85ffa5e32de22dfad229 = L.marker(
+                [-7.075684, -34.83791050000001],
+                {
+}
+            ).addTo(feature_group_f565405a2ea43b6afcac880c5f9edc72);
+        
+    
+            var icon_de1c4dd3e17fb10f1af85a8368cd88e7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5a576567e1c123d946299aa6778a089f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_baf38535c7dd0c4735a5f81e7f044bb6 = $(`<div id="html_baf38535c7dd0c4735a5f81e7f044bb6" style="width: 100.0%; height: 100.0%;">             <b>Mió do Sertão</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: R. José Simões de Araújo, 139 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_5a576567e1c123d946299aa6778a089f.setContent(html_baf38535c7dd0c4735a5f81e7f044bb6);
+            
+        
+
+        marker_69adfd2d008f85ffa5e32de22dfad229.bindPopup(popup_5a576567e1c123d946299aa6778a089f)
+        ;
+
+        
+    
+    
+                marker_69adfd2d008f85ffa5e32de22dfad229.setIcon(icon_de1c4dd3e17fb10f1af85a8368cd88e7);
+            
+    
+            var marker_421610adbeb8daa84b3285973552b563 = L.marker(
+                [-7.075846599999999, -34.8326698],
+                {
+}
+            ).addTo(feature_group_f565405a2ea43b6afcac880c5f9edc72);
+        
+    
+            var icon_b94f5ddfd1b5fbd303ae21444759f7cf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_010bdb9c816e5877b0c3fc9a62257a31 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_954e2a17d396d1a5fcc32441ad5e008d = $(`<div id="html_954e2a17d396d1a5fcc32441ad5e008d" style="width: 100.0%; height: 100.0%;">             <b>Moman Cozinha Contemporânea</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Rua Prefeito Joaquim Gonçalves de Assis, 50 - Loja 11 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_010bdb9c816e5877b0c3fc9a62257a31.setContent(html_954e2a17d396d1a5fcc32441ad5e008d);
+            
+        
+
+        marker_421610adbeb8daa84b3285973552b563.bindPopup(popup_010bdb9c816e5877b0c3fc9a62257a31)
+        ;
+
+        
+    
+    
+                marker_421610adbeb8daa84b3285973552b563.setIcon(icon_b94f5ddfd1b5fbd303ae21444759f7cf);
+            
+    
+            var marker_0b183c9e1d415dec9759551c43a5b67d = L.marker(
+                [-7.092933899999999, -34.8349127],
+                {
+}
+            ).addTo(feature_group_f565405a2ea43b6afcac880c5f9edc72);
+        
+    
+            var icon_23e32c551a930a9cf6bd541dcf70d7df = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_701a9cc25ec1aa9f92694ef897f6ea98 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8ab9fa9acd03f156521a6d5e77165c90 = $(`<div id="html_8ab9fa9acd03f156521a6d5e77165c90" style="width: 100.0%; height: 100.0%;">             <b>Mangiare Pizzaria</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Gov. Argemiro de Figueiredo, 447 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_701a9cc25ec1aa9f92694ef897f6ea98.setContent(html_8ab9fa9acd03f156521a6d5e77165c90);
+            
+        
+
+        marker_0b183c9e1d415dec9759551c43a5b67d.bindPopup(popup_701a9cc25ec1aa9f92694ef897f6ea98)
+        ;
+
+        
+    
+    
+                marker_0b183c9e1d415dec9759551c43a5b67d.setIcon(icon_23e32c551a930a9cf6bd541dcf70d7df);
+            
+    
+            var marker_e2f6c2118e2c48c905d467d13ec27fa3 = L.marker(
+                [-7.0776121, -34.8348792],
+                {
+}
+            ).addTo(feature_group_f565405a2ea43b6afcac880c5f9edc72);
+        
+    
+            var icon_f5ea3b9cf83aa509cbbc56bbad425b74 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_33280995ca5f83f4238ec90602187ce6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1e3b28ecb755c1e869c626ca2153a959 = $(`<div id="html_1e3b28ecb755c1e869c626ca2153a959" style="width: 100.0%; height: 100.0%;">             <b>Arbóreo Ristorante</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: R. Garibaldi Teixeira de Carvalho, Nº 231 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_33280995ca5f83f4238ec90602187ce6.setContent(html_1e3b28ecb755c1e869c626ca2153a959);
+            
+        
+
+        marker_e2f6c2118e2c48c905d467d13ec27fa3.bindPopup(popup_33280995ca5f83f4238ec90602187ce6)
+        ;
+
+        
+    
+    
+                marker_e2f6c2118e2c48c905d467d13ec27fa3.setIcon(icon_f5ea3b9cf83aa509cbbc56bbad425b74);
+            
+    
+            var marker_9acfdc0da82f37381f59c0b683f45f9a = L.marker(
+                [-7.0747257, -34.8315331],
+                {
+}
+            ).addTo(feature_group_f565405a2ea43b6afcac880c5f9edc72);
+        
+    
+            var icon_25b9060f81ec1187e37b9895fb536b51 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f8428cb7a8d8bf0d5c84daa80834f7c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_106c8cd9f7e75ce8f8e9270656a32050 = $(`<div id="html_106c8cd9f7e75ce8f8e9270656a32050" style="width: 100.0%; height: 100.0%;">             <b>Restaurante Buckminster</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Fernando Luiz Henriques dos Santos, 2650 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_8f8428cb7a8d8bf0d5c84daa80834f7c.setContent(html_106c8cd9f7e75ce8f8e9270656a32050);
+            
+        
+
+        marker_9acfdc0da82f37381f59c0b683f45f9a.bindPopup(popup_8f8428cb7a8d8bf0d5c84daa80834f7c)
+        ;
+
+        
+    
+    
+                marker_9acfdc0da82f37381f59c0b683f45f9a.setIcon(icon_25b9060f81ec1187e37b9895fb536b51);
+            
+    
+            var marker_3f5cc9097fa9a01c144fed625117db4e = L.marker(
+                [-7.075188300000001, -34.8314622],
+                {
+}
+            ).addTo(feature_group_f565405a2ea43b6afcac880c5f9edc72);
+        
+    
+            var icon_187443a8efe244f7b125c7fe94668218 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fec35c10f6191e91d3b79f9da57aed24 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9e17ae50c4211e79ba22db0ef5f79c2e = $(`<div id="html_9e17ae50c4211e79ba22db0ef5f79c2e" style="width: 100.0%; height: 100.0%;">             <b>Bercy João Pessoa</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: R. Severino Nicolau de Melo, 163 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_fec35c10f6191e91d3b79f9da57aed24.setContent(html_9e17ae50c4211e79ba22db0ef5f79c2e);
+            
+        
+
+        marker_3f5cc9097fa9a01c144fed625117db4e.bindPopup(popup_fec35c10f6191e91d3b79f9da57aed24)
+        ;
+
+        
+    
+    
+                marker_3f5cc9097fa9a01c144fed625117db4e.setIcon(icon_187443a8efe244f7b125c7fe94668218);
+            
+    
+            var marker_a9e0a2a1555b6116a24f7e9bbce35c65 = L.marker(
+                [-7.0878972, -34.8378665],
+                {
+}
+            ).addTo(feature_group_f565405a2ea43b6afcac880c5f9edc72);
+        
+    
+            var icon_49a08f3368ed6e6f100bdef0f2acbbce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d9bb8db387e70c73aebedffac769e5aa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_85cc62a28493dfac2ab8b3602fe98510 = $(`<div id="html_85cc62a28493dfac2ab8b3602fe98510" style="width: 100.0%; height: 100.0%;">             <b>Seu Portuga</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: R. Lindolfo José Correia das Neves, 394 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_d9bb8db387e70c73aebedffac769e5aa.setContent(html_85cc62a28493dfac2ab8b3602fe98510);
+            
+        
+
+        marker_a9e0a2a1555b6116a24f7e9bbce35c65.bindPopup(popup_d9bb8db387e70c73aebedffac769e5aa)
+        ;
+
+        
+    
+    
+                marker_a9e0a2a1555b6116a24f7e9bbce35c65.setIcon(icon_49a08f3368ed6e6f100bdef0f2acbbce);
+            
+    
+            var marker_0dfbb90b690e16a73ce71c78f6a94298 = L.marker(
+                [-7.087264599999999, -34.8352181],
+                {
+}
+            ).addTo(feature_group_f565405a2ea43b6afcac880c5f9edc72);
+        
+    
+            var icon_09a4aa88fe9474dc6c70da93d7150e33 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_de351a7410b5871835ee1edc7370d222 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_25e9c5ec64ae391457c1da8281501b83 = $(`<div id="html_25e9c5ec64ae391457c1da8281501b83" style="width: 100.0%; height: 100.0%;">             <b>Quitanda Restaurante Self-service - Restaurante Self-service no Bessa</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Fernando Luiz Henriques dos Santos, 1131 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_de351a7410b5871835ee1edc7370d222.setContent(html_25e9c5ec64ae391457c1da8281501b83);
+            
+        
+
+        marker_0dfbb90b690e16a73ce71c78f6a94298.bindPopup(popup_de351a7410b5871835ee1edc7370d222)
+        ;
+
+        
+    
+    
+                marker_0dfbb90b690e16a73ce71c78f6a94298.setIcon(icon_09a4aa88fe9474dc6c70da93d7150e33);
+            
+    
+            var marker_b8fd10787bd8df57d7334889850e21d8 = L.marker(
+                [-7.072249299999999, -34.8366615],
+                {
+}
+            ).addTo(feature_group_f565405a2ea43b6afcac880c5f9edc72);
+        
+    
+            var icon_2efe251d25f289a86794ab1342c3ba8a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4a227abb46280a096fd7f0ba7ace9275 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_536308110fb86d3b464948fa69042e0d = $(`<div id="html_536308110fb86d3b464948fa69042e0d" style="width: 100.0%; height: 100.0%;">             <b>Casa Praia JP</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Campos Sales, 334 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_4a227abb46280a096fd7f0ba7ace9275.setContent(html_536308110fb86d3b464948fa69042e0d);
+            
+        
+
+        marker_b8fd10787bd8df57d7334889850e21d8.bindPopup(popup_4a227abb46280a096fd7f0ba7ace9275)
+        ;
+
+        
+    
+    
+                marker_b8fd10787bd8df57d7334889850e21d8.setIcon(icon_2efe251d25f289a86794ab1342c3ba8a);
+            
+    
+            var marker_dd580281bf3a9f19657b1daaf9946d92 = L.marker(
+                [-7.0742777, -34.8382859],
+                {
+}
+            ).addTo(feature_group_f565405a2ea43b6afcac880c5f9edc72);
+        
+    
+            var icon_e2cae9891bfb9bdc984b08690f73152a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5bad3c09aa8de8a2ccae7c62ea1c940f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_29f194f1a8f9824b17cd2bea01aacdfb = $(`<div id="html_29f194f1a8f9824b17cd2bea01aacdfb" style="width: 100.0%; height: 100.0%;">             <b>Grelha Rústica</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: R. José Simões de Araújo, 285 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_5bad3c09aa8de8a2ccae7c62ea1c940f.setContent(html_29f194f1a8f9824b17cd2bea01aacdfb);
+            
+        
+
+        marker_dd580281bf3a9f19657b1daaf9946d92.bindPopup(popup_5bad3c09aa8de8a2ccae7c62ea1c940f)
+        ;
+
+        
+    
+    
+                marker_dd580281bf3a9f19657b1daaf9946d92.setIcon(icon_e2cae9891bfb9bdc984b08690f73152a);
+            
+    
+            var marker_8f80ff1670f8064c7dd5340ec6812a13 = L.marker(
+                [-7.0918133, -34.8363534],
+                {
+}
+            ).addTo(feature_group_f565405a2ea43b6afcac880c5f9edc72);
+        
+    
+            var icon_ece470739d9d8c24d510bcbfb12a660f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_359d5a75847180d19b96864e6587137c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5c02b76a57339d0ab949511c46b04b19 = $(`<div id="html_5c02b76a57339d0ab949511c46b04b19" style="width: 100.0%; height: 100.0%;">             <b>Estaleiro Restaurante - Bessa | Peixes e Frutos do mar</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: R. Severino Linhares Pordeus, 59 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_359d5a75847180d19b96864e6587137c.setContent(html_5c02b76a57339d0ab949511c46b04b19);
+            
+        
+
+        marker_8f80ff1670f8064c7dd5340ec6812a13.bindPopup(popup_359d5a75847180d19b96864e6587137c)
+        ;
+
+        
+    
+    
+                marker_8f80ff1670f8064c7dd5340ec6812a13.setIcon(icon_ece470739d9d8c24d510bcbfb12a660f);
+            
+    
+            var marker_b16f9dfbd2d0842a2feaa68a9bd92c73 = L.marker(
+                [-7.074376200000001, -34.83163],
+                {
+}
+            ).addTo(feature_group_f565405a2ea43b6afcac880c5f9edc72);
+        
+    
+            var icon_dd5fefe07952beb1b4229b1d159cfc20 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_01667f811115a7b1326b5cc76f319189 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fab85030aba93a494d18a4969e9c89dc = $(`<div id="html_fab85030aba93a494d18a4969e9c89dc" style="width: 100.0%; height: 100.0%;">             <b>PRATO BRASILIS RESTAURANTE</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: R. Fernando Luiz Henriques Dos Santos, 2578 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_01667f811115a7b1326b5cc76f319189.setContent(html_fab85030aba93a494d18a4969e9c89dc);
+            
+        
+
+        marker_b16f9dfbd2d0842a2feaa68a9bd92c73.bindPopup(popup_01667f811115a7b1326b5cc76f319189)
+        ;
+
+        
+    
+    
+                marker_b16f9dfbd2d0842a2feaa68a9bd92c73.setIcon(icon_dd5fefe07952beb1b4229b1d159cfc20);
+            
+    
+            var marker_1e80c8a11a65963ec0c60a8944cd74e1 = L.marker(
+                [-7.079527499999999, -34.830611],
+                {
+}
+            ).addTo(feature_group_f565405a2ea43b6afcac880c5f9edc72);
+        
+    
+            var icon_466d5fdb0034bde282c5981f0042aef2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8530826af0a3b7f2f8cfe8803d94a043 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_284533904e557f92eae3ff9102bb6417 = $(`<div id="html_284533904e557f92eae3ff9102bb6417" style="width: 100.0%; height: 100.0%;">             <b>Marea Restaurante</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: R. Olívio Pinto - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_8530826af0a3b7f2f8cfe8803d94a043.setContent(html_284533904e557f92eae3ff9102bb6417);
+            
+        
+
+        marker_1e80c8a11a65963ec0c60a8944cd74e1.bindPopup(popup_8530826af0a3b7f2f8cfe8803d94a043)
+        ;
+
+        
+    
+    
+                marker_1e80c8a11a65963ec0c60a8944cd74e1.setIcon(icon_466d5fdb0034bde282c5981f0042aef2);
+            
+    
+            var marker_fd7aabe01fde4d717be6a921aed8cd20 = L.marker(
+                [-7.0770366, -34.8313122],
+                {
+}
+            ).addTo(feature_group_f565405a2ea43b6afcac880c5f9edc72);
+        
+    
+            var icon_ecb6ed01e44c2048021555df29b7f615 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_496be48e8c0793607ac30d8ecfb7f7ec = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_40b15aee2938caead2133a2a4c6f34e8 = $(`<div id="html_40b15aee2938caead2133a2a4c6f34e8" style="width: 100.0%; height: 100.0%;">             <b>Ciarlini Cucina Italiana - Pizzas e Massas</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Fernando Luiz Henriques dos Santos, 2290 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_496be48e8c0793607ac30d8ecfb7f7ec.setContent(html_40b15aee2938caead2133a2a4c6f34e8);
+            
+        
+
+        marker_fd7aabe01fde4d717be6a921aed8cd20.bindPopup(popup_496be48e8c0793607ac30d8ecfb7f7ec)
+        ;
+
+        
+    
+    
+                marker_fd7aabe01fde4d717be6a921aed8cd20.setIcon(icon_ecb6ed01e44c2048021555df29b7f615);
+            
+    
+            var marker_8e69c4fb63fa17e51733bb498fe14ea7 = L.marker(
+                [-7.07459, -34.83413],
+                {
+}
+            ).addTo(feature_group_f565405a2ea43b6afcac880c5f9edc72);
+        
+    
+            var icon_d6ef43bf9ab549c09b8b6445ad4d018f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fe8ae55a274ead7c141c1b31913dd305 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b737f8fe8f2f1c62d591ff26e47f5a36 = $(`<div id="html_b737f8fe8f2f1c62d591ff26e47f5a36" style="width: 100.0%; height: 100.0%;">             <b>NÓIS COMEDORIA - Cozinha Regional e Afetiva</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: R. Severino Linhares Pordeus, 194 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_fe8ae55a274ead7c141c1b31913dd305.setContent(html_b737f8fe8f2f1c62d591ff26e47f5a36);
+            
+        
+
+        marker_8e69c4fb63fa17e51733bb498fe14ea7.bindPopup(popup_fe8ae55a274ead7c141c1b31913dd305)
+        ;
+
+        
+    
+    
+                marker_8e69c4fb63fa17e51733bb498fe14ea7.setIcon(icon_d6ef43bf9ab549c09b8b6445ad4d018f);
+            
+    
+            var marker_fe8437556da52f9d126d62f8e0d49eef = L.marker(
+                [-7.0845104, -34.8408142],
+                {
+}
+            ).addTo(feature_group_f565405a2ea43b6afcac880c5f9edc72);
+        
+    
+            var icon_800691a670ca35049bec6fa61d2d9b0d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a508a25f1878e28231d9e220c8bebbe3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c7839d998a4c77eb1fa8a2e09196a9df = $(`<div id="html_c7839d998a4c77eb1fa8a2e09196a9df" style="width: 100.0%; height: 100.0%;">             <b>Sushi Bessa | Restaurante Japonês | João Pessoa</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: R. Francisco Leocádio Ribeiro Coutinho, 55 - Sala 119 - Aeroclube, João Pessoa<br>             </div>`)[0];
+                popup_a508a25f1878e28231d9e220c8bebbe3.setContent(html_c7839d998a4c77eb1fa8a2e09196a9df);
+            
+        
+
+        marker_fe8437556da52f9d126d62f8e0d49eef.bindPopup(popup_a508a25f1878e28231d9e220c8bebbe3)
+        ;
+
+        
+    
+    
+                marker_fe8437556da52f9d126d62f8e0d49eef.setIcon(icon_800691a670ca35049bec6fa61d2d9b0d);
+            
+    
+            var marker_94ea76f1ff4639b80d13f504de6b9c7e = L.marker(
+                [-7.0843833, -34.8458786],
+                {
+}
+            ).addTo(feature_group_f565405a2ea43b6afcac880c5f9edc72);
+        
+    
+            var icon_7e27aab63cae7c2dbb3064d73bb6ca98 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a97ec84e818d479a90722a54dd820842 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aa0db093b4b36be8030f2ce27990b237 = $(`<div id="html_aa0db093b4b36be8030f2ce27990b237" style="width: 100.0%; height: 100.0%;">             <b>Pix Pizzaria JP</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: R. Francisco Leocádio Ribeiro Coutinho, 630 - Aeroclube, João Pessoa<br>             </div>`)[0];
+                popup_a97ec84e818d479a90722a54dd820842.setContent(html_aa0db093b4b36be8030f2ce27990b237);
+            
+        
+
+        marker_94ea76f1ff4639b80d13f504de6b9c7e.bindPopup(popup_a97ec84e818d479a90722a54dd820842)
+        ;
+
+        
+    
+    
+                marker_94ea76f1ff4639b80d13f504de6b9c7e.setIcon(icon_7e27aab63cae7c2dbb3064d73bb6ca98);
+            
+    
+            var marker_1b5d091eb10b8d894c14c71ff829432d = L.marker(
+                [-7.081236, -34.8391863],
+                {
+}
+            ).addTo(feature_group_f565405a2ea43b6afcac880c5f9edc72);
+        
+    
+            var icon_0cb69584b1839892d5cfcd8f3a0c0647 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c4955ded8425e2d943423b963b0b6584 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f182c5ad07d3ad9f0edb20e7ab1aa220 = $(`<div id="html_f182c5ad07d3ad9f0edb20e7ab1aa220" style="width: 100.0%; height: 100.0%;">             <b>BeniOCA</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: R. Bacharel José de Oliveira Curchatuz, 850 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_c4955ded8425e2d943423b963b0b6584.setContent(html_f182c5ad07d3ad9f0edb20e7ab1aa220);
+            
+        
+
+        marker_1b5d091eb10b8d894c14c71ff829432d.bindPopup(popup_c4955ded8425e2d943423b963b0b6584)
+        ;
+
+        
+    
+    
+                marker_1b5d091eb10b8d894c14c71ff829432d.setIcon(icon_0cb69584b1839892d5cfcd8f3a0c0647);
+            
+    
+            var marker_47c3706dfce127a462f71b1a6c3019d2 = L.marker(
+                [-7.076263099999999, -34.8358452],
+                {
+}
+            ).addTo(feature_group_f565405a2ea43b6afcac880c5f9edc72);
+        
+    
+            var icon_a2956332b982fe79822a00ec95123137 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ee481af50ea4a63e49ce2f6323d527cd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b4e2d9127899ef58885a4503109d2720 = $(`<div id="html_b4e2d9127899ef58885a4503109d2720" style="width: 100.0%; height: 100.0%;">             <b>A Família Gaúcha petiscaria</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Antigo bar do cajueiro - R. Severino Nicolau de Melo, 652 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_ee481af50ea4a63e49ce2f6323d527cd.setContent(html_b4e2d9127899ef58885a4503109d2720);
+            
+        
+
+        marker_47c3706dfce127a462f71b1a6c3019d2.bindPopup(popup_ee481af50ea4a63e49ce2f6323d527cd)
+        ;
+
+        
+    
+    
+                marker_47c3706dfce127a462f71b1a6c3019d2.setIcon(icon_a2956332b982fe79822a00ec95123137);
+            
+    
+            var marker_89657324aa87f71d2ae8effc30fa6c2a = L.marker(
+                [-7.076918699999999, -34.8372758],
+                {
+}
+            ).addTo(feature_group_f565405a2ea43b6afcac880c5f9edc72);
+        
+    
+            var icon_ba1120543f6a7ba755ceb5cf4a6499f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ab1ad839eb2ee153688d315e64e9aaa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d5f49d10349007dc66748b66702cd533 = $(`<div id="html_d5f49d10349007dc66748b66702cd533" style="width: 100.0%; height: 100.0%;">             <b>Filipéia Trattoria</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: R. Oceano Ártico, 305 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_0ab1ad839eb2ee153688d315e64e9aaa.setContent(html_d5f49d10349007dc66748b66702cd533);
+            
+        
+
+        marker_89657324aa87f71d2ae8effc30fa6c2a.bindPopup(popup_0ab1ad839eb2ee153688d315e64e9aaa)
+        ;
+
+        
+    
+    
+                marker_89657324aa87f71d2ae8effc30fa6c2a.setIcon(icon_ba1120543f6a7ba755ceb5cf4a6499f1);
+            
+    
+            feature_group_f565405a2ea43b6afcac880c5f9edc72.addTo(map_fd142b3f8d9f2c5cac9b9c07a639891f);
+        
+    
+            var layer_control_5b52033bae4d0947779f3e413bea31c2_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_0c9175f15c503fdf32581a985b187fb8,
+                },
+                overlays :  {
+                    "Pr\u00f3ximos: Sa\u00fade" : feature_group_be6d8287e7ee7508da6df76371ead020,
+                    "Pr\u00f3ximos: Educa\u00e7\u00e3o" : feature_group_916d47f9638b664c028a33c22c3c7b92,
+                    "Pr\u00f3ximos: Com\u00e9rcio" : feature_group_9016d2d4a3397d9c3e46a7d0b368ce43,
+                    "Pr\u00f3ximos: Servi\u00e7os" : feature_group_92c244887f80ee9211cb27e836430f46,
+                    "Pr\u00f3ximos: Lazer/Fitness" : feature_group_a18d7e21a3f6a6661f5d7b27e486828e,
+                    "Pr\u00f3ximos: Alimenta\u00e7\u00e3o" : feature_group_f565405a2ea43b6afcac880c5f9edc72,
+                },
+            };
+            let layer_control_5b52033bae4d0947779f3e413bea31c2 = L.control.layers(
+                layer_control_5b52033bae4d0947779f3e413bea31c2_layers.base_layers,
+                layer_control_5b52033bae4d0947779f3e413bea31c2_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_fd142b3f8d9f2c5cac9b9c07a639891f);
+
+        
+</script>
+</html>
