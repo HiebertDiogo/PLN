@@ -1,0 +1,4872 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_51cd48d8143a7f4cb056ce5d74a2a245 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_51cd48d8143a7f4cb056ce5d74a2a245" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_51cd48d8143a7f4cb056ce5d74a2a245 = L.map(
+                "map_51cd48d8143a7f4cb056ce5d74a2a245",
+                {
+                    center: [-7.106615499999999, -34.828011],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_96c47045019db1170eee146656c85ab4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_96c47045019db1170eee146656c85ab4.addTo(map_51cd48d8143a7f4cb056ce5d74a2a245);
+        
+    
+            var marker_e9273cde594b1c1aa869bcb62abb24b8 = L.marker(
+                [-7.106615499999999, -34.828011],
+                {
+}
+            ).addTo(map_51cd48d8143a7f4cb056ce5d74a2a245);
+        
+    
+            var icon_b8808d30c432f55aca4db47ba2ce3fea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_45c048a869f2cc24d87ac246e0eebb7e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_719e7f1b3cddcf468ca5baa621805418 = $(`<div id="html_719e7f1b3cddcf468ca5baa621805418" style="width: 100.0%; height: 100.0%;">RESIDÊNCIA: <b>Manaíra Palace Residence</b><br>Endereço: Av. João Maurício, 581 - Manaíra, João Pessoa - PB, 58038-000, Brasil</div>`)[0];
+                popup_45c048a869f2cc24d87ac246e0eebb7e.setContent(html_719e7f1b3cddcf468ca5baa621805418);
+            
+        
+
+        marker_e9273cde594b1c1aa869bcb62abb24b8.bindPopup(popup_45c048a869f2cc24d87ac246e0eebb7e)
+        ;
+
+        
+    
+    
+                marker_e9273cde594b1c1aa869bcb62abb24b8.setIcon(icon_b8808d30c432f55aca4db47ba2ce3fea);
+            
+    
+            var feature_group_e062234f8191ce334934d1981faa2de8 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_e062234f8191ce334934d1981faa2de8.addTo(map_51cd48d8143a7f4cb056ce5d74a2a245);
+        
+    
+            var feature_group_fc45dcd27783b07f65ce180284e22e87 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_082f0dbae53240af394921d60051c6c9 = L.marker(
+                [-7.113906399999999, -34.8256367],
+                {
+}
+            ).addTo(feature_group_fc45dcd27783b07f65ce180284e22e87);
+        
+    
+            var icon_ccb413ee5140d105b67a52ab27bc82ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d12bbfb20028109c1edd9b2e690bd8ee = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_70b14fdb8b05e9d94e745272f89e3418 = $(`<div id="html_70b14fdb8b05e9d94e745272f89e3418" style="width: 100.0%; height: 100.0%;">             <b>Redepharma</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: Av. Nego, 332 - Tambaú, João Pessoa<br>             </div>`)[0];
+                popup_d12bbfb20028109c1edd9b2e690bd8ee.setContent(html_70b14fdb8b05e9d94e745272f89e3418);
+            
+        
+
+        marker_082f0dbae53240af394921d60051c6c9.bindPopup(popup_d12bbfb20028109c1edd9b2e690bd8ee)
+        ;
+
+        
+    
+    
+                marker_082f0dbae53240af394921d60051c6c9.setIcon(icon_ccb413ee5140d105b67a52ab27bc82ae);
+            
+    
+            var marker_591d49eca2057171e2c3edff8c238cd6 = L.marker(
+                [-7.1057314, -34.8340182],
+                {
+}
+            ).addTo(feature_group_fc45dcd27783b07f65ce180284e22e87);
+        
+    
+            var icon_dec1a34a48c77c3897ca77d14ce4497f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_867de32e498b2f9ab3be91dc9c1365e7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_daa0a5a4f46b43e1145128133b9bf621 = $(`<div id="html_daa0a5a4f46b43e1145128133b9bf621" style="width: 100.0%; height: 100.0%;">             <b>Net More Pharma - Pharmacy Hope</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: Av. Esperança, 1165 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_867de32e498b2f9ab3be91dc9c1365e7.setContent(html_daa0a5a4f46b43e1145128133b9bf621);
+            
+        
+
+        marker_591d49eca2057171e2c3edff8c238cd6.bindPopup(popup_867de32e498b2f9ab3be91dc9c1365e7)
+        ;
+
+        
+    
+    
+                marker_591d49eca2057171e2c3edff8c238cd6.setIcon(icon_dec1a34a48c77c3897ca77d14ce4497f);
+            
+    
+            var marker_886f80c77dd9626d7680664dd7ab8c2f = L.marker(
+                [-7.0994736, -34.83808210000001],
+                {
+}
+            ).addTo(feature_group_fc45dcd27783b07f65ce180284e22e87);
+        
+    
+            var icon_5044d4987abff8c8ffd1d5e2e62b8a13 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d15f3769839b6df176d5aac6dce06eab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9c4a7e43fb62909eb2d8d0376c65e2d8 = $(`<div id="html_9c4a7e43fb62909eb2d8d0376c65e2d8" style="width: 100.0%; height: 100.0%;">             <b>Drogasil</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: R. Escrivão Sebastião de Azevedo Bastos, 251 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_d15f3769839b6df176d5aac6dce06eab.setContent(html_9c4a7e43fb62909eb2d8d0376c65e2d8);
+            
+        
+
+        marker_886f80c77dd9626d7680664dd7ab8c2f.bindPopup(popup_d15f3769839b6df176d5aac6dce06eab)
+        ;
+
+        
+    
+    
+                marker_886f80c77dd9626d7680664dd7ab8c2f.setIcon(icon_5044d4987abff8c8ffd1d5e2e62b8a13);
+            
+    
+            var marker_93dbde3fd58e193bd199782145028b46 = L.marker(
+                [-7.1117764, -34.82696019999999],
+                {
+}
+            ).addTo(feature_group_fc45dcd27783b07f65ce180284e22e87);
+        
+    
+            var icon_074d1425151cccea160902bc0d5ded8d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b067555a4983fcc87e5bf86af51a6ea6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f12008b02a97f1deb37066307c61378b = $(`<div id="html_f12008b02a97f1deb37066307c61378b" style="width: 100.0%; height: 100.0%;">             <b>Drogasil</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: Av. Sen. Ruy Carneiro, 307 - Tambaú, João Pessoa<br>             </div>`)[0];
+                popup_b067555a4983fcc87e5bf86af51a6ea6.setContent(html_f12008b02a97f1deb37066307c61378b);
+            
+        
+
+        marker_93dbde3fd58e193bd199782145028b46.bindPopup(popup_b067555a4983fcc87e5bf86af51a6ea6)
+        ;
+
+        
+    
+    
+                marker_93dbde3fd58e193bd199782145028b46.setIcon(icon_074d1425151cccea160902bc0d5ded8d);
+            
+    
+            var marker_0a6097452f6c019af4ccc6f4d57bd927 = L.marker(
+                [-7.1065568, -34.834774],
+                {
+}
+            ).addTo(feature_group_fc45dcd27783b07f65ce180284e22e87);
+        
+    
+            var icon_9ee769c586c2648e465ed4cd927f3c3c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4da516fd1ee5519d44f0846ffcfb5f74 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cb9363078583a95003ad699cdcf3a27a = $(`<div id="html_cb9363078583a95003ad699cdcf3a27a" style="width: 100.0%; height: 100.0%;">             <b>Drogasil</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: Av. João Câncio da Silva, 880 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_4da516fd1ee5519d44f0846ffcfb5f74.setContent(html_cb9363078583a95003ad699cdcf3a27a);
+            
+        
+
+        marker_0a6097452f6c019af4ccc6f4d57bd927.bindPopup(popup_4da516fd1ee5519d44f0846ffcfb5f74)
+        ;
+
+        
+    
+    
+                marker_0a6097452f6c019af4ccc6f4d57bd927.setIcon(icon_9ee769c586c2648e465ed4cd927f3c3c);
+            
+    
+            var marker_98ea5d3047bfcb56997e986619d7e513 = L.marker(
+                [-7.1143683, -34.8247205],
+                {
+}
+            ).addTo(feature_group_fc45dcd27783b07f65ce180284e22e87);
+        
+    
+            var icon_f99eb2071d5a4fcc6a3faccbc96d6b9f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e7bc10a473bd075e498045e782bbfb08 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e16b50d3aad3ff62df4073d380a99c1d = $(`<div id="html_e16b50d3aad3ff62df4073d380a99c1d" style="width: 100.0%; height: 100.0%;">             <b>Drogaria Maisfarma</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: R. Nossa Sra. dos Navegantes, 370 - Sala 04 / 05 - Tambaú, João Pessoa<br>             </div>`)[0];
+                popup_e7bc10a473bd075e498045e782bbfb08.setContent(html_e16b50d3aad3ff62df4073d380a99c1d);
+            
+        
+
+        marker_98ea5d3047bfcb56997e986619d7e513.bindPopup(popup_e7bc10a473bd075e498045e782bbfb08)
+        ;
+
+        
+    
+    
+                marker_98ea5d3047bfcb56997e986619d7e513.setIcon(icon_f99eb2071d5a4fcc6a3faccbc96d6b9f);
+            
+    
+            var marker_1c82103ef49a14dcb93d5867a62775c7 = L.marker(
+                [-7.1163713, -34.8248997],
+                {
+}
+            ).addTo(feature_group_fc45dcd27783b07f65ce180284e22e87);
+        
+    
+            var icon_6f747352e353a269dcf524ae86f31947 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fac89c9675c05f42a9019bd4e4d21108 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_45bc945d83bc79b1bde1be77e1a0b0b9 = $(`<div id="html_45bc945d83bc79b1bde1be77e1a0b0b9" style="width: 100.0%; height: 100.0%;">             <b>Farmácia Pague Menos</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: Av - R. Helena Meira Lima, 203 - Tambaú, João Pessoa<br>             </div>`)[0];
+                popup_fac89c9675c05f42a9019bd4e4d21108.setContent(html_45bc945d83bc79b1bde1be77e1a0b0b9);
+            
+        
+
+        marker_1c82103ef49a14dcb93d5867a62775c7.bindPopup(popup_fac89c9675c05f42a9019bd4e4d21108)
+        ;
+
+        
+    
+    
+                marker_1c82103ef49a14dcb93d5867a62775c7.setIcon(icon_6f747352e353a269dcf524ae86f31947);
+            
+    
+            var marker_81cea06814bd5cfd37e03bfac6014660 = L.marker(
+                [-7.097520299999999, -34.8372876],
+                {
+}
+            ).addTo(feature_group_fc45dcd27783b07f65ce180284e22e87);
+        
+    
+            var icon_5afae605412d2721cc7020bb7dd4af0e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a61729e4a24fffb507a28b4236eff100 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_687463b4c282a0bec567625007f9396c = $(`<div id="html_687463b4c282a0bec567625007f9396c" style="width: 100.0%; height: 100.0%;">             <b>REDEPHARMA</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: Av. Gov. Flávio Ribeiro Coutinho, 445 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_a61729e4a24fffb507a28b4236eff100.setContent(html_687463b4c282a0bec567625007f9396c);
+            
+        
+
+        marker_81cea06814bd5cfd37e03bfac6014660.bindPopup(popup_a61729e4a24fffb507a28b4236eff100)
+        ;
+
+        
+    
+    
+                marker_81cea06814bd5cfd37e03bfac6014660.setIcon(icon_5afae605412d2721cc7020bb7dd4af0e);
+            
+    
+            var marker_e3e85a2dea5acef1f0d4466bc8d39444 = L.marker(
+                [-7.1105424, -34.825215],
+                {
+}
+            ).addTo(feature_group_fc45dcd27783b07f65ce180284e22e87);
+        
+    
+            var icon_829426bcb5e6cbf9e85ff898263115d0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_128691566b1c94eccd4ffd8c953a24d8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f171fcf3ce60a82d4924c0e0b298eb37 = $(`<div id="html_f171fcf3ce60a82d4924c0e0b298eb37" style="width: 100.0%; height: 100.0%;">             <b>Farmácia Pague Menos</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: Av. Sen. Ruy Carneiro, 198 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_128691566b1c94eccd4ffd8c953a24d8.setContent(html_f171fcf3ce60a82d4924c0e0b298eb37);
+            
+        
+
+        marker_e3e85a2dea5acef1f0d4466bc8d39444.bindPopup(popup_128691566b1c94eccd4ffd8c953a24d8)
+        ;
+
+        
+    
+    
+                marker_e3e85a2dea5acef1f0d4466bc8d39444.setIcon(icon_829426bcb5e6cbf9e85ff898263115d0);
+            
+    
+            var marker_51a3b52d6048545ff5da8012c599e6b5 = L.marker(
+                [-7.1067031, -34.8322652],
+                {
+}
+            ).addTo(feature_group_fc45dcd27783b07f65ce180284e22e87);
+        
+    
+            var icon_a7ed3b125e3420a4febc8948e59680f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b75a288b3ccb22d8fea8f7c2b3410c51 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c823f3ee90c250a5dd785139171c102d = $(`<div id="html_c823f3ee90c250a5dd785139171c102d" style="width: 100.0%; height: 100.0%;">             <b>Drogaria Med Saúde JP</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: Av. Pombal, 665 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_b75a288b3ccb22d8fea8f7c2b3410c51.setContent(html_c823f3ee90c250a5dd785139171c102d);
+            
+        
+
+        marker_51a3b52d6048545ff5da8012c599e6b5.bindPopup(popup_b75a288b3ccb22d8fea8f7c2b3410c51)
+        ;
+
+        
+    
+    
+                marker_51a3b52d6048545ff5da8012c599e6b5.setIcon(icon_a7ed3b125e3420a4febc8948e59680f5);
+            
+    
+            var marker_1c0bcab450bf67321a973366de82b5f5 = L.marker(
+                [-7.1028096, -34.8374547],
+                {
+}
+            ).addTo(feature_group_fc45dcd27783b07f65ce180284e22e87);
+        
+    
+            var icon_d06905bd8a65f28f2fd3e5a81735a720 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3837d8865be48b6b96028d0368a61076 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_20521baa3f5a657190a7a3e55d0f1d15 = $(`<div id="html_20521baa3f5a657190a7a3e55d0f1d15" style="width: 100.0%; height: 100.0%;">             <b>Drogasil</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: Av. Euzely Fabrício de Souza, 633 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_3837d8865be48b6b96028d0368a61076.setContent(html_20521baa3f5a657190a7a3e55d0f1d15);
+            
+        
+
+        marker_1c0bcab450bf67321a973366de82b5f5.bindPopup(popup_3837d8865be48b6b96028d0368a61076)
+        ;
+
+        
+    
+    
+                marker_1c0bcab450bf67321a973366de82b5f5.setIcon(icon_d06905bd8a65f28f2fd3e5a81735a720);
+            
+    
+            var marker_0cf741c60054bb9ae7c78a7bceef9084 = L.marker(
+                [-7.097581300000001, -34.8382661],
+                {
+}
+            ).addTo(feature_group_fc45dcd27783b07f65ce180284e22e87);
+        
+    
+            var icon_47f7eed7b6419e3f64aaffabdebc10b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3a96f81ae515b9fbec380c7bbc00fe92 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7fa4188c822fc8898e83bd6de67a341a = $(`<div id="html_7fa4188c822fc8898e83bd6de67a341a" style="width: 100.0%; height: 100.0%;">             <b>Farmácia Pague Menos</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: R. Reinaldo Tavares de Melo, S/N - Lote 258 /Quadra 414 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_3a96f81ae515b9fbec380c7bbc00fe92.setContent(html_7fa4188c822fc8898e83bd6de67a341a);
+            
+        
+
+        marker_0cf741c60054bb9ae7c78a7bceef9084.bindPopup(popup_3a96f81ae515b9fbec380c7bbc00fe92)
+        ;
+
+        
+    
+    
+                marker_0cf741c60054bb9ae7c78a7bceef9084.setIcon(icon_47f7eed7b6419e3f64aaffabdebc10b3);
+            
+    
+            var marker_51dc887f02f3d7cff22018373827553e = L.marker(
+                [-7.110367300000001, -34.8316089],
+                {
+}
+            ).addTo(feature_group_fc45dcd27783b07f65ce180284e22e87);
+        
+    
+            var icon_808e29ca13a75649675f1710c8e5197b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a65f59cdb213abe3c776698a19b77dfe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1ac88e7955e463726420df36004c7525 = $(`<div id="html_1ac88e7955e463726420df36004c7525" style="width: 100.0%; height: 100.0%;">             <b>Farmácia Pague Menos</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: Av. João Câncio da Silva, 431 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_a65f59cdb213abe3c776698a19b77dfe.setContent(html_1ac88e7955e463726420df36004c7525);
+            
+        
+
+        marker_51dc887f02f3d7cff22018373827553e.bindPopup(popup_a65f59cdb213abe3c776698a19b77dfe)
+        ;
+
+        
+    
+    
+                marker_51dc887f02f3d7cff22018373827553e.setIcon(icon_808e29ca13a75649675f1710c8e5197b);
+            
+    
+            var marker_9be19e1ae2fa5d5698a3f98c04caa0e1 = L.marker(
+                [-7.1155298, -34.8296869],
+                {
+}
+            ).addTo(feature_group_fc45dcd27783b07f65ce180284e22e87);
+        
+    
+            var icon_1ab1da0c93ad47e11b4b1caac082d5d9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_85a99379ac2153190b2884f7454831df = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_efb09805ea8f90de499ab3585214634f = $(`<div id="html_efb09805ea8f90de499ab3585214634f" style="width: 100.0%; height: 100.0%;">             <b>Farmácias RedeMed Tambaú</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: Rua Severino Massa Spinelli, 270 - Tambaú, João Pessoa<br>             </div>`)[0];
+                popup_85a99379ac2153190b2884f7454831df.setContent(html_efb09805ea8f90de499ab3585214634f);
+            
+        
+
+        marker_9be19e1ae2fa5d5698a3f98c04caa0e1.bindPopup(popup_85a99379ac2153190b2884f7454831df)
+        ;
+
+        
+    
+    
+                marker_9be19e1ae2fa5d5698a3f98c04caa0e1.setIcon(icon_1ab1da0c93ad47e11b4b1caac082d5d9);
+            
+    
+            var marker_4b3d901f89f31dba82f410236e260dd5 = L.marker(
+                [-7.1132246, -34.830013],
+                {
+}
+            ).addTo(feature_group_fc45dcd27783b07f65ce180284e22e87);
+        
+    
+            var icon_8e36dba970463e5fe1c1bd5e724e5770 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a775e83416f3719141415d5a8e26b46 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1ce03b5ef2720b1f4d9ae1288d225b7a = $(`<div id="html_1ce03b5ef2720b1f4d9ae1288d225b7a" style="width: 100.0%; height: 100.0%;">             <b>Redepharma 98 Concept</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: Av. Nego, 870 - Tambaú, João Pessoa<br>             </div>`)[0];
+                popup_7a775e83416f3719141415d5a8e26b46.setContent(html_1ce03b5ef2720b1f4d9ae1288d225b7a);
+            
+        
+
+        marker_4b3d901f89f31dba82f410236e260dd5.bindPopup(popup_7a775e83416f3719141415d5a8e26b46)
+        ;
+
+        
+    
+    
+                marker_4b3d901f89f31dba82f410236e260dd5.setIcon(icon_8e36dba970463e5fe1c1bd5e724e5770);
+            
+    
+            var marker_291084e6cf219a6fe223943af4900773 = L.marker(
+                [-7.097070899999999, -34.8348228],
+                {
+}
+            ).addTo(feature_group_fc45dcd27783b07f65ce180284e22e87);
+        
+    
+            var icon_260233d34441d767e49f8a6feefc215d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_66397baa7bff780f599d1af72b0930d8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6299be4afe5f2f85aeae490185523224 = $(`<div id="html_6299be4afe5f2f85aeae490185523224" style="width: 100.0%; height: 100.0%;">             <b>Farmácia Pague Menos</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: Av. Gov. Argemiro de Figueiredo, 13 - filial 88 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_66397baa7bff780f599d1af72b0930d8.setContent(html_6299be4afe5f2f85aeae490185523224);
+            
+        
+
+        marker_291084e6cf219a6fe223943af4900773.bindPopup(popup_66397baa7bff780f599d1af72b0930d8)
+        ;
+
+        
+    
+    
+                marker_291084e6cf219a6fe223943af4900773.setIcon(icon_260233d34441d767e49f8a6feefc215d);
+            
+    
+            var marker_25738b0f8bc23c47123317524f09ed9d = L.marker(
+                [-7.1012387, -34.8336827],
+                {
+}
+            ).addTo(feature_group_fc45dcd27783b07f65ce180284e22e87);
+        
+    
+            var icon_47f3747bd89a574931936d70cfaebfcc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2b089019d9e898153c4b5a57755d6baf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2fe77c96b73ec029c8d69a7e1110f290 = $(`<div id="html_2fe77c96b73ec029c8d69a7e1110f290" style="width: 100.0%; height: 100.0%;">             <b>Redepharma</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: Av. Gen. Edson Ramalho, numero 889 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_2b089019d9e898153c4b5a57755d6baf.setContent(html_2fe77c96b73ec029c8d69a7e1110f290);
+            
+        
+
+        marker_25738b0f8bc23c47123317524f09ed9d.bindPopup(popup_2b089019d9e898153c4b5a57755d6baf)
+        ;
+
+        
+    
+    
+                marker_25738b0f8bc23c47123317524f09ed9d.setIcon(icon_47f3747bd89a574931936d70cfaebfcc);
+            
+    
+            feature_group_fc45dcd27783b07f65ce180284e22e87.addTo(map_51cd48d8143a7f4cb056ce5d74a2a245);
+        
+    
+            var feature_group_8a14f891b4382d8e04cf6fe1e75d6bd3 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_8a14f891b4382d8e04cf6fe1e75d6bd3.addTo(map_51cd48d8143a7f4cb056ce5d74a2a245);
+        
+    
+            var feature_group_a98d0027f521994253a9c1d3ea670893 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_32e9ed9d372fb6b321e70fa5ae0cf451 = L.marker(
+                [-7.1083297, -34.8372846],
+                {
+}
+            ).addTo(feature_group_a98d0027f521994253a9c1d3ea670893);
+        
+    
+            var icon_898e4f378e66a6949384328d8508f2a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2cbb49277324d54ccd21fdc9555bead4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ccdb7617ad5c7c5c635410196d5d829e = $(`<div id="html_ccdb7617ad5c7c5c635410196d5d829e" style="width: 100.0%; height: 100.0%;">             <b>Municipal school Nazinha Barbosa da Franca</b><br>             Tipo: Educação (school)<br>             Endereço: R. Francisco Brandão, 829 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_2cbb49277324d54ccd21fdc9555bead4.setContent(html_ccdb7617ad5c7c5c635410196d5d829e);
+            
+        
+
+        marker_32e9ed9d372fb6b321e70fa5ae0cf451.bindPopup(popup_2cbb49277324d54ccd21fdc9555bead4)
+        ;
+
+        
+    
+    
+                marker_32e9ed9d372fb6b321e70fa5ae0cf451.setIcon(icon_898e4f378e66a6949384328d8508f2a6);
+            
+    
+            var marker_2f418d488aecaab9a935bf2a9d2d65cd = L.marker(
+                [-7.1108021, -34.8280708],
+                {
+}
+            ).addTo(feature_group_a98d0027f521994253a9c1d3ea670893);
+        
+    
+            var icon_d57285f5393c55711ef68ca6f3b70175 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_78f066f6e9363033c8edbca1064f33ef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_da4ed64798c43974da23fa2a0cf9935d = $(`<div id="html_da4ed64798c43974da23fa2a0cf9935d" style="width: 100.0%; height: 100.0%;">             <b>Escola Municipal Seráfico da Nobrega</b><br>             Tipo: Educação (school)<br>             Endereço: Rua Ubirajara Targino Botto, 36 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_78f066f6e9363033c8edbca1064f33ef.setContent(html_da4ed64798c43974da23fa2a0cf9935d);
+            
+        
+
+        marker_2f418d488aecaab9a935bf2a9d2d65cd.bindPopup(popup_78f066f6e9363033c8edbca1064f33ef)
+        ;
+
+        
+    
+    
+                marker_2f418d488aecaab9a935bf2a9d2d65cd.setIcon(icon_d57285f5393c55711ef68ca6f3b70175);
+            
+    
+            var marker_6905ca88d10bdea764de0dba6b6bc01b = L.marker(
+                [-7.1143451, -34.8336337],
+                {
+}
+            ).addTo(feature_group_a98d0027f521994253a9c1d3ea670893);
+        
+    
+            var icon_54897f0f9cbd0671646cd9ff6e412549 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3491fb7f9b9061930190e676a047e6fe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2b255985bbd184cdba07a3fe9955d333 = $(`<div id="html_2b255985bbd184cdba07a3fe9955d333" style="width: 100.0%; height: 100.0%;">             <b>Colégio Batista Brasil João Pessoa</b><br>             Tipo: Educação (school)<br>             Endereço: Do Maternal ao Ensino Médio - Av. Sen. Ruy Carneiro, 1225 - Brisamar, João Pessoa<br>             </div>`)[0];
+                popup_3491fb7f9b9061930190e676a047e6fe.setContent(html_2b255985bbd184cdba07a3fe9955d333);
+            
+        
+
+        marker_6905ca88d10bdea764de0dba6b6bc01b.bindPopup(popup_3491fb7f9b9061930190e676a047e6fe)
+        ;
+
+        
+    
+    
+                marker_6905ca88d10bdea764de0dba6b6bc01b.setIcon(icon_54897f0f9cbd0671646cd9ff6e412549);
+            
+    
+            var marker_031b9b40fd1a6cb148babea9d6ffcacd = L.marker(
+                [-7.1172625, -34.8388997],
+                {
+}
+            ).addTo(feature_group_a98d0027f521994253a9c1d3ea670893);
+        
+    
+            var icon_4d866a0796cd27ec9e4da21520f69452 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f28cc2cdcd849c40449fd5a57ce682ae = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e1ab7c5753beae6c9b3b7407eb8e7190 = $(`<div id="html_e1ab7c5753beae6c9b3b7407eb8e7190" style="width: 100.0%; height: 100.0%;">             <b>Escola Luz - Unidade 1</b><br>             Tipo: Educação (school)<br>             Endereço: Av. Sen. Ruy Carneiro, 539 - Brisamar, João Pessoa<br>             </div>`)[0];
+                popup_f28cc2cdcd849c40449fd5a57ce682ae.setContent(html_e1ab7c5753beae6c9b3b7407eb8e7190);
+            
+        
+
+        marker_031b9b40fd1a6cb148babea9d6ffcacd.bindPopup(popup_f28cc2cdcd849c40449fd5a57ce682ae)
+        ;
+
+        
+    
+    
+                marker_031b9b40fd1a6cb148babea9d6ffcacd.setIcon(icon_4d866a0796cd27ec9e4da21520f69452);
+            
+    
+            var marker_2a2f7628e4e28983afa3aa21f869ad06 = L.marker(
+                [-7.1052003, -34.8367438],
+                {
+}
+            ).addTo(feature_group_a98d0027f521994253a9c1d3ea670893);
+        
+    
+            var icon_311fd73474aad3c957f21e2ea879ab73 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f3fb533597f125e78ccb2ce76bbab0dc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_37e39cd9df024bf0c4638c8210661e35 = $(`<div id="html_37e39cd9df024bf0c4638c8210661e35" style="width: 100.0%; height: 100.0%;">             <b>State School Alice Carneiro</b><br>             Tipo: Educação (school)<br>             Endereço: Av. Sapé - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_f3fb533597f125e78ccb2ce76bbab0dc.setContent(html_37e39cd9df024bf0c4638c8210661e35);
+            
+        
+
+        marker_2a2f7628e4e28983afa3aa21f869ad06.bindPopup(popup_f3fb533597f125e78ccb2ce76bbab0dc)
+        ;
+
+        
+    
+    
+                marker_2a2f7628e4e28983afa3aa21f869ad06.setIcon(icon_311fd73474aad3c957f21e2ea879ab73);
+            
+    
+            var marker_0dd01748fe3f8bd5f3ce4c5e626b6fb9 = L.marker(
+                [-7.114896099999999, -34.8238991],
+                {
+}
+            ).addTo(feature_group_a98d0027f521994253a9c1d3ea670893);
+        
+    
+            var icon_cdd62a6b64b8ea4c0a328c3780fedafd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8a33a519038170585c3003657db9af19 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9880e89348891bc5213c0990198c0b7f = $(`<div id="html_9880e89348891bc5213c0990198c0b7f" style="width: 100.0%; height: 100.0%;">             <b>SENAC - School of Food and Hospitality</b><br>             Tipo: Educação (school)<br>             Endereço: Av. Antônio Lira, 300 - Tambaú, João Pessoa<br>             </div>`)[0];
+                popup_8a33a519038170585c3003657db9af19.setContent(html_9880e89348891bc5213c0990198c0b7f);
+            
+        
+
+        marker_0dd01748fe3f8bd5f3ce4c5e626b6fb9.bindPopup(popup_8a33a519038170585c3003657db9af19)
+        ;
+
+        
+    
+    
+                marker_0dd01748fe3f8bd5f3ce4c5e626b6fb9.setIcon(icon_cdd62a6b64b8ea4c0a328c3780fedafd);
+            
+    
+            var marker_b313048338604e98b17160b0c99bbf35 = L.marker(
+                [-7.114701999999999, -34.8282543],
+                {
+}
+            ).addTo(feature_group_a98d0027f521994253a9c1d3ea670893);
+        
+    
+            var icon_e92c77f8d9143b39c711b336f503bd8f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2d4afdbe140ab1b8eaf512ce80090332 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_775311270498813344ae2b0266c341e8 = $(`<div id="html_775311270498813344ae2b0266c341e8" style="width: 100.0%; height: 100.0%;">             <b>Colégio Motiva Ambiental</b><br>             Tipo: Educação (school)<br>             Endereço: R. Silvino Lopes, 255 - Tambaú, João Pessoa<br>             </div>`)[0];
+                popup_2d4afdbe140ab1b8eaf512ce80090332.setContent(html_775311270498813344ae2b0266c341e8);
+            
+        
+
+        marker_b313048338604e98b17160b0c99bbf35.bindPopup(popup_2d4afdbe140ab1b8eaf512ce80090332)
+        ;
+
+        
+    
+    
+                marker_b313048338604e98b17160b0c99bbf35.setIcon(icon_e92c77f8d9143b39c711b336f503bd8f);
+            
+    
+            var marker_3a3804a08b8f8763f483250043206fda = L.marker(
+                [-7.1143556, -34.8272207],
+                {
+}
+            ).addTo(feature_group_a98d0027f521994253a9c1d3ea670893);
+        
+    
+            var icon_23a19fd415ba9a18b337faa0ee56ed5b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e46eec10713c6bdf388b27b01a8765fd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_931bd1d3caa56939fec86aa6fc4517fa = $(`<div id="html_931bd1d3caa56939fec86aa6fc4517fa" style="width: 100.0%; height: 100.0%;">             <b>Colégio Monte Real</b><br>             Tipo: Educação (school)<br>             Endereço: R. Monteiro Lobato, 197 - Tambaú, João Pessoa<br>             </div>`)[0];
+                popup_e46eec10713c6bdf388b27b01a8765fd.setContent(html_931bd1d3caa56939fec86aa6fc4517fa);
+            
+        
+
+        marker_3a3804a08b8f8763f483250043206fda.bindPopup(popup_e46eec10713c6bdf388b27b01a8765fd)
+        ;
+
+        
+    
+    
+                marker_3a3804a08b8f8763f483250043206fda.setIcon(icon_23a19fd415ba9a18b337faa0ee56ed5b);
+            
+    
+            var marker_1692b40cae4eec0ff64cb5788f249d62 = L.marker(
+                [-7.1116786, -34.8276436],
+                {
+}
+            ).addTo(feature_group_a98d0027f521994253a9c1d3ea670893);
+        
+    
+            var icon_61134aa60974f5b79a2428eda75e598c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fe56b39f5057394dc90457fd68fb127b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9ad2ab1c2ab4a7852e05765c4fc664ae = $(`<div id="html_9ad2ab1c2ab4a7852e05765c4fc664ae" style="width: 100.0%; height: 100.0%;">             <b>Geo Tambaú High School</b><br>             Tipo: Educação (school)<br>             Endereço: Av. Sen. Ruy Carneiro, 500 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_fe56b39f5057394dc90457fd68fb127b.setContent(html_9ad2ab1c2ab4a7852e05765c4fc664ae);
+            
+        
+
+        marker_1692b40cae4eec0ff64cb5788f249d62.bindPopup(popup_fe56b39f5057394dc90457fd68fb127b)
+        ;
+
+        
+    
+    
+                marker_1692b40cae4eec0ff64cb5788f249d62.setIcon(icon_61134aa60974f5b79a2428eda75e598c);
+            
+    
+            var marker_8dd21b2ba8ab0a0160b372b37250404c = L.marker(
+                [-7.1038608, -34.8332293],
+                {
+}
+            ).addTo(feature_group_a98d0027f521994253a9c1d3ea670893);
+        
+    
+            var icon_bdb6e68bfb7f2fa3dd76a5f37c8b7dfc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bedf96f9a2caa4f218fccbf7c0fc9767 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_49e855049ff36cacb9dc3a36208f7dd1 = $(`<div id="html_49e855049ff36cacb9dc3a36208f7dd1" style="width: 100.0%; height: 100.0%;">             <b>Escola da Felicidade</b><br>             Tipo: Educação (school)<br>             Endereço: Av. Eutiquiano Barreto, 274 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_bedf96f9a2caa4f218fccbf7c0fc9767.setContent(html_49e855049ff36cacb9dc3a36208f7dd1);
+            
+        
+
+        marker_8dd21b2ba8ab0a0160b372b37250404c.bindPopup(popup_bedf96f9a2caa4f218fccbf7c0fc9767)
+        ;
+
+        
+    
+    
+                marker_8dd21b2ba8ab0a0160b372b37250404c.setIcon(icon_bdb6e68bfb7f2fa3dd76a5f37c8b7dfc);
+            
+    
+            var marker_d620c6340a68fcc0da9d716bfeda97e5 = L.marker(
+                [-7.1096387, -34.8296557],
+                {
+}
+            ).addTo(feature_group_a98d0027f521994253a9c1d3ea670893);
+        
+    
+            var icon_94b24ffb5f92a6de4de63e3703f9f48f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_27753a80493385ef81afefa69a1b97a7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ba9b805db14f916525532bc87d6f162c = $(`<div id="html_ba9b805db14f916525532bc87d6f162c" style="width: 100.0%; height: 100.0%;">             <b>Colégio 1º Mundo em novo endereço: Av. Argemiro de Figueiredo, 3047</b><br>             Tipo: Educação (school)<br>             Endereço: R. Franca Filho, 409 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_27753a80493385ef81afefa69a1b97a7.setContent(html_ba9b805db14f916525532bc87d6f162c);
+            
+        
+
+        marker_d620c6340a68fcc0da9d716bfeda97e5.bindPopup(popup_27753a80493385ef81afefa69a1b97a7)
+        ;
+
+        
+    
+    
+                marker_d620c6340a68fcc0da9d716bfeda97e5.setIcon(icon_94b24ffb5f92a6de4de63e3703f9f48f);
+            
+    
+            var marker_5c90adf04de2e5c89042e360a34baf90 = L.marker(
+                [-7.117617399999999, -34.8375935],
+                {
+}
+            ).addTo(feature_group_a98d0027f521994253a9c1d3ea670893);
+        
+    
+            var icon_c715cb69469a226f0084895d68b454ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44b5c537e53276c459e0f0c58872b4ba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_34e7a8dd733b71512007084bf590675b = $(`<div id="html_34e7a8dd733b71512007084bf590675b" style="width: 100.0%; height: 100.0%;">             <b>UNEPI</b><br>             Tipo: Educação (school)<br>             Endereço: R. Hildebrando Tourinho, 177 - Miramar, João Pessoa<br>             </div>`)[0];
+                popup_44b5c537e53276c459e0f0c58872b4ba.setContent(html_34e7a8dd733b71512007084bf590675b);
+            
+        
+
+        marker_5c90adf04de2e5c89042e360a34baf90.bindPopup(popup_44b5c537e53276c459e0f0c58872b4ba)
+        ;
+
+        
+    
+    
+                marker_5c90adf04de2e5c89042e360a34baf90.setIcon(icon_c715cb69469a226f0084895d68b454ee);
+            
+    
+            var marker_c99a04e89cb3a208054bb275fc2d8f0c = L.marker(
+                [-7.1172026, -34.8371247],
+                {
+}
+            ).addTo(feature_group_a98d0027f521994253a9c1d3ea670893);
+        
+    
+            var icon_2199a6fa117638141a0ac1f70e7cf7b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eaca5ac931abf0812e2a62d424d49919 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_43f3bb8c18151c3b0ff6c9ab2e1f2132 = $(`<div id="html_43f3bb8c18151c3b0ff6c9ab2e1f2132" style="width: 100.0%; height: 100.0%;">             <b>College Motiva - Miramar Unit</b><br>             Tipo: Educação (school)<br>             Endereço: R. Antônio Rabelo Júnior, 270 - Miramar, João Pessoa<br>             </div>`)[0];
+                popup_eaca5ac931abf0812e2a62d424d49919.setContent(html_43f3bb8c18151c3b0ff6c9ab2e1f2132);
+            
+        
+
+        marker_c99a04e89cb3a208054bb275fc2d8f0c.bindPopup(popup_eaca5ac931abf0812e2a62d424d49919)
+        ;
+
+        
+    
+    
+                marker_c99a04e89cb3a208054bb275fc2d8f0c.setIcon(icon_2199a6fa117638141a0ac1f70e7cf7b3);
+            
+    
+            var marker_243df23c62ce52dc3435a6dba717a754 = L.marker(
+                [-7.113135499999999, -34.8318049],
+                {
+}
+            ).addTo(feature_group_a98d0027f521994253a9c1d3ea670893);
+        
+    
+            var icon_b0b8928369a0c1e1dbd2131d6b923a51 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5771652f061206ff0e436eda76f50141 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_42b1345c948e4496995a2900b7942d53 = $(`<div id="html_42b1345c948e4496995a2900b7942d53" style="width: 100.0%; height: 100.0%;">             <b>Mother Owl Nursery and Early Childhood Education</b><br>             Tipo: Educação (school)<br>             Endereço: 460, Av. Maria Rosa, 82 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_5771652f061206ff0e436eda76f50141.setContent(html_42b1345c948e4496995a2900b7942d53);
+            
+        
+
+        marker_243df23c62ce52dc3435a6dba717a754.bindPopup(popup_5771652f061206ff0e436eda76f50141)
+        ;
+
+        
+    
+    
+                marker_243df23c62ce52dc3435a6dba717a754.setIcon(icon_b0b8928369a0c1e1dbd2131d6b923a51);
+            
+    
+            var marker_984a9a81809e85fc55f9ebf0dc4aa607 = L.marker(
+                [-7.1155709, -34.833566],
+                {
+}
+            ).addTo(feature_group_a98d0027f521994253a9c1d3ea670893);
+        
+    
+            var icon_c0a1c41bcb4f33bdae1b00c462f7e65e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_23655ccd840b47d97cb52a4014531832 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bb5f7e892d62f5f409576f3b48239ae9 = $(`<div id="html_bb5f7e892d62f5f409576f3b48239ae9" style="width: 100.0%; height: 100.0%;">             <b>Colégio GGE - João Pessoa</b><br>             Tipo: Educação (school)<br>             Endereço: R. Orlando Soares de Oliveira, 36 - Miramar, João Pessoa<br>             </div>`)[0];
+                popup_23655ccd840b47d97cb52a4014531832.setContent(html_bb5f7e892d62f5f409576f3b48239ae9);
+            
+        
+
+        marker_984a9a81809e85fc55f9ebf0dc4aa607.bindPopup(popup_23655ccd840b47d97cb52a4014531832)
+        ;
+
+        
+    
+    
+                marker_984a9a81809e85fc55f9ebf0dc4aa607.setIcon(icon_c0a1c41bcb4f33bdae1b00c462f7e65e);
+            
+    
+            var marker_e703ffc5ec037e6513b562653cbcf16a = L.marker(
+                [-7.109563, -34.828924],
+                {
+}
+            ).addTo(feature_group_a98d0027f521994253a9c1d3ea670893);
+        
+    
+            var icon_71b4c9caf6903614d2bf7fb1ae3ad493 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_08db75f7e1e8688f245fbcbeaf7a8c45 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_df0f44533fb300cc4960723177beb306 = $(`<div id="html_df0f44533fb300cc4960723177beb306" style="width: 100.0%; height: 100.0%;">             <b>POLO MACKENZIE JOÃO PESSOA</b><br>             Tipo: Educação (university)<br>             Endereço: R. Geraldo Costa, 382 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_08db75f7e1e8688f245fbcbeaf7a8c45.setContent(html_df0f44533fb300cc4960723177beb306);
+            
+        
+
+        marker_e703ffc5ec037e6513b562653cbcf16a.bindPopup(popup_08db75f7e1e8688f245fbcbeaf7a8c45)
+        ;
+
+        
+    
+    
+                marker_e703ffc5ec037e6513b562653cbcf16a.setIcon(icon_71b4c9caf6903614d2bf7fb1ae3ad493);
+            
+    
+            var marker_277404333d3faf2639238a833c32ed1f = L.marker(
+                [-7.0970638, -34.8339956],
+                {
+}
+            ).addTo(feature_group_a98d0027f521994253a9c1d3ea670893);
+        
+    
+            var icon_40aed72d4a315bd9abc571b375536108 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5dff5cb2e441f774d77d94e9cb5f1215 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d15a08a85ab131010c10029de73b1ed4 = $(`<div id="html_d15a08a85ab131010c10029de73b1ed4" style="width: 100.0%; height: 100.0%;">             <b>Una Vida</b><br>             Tipo: Educação (university)<br>             Endereço: Comercial Manaíra - Av. Gov. Flávio Ribeiro Coutinho, 50 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_5dff5cb2e441f774d77d94e9cb5f1215.setContent(html_d15a08a85ab131010c10029de73b1ed4);
+            
+        
+
+        marker_277404333d3faf2639238a833c32ed1f.bindPopup(popup_5dff5cb2e441f774d77d94e9cb5f1215)
+        ;
+
+        
+    
+    
+                marker_277404333d3faf2639238a833c32ed1f.setIcon(icon_40aed72d4a315bd9abc571b375536108);
+            
+    
+            var marker_670265415860de1ddadbb920ec63e27c = L.marker(
+                [-7.0975715, -34.8340447],
+                {
+}
+            ).addTo(feature_group_a98d0027f521994253a9c1d3ea670893);
+        
+    
+            var icon_68bb69cc688e37b7b9223df6ca530fd3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_45720fde2630edf9ae9c9d1c86cb49d7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_59915120a73957db0eb8b87c094f260f = $(`<div id="html_59915120a73957db0eb8b87c094f260f" style="width: 100.0%; height: 100.0%;">             <b>Estacio - IDEZ</b><br>             Tipo: Educação (university)<br>             Endereço: Av. Gov. Flávio Ribeiro Coutinho, 115 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_45720fde2630edf9ae9c9d1c86cb49d7.setContent(html_59915120a73957db0eb8b87c094f260f);
+            
+        
+
+        marker_670265415860de1ddadbb920ec63e27c.bindPopup(popup_45720fde2630edf9ae9c9d1c86cb49d7)
+        ;
+
+        
+    
+    
+                marker_670265415860de1ddadbb920ec63e27c.setIcon(icon_68bb69cc688e37b7b9223df6ca530fd3);
+            
+    
+            var marker_f2a16607de069501972dcac4125b4b23 = L.marker(
+                [-7.115640699999999, -34.8337843],
+                {
+}
+            ).addTo(feature_group_a98d0027f521994253a9c1d3ea670893);
+        
+    
+            var icon_18262257056fc659414719467813b83c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8702cb2a8ea14e81ff43142bed86afe8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8b9b90a21aa46035cf19510211952726 = $(`<div id="html_8b9b90a21aa46035cf19510211952726" style="width: 100.0%; height: 100.0%;">             <b>DeVry João Pessoa</b><br>             Tipo: Educação (university)<br>             Endereço: R. Orlando Soares de Oliveira, s/n - Miramar, João Pessoa<br>             </div>`)[0];
+                popup_8702cb2a8ea14e81ff43142bed86afe8.setContent(html_8b9b90a21aa46035cf19510211952726);
+            
+        
+
+        marker_f2a16607de069501972dcac4125b4b23.bindPopup(popup_8702cb2a8ea14e81ff43142bed86afe8)
+        ;
+
+        
+    
+    
+                marker_f2a16607de069501972dcac4125b4b23.setIcon(icon_18262257056fc659414719467813b83c);
+            
+    
+            var marker_b6fa1a5e6d94627627d55e6b9007614c = L.marker(
+                [-7.115117000000001, -34.8268799],
+                {
+}
+            ).addTo(feature_group_a98d0027f521994253a9c1d3ea670893);
+        
+    
+            var icon_59f111fb2058966a628ff7cd74134257 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_be809f942d741539e4628715a0fa2335 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b9a9ff513d007b6daf48f7bb27c6b50c = $(`<div id="html_b9a9ff513d007b6daf48f7bb27c6b50c" style="width: 100.0%; height: 100.0%;">             <b>Faculdade IESP - Centro de Conciliação e Mediação</b><br>             Tipo: Educação (university)<br>             Endereço: Av. Infante Dom Henrique, 406 - Tambaú, João Pessoa<br>             </div>`)[0];
+                popup_be809f942d741539e4628715a0fa2335.setContent(html_b9a9ff513d007b6daf48f7bb27c6b50c);
+            
+        
+
+        marker_b6fa1a5e6d94627627d55e6b9007614c.bindPopup(popup_be809f942d741539e4628715a0fa2335)
+        ;
+
+        
+    
+    
+                marker_b6fa1a5e6d94627627d55e6b9007614c.setIcon(icon_59f111fb2058966a628ff7cd74134257);
+            
+    
+            var marker_8d8137eae5c51bea84424c714009e28a = L.marker(
+                [-7.117297, -34.8381129],
+                {
+}
+            ).addTo(feature_group_a98d0027f521994253a9c1d3ea670893);
+        
+    
+            var icon_a932b520b91b0e7c26d1645906b9aff2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bdf6cd6f3f84ad725a694a3c82761602 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9e48cea1d450f038769fd432f4b23eef = $(`<div id="html_9e48cea1d450f038769fd432f4b23eef" style="width: 100.0%; height: 100.0%;">             <b>Unep</b><br>             Tipo: Educação (university)<br>             Endereço: Av. Sen. Ruy Carneiro, 539 - Brisamar, João Pessoa<br>             </div>`)[0];
+                popup_bdf6cd6f3f84ad725a694a3c82761602.setContent(html_9e48cea1d450f038769fd432f4b23eef);
+            
+        
+
+        marker_8d8137eae5c51bea84424c714009e28a.bindPopup(popup_bdf6cd6f3f84ad725a694a3c82761602)
+        ;
+
+        
+    
+    
+                marker_8d8137eae5c51bea84424c714009e28a.setIcon(icon_a932b520b91b0e7c26d1645906b9aff2);
+            
+    
+            var marker_265da0cf749ad68a7f2fc0e305f078c6 = L.marker(
+                [-7.0975024, -34.8339449],
+                {
+}
+            ).addTo(feature_group_a98d0027f521994253a9c1d3ea670893);
+        
+    
+            var icon_222f562a8a63623e0f6835ffcb816606 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e0b295216b8211eebfe9e31ccb60152b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_233e2e05cf038ae2e1c57f2bed1d8233 = $(`<div id="html_233e2e05cf038ae2e1c57f2bed1d8233" style="width: 100.0%; height: 100.0%;">             <b>Institutos Paraibanos de Educação</b><br>             Tipo: Educação (university)<br>             Endereço: Av. Gov. Flávio Ribeiro Coutinho, 115 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_e0b295216b8211eebfe9e31ccb60152b.setContent(html_233e2e05cf038ae2e1c57f2bed1d8233);
+            
+        
+
+        marker_265da0cf749ad68a7f2fc0e305f078c6.bindPopup(popup_e0b295216b8211eebfe9e31ccb60152b)
+        ;
+
+        
+    
+    
+                marker_265da0cf749ad68a7f2fc0e305f078c6.setIcon(icon_222f562a8a63623e0f6835ffcb816606);
+            
+    
+            feature_group_a98d0027f521994253a9c1d3ea670893.addTo(map_51cd48d8143a7f4cb056ce5d74a2a245);
+        
+    
+            var feature_group_cfc299b21f08c004eab6a7dcfe83bf4d = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_b93a99d501f161144389f86d298f817f = L.marker(
+                [-7.0969332, -34.8385495],
+                {
+}
+            ).addTo(feature_group_cfc299b21f08c004eab6a7dcfe83bf4d);
+        
+    
+            var icon_d157882fb370ea0f57fd08a377249ff9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_490abc987688b36d39114ed353202d90 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7465514d079386198c066f203df8c2ef = $(`<div id="html_7465514d079386198c066f203df8c2ef" style="width: 100.0%; height: 100.0%;">             <b>Pão de Açúcar</b><br>             Tipo: Comércio (supermarket)<br>             Endereço: Av. Gov. Flávio Ribeiro Coutinho, 600 - Aeroclube, João Pessoa<br>             </div>`)[0];
+                popup_490abc987688b36d39114ed353202d90.setContent(html_7465514d079386198c066f203df8c2ef);
+            
+        
+
+        marker_b93a99d501f161144389f86d298f817f.bindPopup(popup_490abc987688b36d39114ed353202d90)
+        ;
+
+        
+    
+    
+                marker_b93a99d501f161144389f86d298f817f.setIcon(icon_d157882fb370ea0f57fd08a377249ff9);
+            
+    
+            var marker_5b622371656110ef7fee116d6bdcdd02 = L.marker(
+                [-7.110936000000001, -34.8306434],
+                {
+}
+            ).addTo(feature_group_cfc299b21f08c004eab6a7dcfe83bf4d);
+        
+    
+            var icon_f8e440f8dccdd94ad6df2f7d727f14cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e814a1e749b3e74a999645337001ace0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e2899236b8cc6cc69ba67b8ec89e4a56 = $(`<div id="html_e2899236b8cc6cc69ba67b8ec89e4a56" style="width: 100.0%; height: 100.0%;">             <b>Rede Menor Preço</b><br>             Tipo: Comércio (supermarket)<br>             Endereço: R. Geraldo Costa, 312 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_e814a1e749b3e74a999645337001ace0.setContent(html_e2899236b8cc6cc69ba67b8ec89e4a56);
+            
+        
+
+        marker_5b622371656110ef7fee116d6bdcdd02.bindPopup(popup_e814a1e749b3e74a999645337001ace0)
+        ;
+
+        
+    
+    
+                marker_5b622371656110ef7fee116d6bdcdd02.setIcon(icon_f8e440f8dccdd94ad6df2f7d727f14cd);
+            
+    
+            var marker_5461586832054098f5093d8bc1d5c436 = L.marker(
+                [-7.111078, -34.8273146],
+                {
+}
+            ).addTo(feature_group_cfc299b21f08c004eab6a7dcfe83bf4d);
+        
+    
+            var icon_3be6fe9d0eda841579a8112ea2e3bdc6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_424c880a5f76cd562a66b4c13d561afc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fafb0d2d49d7ff34cce78a7ba1723627 = $(`<div id="html_fafb0d2d49d7ff34cce78a7ba1723627" style="width: 100.0%; height: 100.0%;">             <b>BeMais Ruy Carneiro</b><br>             Tipo: Comércio (supermarket)<br>             Endereço: Av. Sen. Ruy Carneiro, 320 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_424c880a5f76cd562a66b4c13d561afc.setContent(html_fafb0d2d49d7ff34cce78a7ba1723627);
+            
+        
+
+        marker_5461586832054098f5093d8bc1d5c436.bindPopup(popup_424c880a5f76cd562a66b4c13d561afc)
+        ;
+
+        
+    
+    
+                marker_5461586832054098f5093d8bc1d5c436.setIcon(icon_3be6fe9d0eda841579a8112ea2e3bdc6);
+            
+    
+            var marker_f5ce369b96124795ac4d13a4272a0bc8 = L.marker(
+                [-7.109793199999999, -34.83214830000001],
+                {
+}
+            ).addTo(feature_group_cfc299b21f08c004eab6a7dcfe83bf4d);
+        
+    
+            var icon_1c025c04ac404bc7452d2e8cc7eeb1bb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_77c51d3801724c4eda9c3fc21a029dab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6f55272b6a83016229a43dfc32207fa9 = $(`<div id="html_6f55272b6a83016229a43dfc32207fa9" style="width: 100.0%; height: 100.0%;">             <b>Supermercado Manaíra</b><br>             Tipo: Comércio (supermarket)<br>             Endereço: Av. João Câncio da Silva, 493 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_77c51d3801724c4eda9c3fc21a029dab.setContent(html_6f55272b6a83016229a43dfc32207fa9);
+            
+        
+
+        marker_f5ce369b96124795ac4d13a4272a0bc8.bindPopup(popup_77c51d3801724c4eda9c3fc21a029dab)
+        ;
+
+        
+    
+    
+                marker_f5ce369b96124795ac4d13a4272a0bc8.setIcon(icon_1c025c04ac404bc7452d2e8cc7eeb1bb);
+            
+    
+            var marker_ec18cbf30e1a3329881524d324b955f4 = L.marker(
+                [-7.0976629, -34.8392652],
+                {
+}
+            ).addTo(feature_group_cfc299b21f08c004eab6a7dcfe83bf4d);
+        
+    
+            var icon_1da5105c9c8a4e349335fc58d92f871f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e82e2f6a782cbbb095780186ba1de5b5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_da8f4c322448bcc6a6c175a526e27404 = $(`<div id="html_da8f4c322448bcc6a6c175a526e27404" style="width: 100.0%; height: 100.0%;">             <b>BeMais Supermercados - Retão de Manaíra</b><br>             Tipo: Comércio (supermarket)<br>             Endereço: Av. Gov. Flávio Ribeiro Coutinho, 615 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_e82e2f6a782cbbb095780186ba1de5b5.setContent(html_da8f4c322448bcc6a6c175a526e27404);
+            
+        
+
+        marker_ec18cbf30e1a3329881524d324b955f4.bindPopup(popup_e82e2f6a782cbbb095780186ba1de5b5)
+        ;
+
+        
+    
+    
+                marker_ec18cbf30e1a3329881524d324b955f4.setIcon(icon_1da5105c9c8a4e349335fc58d92f871f);
+            
+    
+            var marker_b26311f018d93e11d05133bb82fdb572 = L.marker(
+                [-7.1072354, -34.8351416],
+                {
+}
+            ).addTo(feature_group_cfc299b21f08c004eab6a7dcfe83bf4d);
+        
+    
+            var icon_042bd7508e7649d158e81fed1569024b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_20be1623350a3937bde87e8b56c06daa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f70dab19434aafd540d519076cf2138b = $(`<div id="html_f70dab19434aafd540d519076cf2138b" style="width: 100.0%; height: 100.0%;">             <b>Supermercado Iob</b><br>             Tipo: Comércio (supermarket)<br>             Endereço: R. Maj. Ciraulo, 703 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_20be1623350a3937bde87e8b56c06daa.setContent(html_f70dab19434aafd540d519076cf2138b);
+            
+        
+
+        marker_b26311f018d93e11d05133bb82fdb572.bindPopup(popup_20be1623350a3937bde87e8b56c06daa)
+        ;
+
+        
+    
+    
+                marker_b26311f018d93e11d05133bb82fdb572.setIcon(icon_042bd7508e7649d158e81fed1569024b);
+            
+    
+            feature_group_cfc299b21f08c004eab6a7dcfe83bf4d.addTo(map_51cd48d8143a7f4cb056ce5d74a2a245);
+        
+    
+            var feature_group_16ba5928d952c27b4d676dae1434031e = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_620013b217765e7d81a9b87ebac443e0 = L.marker(
+                [-7.114192099999999, -34.8244227],
+                {
+}
+            ).addTo(feature_group_16ba5928d952c27b4d676dae1434031e);
+        
+    
+            var icon_15611f422bd26ba8286d42e56bdfe34b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_85b8b59e480e41493fdca7b32628251f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3629444940c29760337b97ac815510a1 = $(`<div id="html_3629444940c29760337b97ac815510a1" style="width: 100.0%; height: 100.0%;">             <b>Posto Shell</b><br>             Tipo: Serviços (gas_station)<br>             Endereço: Av. Nego, 196 101 - Tambaú, João Pessoa<br>             </div>`)[0];
+                popup_85b8b59e480e41493fdca7b32628251f.setContent(html_3629444940c29760337b97ac815510a1);
+            
+        
+
+        marker_620013b217765e7d81a9b87ebac443e0.bindPopup(popup_85b8b59e480e41493fdca7b32628251f)
+        ;
+
+        
+    
+    
+                marker_620013b217765e7d81a9b87ebac443e0.setIcon(icon_15611f422bd26ba8286d42e56bdfe34b);
+            
+    
+            var marker_19c68d6beffdac22fb997f84888b7d4f = L.marker(
+                [-7.102493000000001, -34.837344],
+                {
+}
+            ).addTo(feature_group_16ba5928d952c27b4d676dae1434031e);
+        
+    
+            var icon_613aec8406ee28406c8f600a5158f08e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c62e553a50301292a1107960c4d1e3f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b442e75a1a76c28ddf802a8147f25961 = $(`<div id="html_b442e75a1a76c28ddf802a8147f25961" style="width: 100.0%; height: 100.0%;">             <b>Posto Ipiranga</b><br>             Tipo: Serviços (gas_station)<br>             Endereço: Av. Euzely Fabrício de Souza, 600 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_3c62e553a50301292a1107960c4d1e3f.setContent(html_b442e75a1a76c28ddf802a8147f25961);
+            
+        
+
+        marker_19c68d6beffdac22fb997f84888b7d4f.bindPopup(popup_3c62e553a50301292a1107960c4d1e3f)
+        ;
+
+        
+    
+    
+                marker_19c68d6beffdac22fb997f84888b7d4f.setIcon(icon_613aec8406ee28406c8f600a5158f08e);
+            
+    
+            var marker_b9c1abc73c03de4827f2221aa5c04d6c = L.marker(
+                [-7.097579899999999, -34.8386311],
+                {
+}
+            ).addTo(feature_group_16ba5928d952c27b4d676dae1434031e);
+        
+    
+            var icon_47aee5091da7ac4e67da339c30e45795 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1009159e5f6cd961a2698a250e4077ba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6932e3c89aff8ae63693344eac8b75c8 = $(`<div id="html_6932e3c89aff8ae63693344eac8b75c8" style="width: 100.0%; height: 100.0%;">             <b>Posto Quadramares</b><br>             Tipo: Serviços (gas_station)<br>             Endereço: Av. Gov. Flávio Ribeiro Coutinho, 575 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_1009159e5f6cd961a2698a250e4077ba.setContent(html_6932e3c89aff8ae63693344eac8b75c8);
+            
+        
+
+        marker_b9c1abc73c03de4827f2221aa5c04d6c.bindPopup(popup_1009159e5f6cd961a2698a250e4077ba)
+        ;
+
+        
+    
+    
+                marker_b9c1abc73c03de4827f2221aa5c04d6c.setIcon(icon_47aee5091da7ac4e67da339c30e45795);
+            
+    
+            var marker_f91bb35bc8148357a67f7c98eef5969b = L.marker(
+                [-7.1072057, -34.8286675],
+                {
+}
+            ).addTo(feature_group_16ba5928d952c27b4d676dae1434031e);
+        
+    
+            var icon_7c2e461fcafa6772912043c3f039daef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8b487bab328ac37163fb79616ea46ea8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aa1195cb6747a7c6c6a3e5c218eb060a = $(`<div id="html_aa1195cb6747a7c6c6a3e5c218eb060a" style="width: 100.0%; height: 100.0%;">             <b>Posto Petrobras</b><br>             Tipo: Serviços (gas_station)<br>             Endereço: Av. Gen. Edson Ramalho, 122 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_8b487bab328ac37163fb79616ea46ea8.setContent(html_aa1195cb6747a7c6c6a3e5c218eb060a);
+            
+        
+
+        marker_f91bb35bc8148357a67f7c98eef5969b.bindPopup(popup_8b487bab328ac37163fb79616ea46ea8)
+        ;
+
+        
+    
+    
+                marker_f91bb35bc8148357a67f7c98eef5969b.setIcon(icon_7c2e461fcafa6772912043c3f039daef);
+            
+    
+            var marker_9c39b20a4985ace865bb9228984fb1d0 = L.marker(
+                [-7.1126087, -34.8287737],
+                {
+}
+            ).addTo(feature_group_16ba5928d952c27b4d676dae1434031e);
+        
+    
+            var icon_cc3284beb9ea219f0731879d5335bd03 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db5014941efbcdec471daa2eec59cd18 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2e7a234e39f956dd0082523c4b16807a = $(`<div id="html_2e7a234e39f956dd0082523c4b16807a" style="width: 100.0%; height: 100.0%;">             <b>Desk Expression Tambaú</b><br>             Tipo: Serviços (gas_station)<br>             Endereço: Av. Sen. Ruy Carneiro, 647 - Sala 10 - Tambaú, João Pessoa<br>             </div>`)[0];
+                popup_db5014941efbcdec471daa2eec59cd18.setContent(html_2e7a234e39f956dd0082523c4b16807a);
+            
+        
+
+        marker_9c39b20a4985ace865bb9228984fb1d0.bindPopup(popup_db5014941efbcdec471daa2eec59cd18)
+        ;
+
+        
+    
+    
+                marker_9c39b20a4985ace865bb9228984fb1d0.setIcon(icon_cc3284beb9ea219f0731879d5335bd03);
+            
+    
+            var marker_342bad72b210e5adafce225a46a92906 = L.marker(
+                [-7.1138017, -34.8317719],
+                {
+}
+            ).addTo(feature_group_16ba5928d952c27b4d676dae1434031e);
+        
+    
+            var icon_63f102e740b82b8dbbd7f5ed65bbe88a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_beb2d705e5954a6a9b8ca873ee4e138d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_58b983f4029a44d2d17f5b43766c631d = $(`<div id="html_58b983f4029a44d2d17f5b43766c631d" style="width: 100.0%; height: 100.0%;">             <b>Posto Petrobras</b><br>             Tipo: Serviços (gas_station)<br>             Endereço: Av. Sen. Ruy Carneiro, 1000 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_beb2d705e5954a6a9b8ca873ee4e138d.setContent(html_58b983f4029a44d2d17f5b43766c631d);
+            
+        
+
+        marker_342bad72b210e5adafce225a46a92906.bindPopup(popup_beb2d705e5954a6a9b8ca873ee4e138d)
+        ;
+
+        
+    
+    
+                marker_342bad72b210e5adafce225a46a92906.setIcon(icon_63f102e740b82b8dbbd7f5ed65bbe88a);
+            
+    
+            var marker_8bcd5037e278d48fe6c59dec8abfdf53 = L.marker(
+                [-7.113686899999999, -34.8319445],
+                {
+}
+            ).addTo(feature_group_16ba5928d952c27b4d676dae1434031e);
+        
+    
+            var icon_37d153605e14cc1180a9023a25ff043f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_22c28893e71207703aa647c47794de26 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_332ebf86ed29edf24c2a0c86a3b9c6fd = $(`<div id="html_332ebf86ed29edf24c2a0c86a3b9c6fd" style="width: 100.0%; height: 100.0%;">             <b>Posto São Luiz XI</b><br>             Tipo: Serviços (gas_station)<br>             Endereço: Av. Sen. Ruy Carneiro, 1000 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_22c28893e71207703aa647c47794de26.setContent(html_332ebf86ed29edf24c2a0c86a3b9c6fd);
+            
+        
+
+        marker_8bcd5037e278d48fe6c59dec8abfdf53.bindPopup(popup_22c28893e71207703aa647c47794de26)
+        ;
+
+        
+    
+    
+                marker_8bcd5037e278d48fe6c59dec8abfdf53.setIcon(icon_37d153605e14cc1180a9023a25ff043f);
+            
+    
+            var marker_9be2228fb6a83c377772b2abb4e3c40e = L.marker(
+                [-7.0958603, -34.8354718],
+                {
+}
+            ).addTo(feature_group_16ba5928d952c27b4d676dae1434031e);
+        
+    
+            var icon_faf0b975017b955877efa398bb1ba6a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6ab15d209ff462060d1b3081084f2ccd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eb54489830917efb043b380e72e77419 = $(`<div id="html_eb54489830917efb043b380e72e77419" style="width: 100.0%; height: 100.0%;">             <b>Posto Ipiranga</b><br>             Tipo: Serviços (gas_station)<br>             Endereço: Av. Fernando Luiz Henriques dos Santos, 160 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_6ab15d209ff462060d1b3081084f2ccd.setContent(html_eb54489830917efb043b380e72e77419);
+            
+        
+
+        marker_9be2228fb6a83c377772b2abb4e3c40e.bindPopup(popup_6ab15d209ff462060d1b3081084f2ccd)
+        ;
+
+        
+    
+    
+                marker_9be2228fb6a83c377772b2abb4e3c40e.setIcon(icon_faf0b975017b955877efa398bb1ba6a7);
+            
+    
+            var marker_4d16590e5d8f82bdb2bcf098c9271778 = L.marker(
+                [-7.0958488, -34.8354445],
+                {
+}
+            ).addTo(feature_group_16ba5928d952c27b4d676dae1434031e);
+        
+    
+            var icon_127fd7151c8dd54b2da6af40f2dcc246 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b3021ced190f3627a85fedd3b86a81b7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_15990a49ef52659f8b455db32aaebb12 = $(`<div id="html_15990a49ef52659f8b455db32aaebb12" style="width: 100.0%; height: 100.0%;">             <b>Posto Ipiranga</b><br>             Tipo: Serviços (gas_station)<br>             Endereço: Av. Fernando Luiz Henriques dos Santos, 160 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_b3021ced190f3627a85fedd3b86a81b7.setContent(html_15990a49ef52659f8b455db32aaebb12);
+            
+        
+
+        marker_4d16590e5d8f82bdb2bcf098c9271778.bindPopup(popup_b3021ced190f3627a85fedd3b86a81b7)
+        ;
+
+        
+    
+    
+                marker_4d16590e5d8f82bdb2bcf098c9271778.setIcon(icon_127fd7151c8dd54b2da6af40f2dcc246);
+            
+    
+            var marker_71caf09b8a9a3a71e5f04d5ea56515e2 = L.marker(
+                [-7.102509299999999, -34.8373403],
+                {
+}
+            ).addTo(feature_group_16ba5928d952c27b4d676dae1434031e);
+        
+    
+            var icon_45aa1ae2c61c6c59ab59dc514cc182f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_57c8be4b5746090b0da0e75557447072 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_27e2507025ec7bf13f36014d4a6209c6 = $(`<div id="html_27e2507025ec7bf13f36014d4a6209c6" style="width: 100.0%; height: 100.0%;">             <b>Posto Ipiranga</b><br>             Tipo: Serviços (gas_station)<br>             Endereço: Av. Euzely Fabrício de Souza, 600 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_57c8be4b5746090b0da0e75557447072.setContent(html_27e2507025ec7bf13f36014d4a6209c6);
+            
+        
+
+        marker_71caf09b8a9a3a71e5f04d5ea56515e2.bindPopup(popup_57c8be4b5746090b0da0e75557447072)
+        ;
+
+        
+    
+    
+                marker_71caf09b8a9a3a71e5f04d5ea56515e2.setIcon(icon_45aa1ae2c61c6c59ab59dc514cc182f1);
+            
+    
+            feature_group_16ba5928d952c27b4d676dae1434031e.addTo(map_51cd48d8143a7f4cb056ce5d74a2a245);
+        
+    
+            var feature_group_9eb81495818e78b2420667219d381f03 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_840a9c0d541d80319dd32f72980ca13d = L.marker(
+                [-7.114896099999999, -34.8238991],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_a8011b65d088a5e19a94f85366ac34a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f4dcd1bfc7ba5e3a0e15ff9e83b7a88d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c4605878583adfc9e0faafbd67dad4d7 = $(`<div id="html_c4605878583adfc9e0faafbd67dad4d7" style="width: 100.0%; height: 100.0%;">             <b>LoopFit Academia Tambaú</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Antônio Lira, 300 - Piso Térreo - Tambaú, João Pessoa<br>             </div>`)[0];
+                popup_f4dcd1bfc7ba5e3a0e15ff9e83b7a88d.setContent(html_c4605878583adfc9e0faafbd67dad4d7);
+            
+        
+
+        marker_840a9c0d541d80319dd32f72980ca13d.bindPopup(popup_f4dcd1bfc7ba5e3a0e15ff9e83b7a88d)
+        ;
+
+        
+    
+    
+                marker_840a9c0d541d80319dd32f72980ca13d.setIcon(icon_a8011b65d088a5e19a94f85366ac34a8);
+            
+    
+            var marker_c2ed3adb202adb8b85930cc32ea66e17 = L.marker(
+                [-7.1113171, -34.8318101],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_9f9f60152ea1937c27e611006e9fa0a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a8e6593add8a2ea1ee14dd147450c7c4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eff2e81fc45fd4b20f4a0a5daab6cd22 = $(`<div id="html_eff2e81fc45fd4b20f4a0a5daab6cd22" style="width: 100.0%; height: 100.0%;">             <b>Pulse Fit CT</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: R. Franca Filho, 711 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_a8e6593add8a2ea1ee14dd147450c7c4.setContent(html_eff2e81fc45fd4b20f4a0a5daab6cd22);
+            
+        
+
+        marker_c2ed3adb202adb8b85930cc32ea66e17.bindPopup(popup_a8e6593add8a2ea1ee14dd147450c7c4)
+        ;
+
+        
+    
+    
+                marker_c2ed3adb202adb8b85930cc32ea66e17.setIcon(icon_9f9f60152ea1937c27e611006e9fa0a6);
+            
+    
+            var marker_9e0a577599820d04122f4b13929d463f = L.marker(
+                [-7.1106129, -34.8328681],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_b215f7999bb7b3d6616e0da17ea3788e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ac59fea0e5e253fbaca7061a3b1c8656 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_343a93062c760f240a4e486df71b7f42 = $(`<div id="html_343a93062c760f240a4e486df71b7f42" style="width: 100.0%; height: 100.0%;">             <b>Power Academia</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Silvino Chaves, 346 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_ac59fea0e5e253fbaca7061a3b1c8656.setContent(html_343a93062c760f240a4e486df71b7f42);
+            
+        
+
+        marker_9e0a577599820d04122f4b13929d463f.bindPopup(popup_ac59fea0e5e253fbaca7061a3b1c8656)
+        ;
+
+        
+    
+    
+                marker_9e0a577599820d04122f4b13929d463f.setIcon(icon_b215f7999bb7b3d6616e0da17ea3788e);
+            
+    
+            var marker_2752682bd1ba0fc8fd878197f29508d0 = L.marker(
+                [-7.1120325, -34.8270942],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_1f40b8ecafa51385d25c0ce9a509e7b1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_63080ef9a76957e64da58e0436d51ea2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ea71f4841299a57793e43ee932a8ee70 = $(`<div id="html_ea71f4841299a57793e43ee932a8ee70" style="width: 100.0%; height: 100.0%;">             <b>Science Academia</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Infante Dom Henrique, n° 40 - Tambaú, João Pessoa<br>             </div>`)[0];
+                popup_63080ef9a76957e64da58e0436d51ea2.setContent(html_ea71f4841299a57793e43ee932a8ee70);
+            
+        
+
+        marker_2752682bd1ba0fc8fd878197f29508d0.bindPopup(popup_63080ef9a76957e64da58e0436d51ea2)
+        ;
+
+        
+    
+    
+                marker_2752682bd1ba0fc8fd878197f29508d0.setIcon(icon_1f40b8ecafa51385d25c0ce9a509e7b1);
+            
+    
+            var marker_87acebaaafb846a233a9c32ee8a5b23f = L.marker(
+                [-7.106983, -34.8343165],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_978a05254635daca36ac6b4694587c3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b9019d505e0883f603764a0ed11a40d8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e3c3131954bcba5ae6de30f78e70a814 = $(`<div id="html_e3c3131954bcba5ae6de30f78e70a814" style="width: 100.0%; height: 100.0%;">             <b>SER Treinamento Funcional Personalizado</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. João Câncio da Silva, 798 - sala 1 e 2 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_b9019d505e0883f603764a0ed11a40d8.setContent(html_e3c3131954bcba5ae6de30f78e70a814);
+            
+        
+
+        marker_87acebaaafb846a233a9c32ee8a5b23f.bindPopup(popup_b9019d505e0883f603764a0ed11a40d8)
+        ;
+
+        
+    
+    
+                marker_87acebaaafb846a233a9c32ee8a5b23f.setIcon(icon_978a05254635daca36ac6b4694587c3b);
+            
+    
+            var marker_260a71733998b4908a0afcc9facace1a = L.marker(
+                [-7.0993669, -34.8352774],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_836602da8d95f1a6f4a1fbe6cc10f5ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_09d411a13ad10ebda3d359a4b69848c3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_94e51fbb9b1138285387eac8fd329fa8 = $(`<div id="html_94e51fbb9b1138285387eac8fd329fa8" style="width: 100.0%; height: 100.0%;">             <b>WE Fitness CT Personal</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Empresarial Summer Center - Av. Guarabira, 1272 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_09d411a13ad10ebda3d359a4b69848c3.setContent(html_94e51fbb9b1138285387eac8fd329fa8);
+            
+        
+
+        marker_260a71733998b4908a0afcc9facace1a.bindPopup(popup_09d411a13ad10ebda3d359a4b69848c3)
+        ;
+
+        
+    
+    
+                marker_260a71733998b4908a0afcc9facace1a.setIcon(icon_836602da8d95f1a6f4a1fbe6cc10f5ed);
+            
+    
+            var marker_c8dfd5775a7af64f3a0da53a741ba0d4 = L.marker(
+                [-7.097098099999999, -34.8391765],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_7deb6fc3356096155826037225cd4440 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3fd2aeecfb6c7f8de1391be3c99c3165 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ad8305ebba6fc71b250e29c7ca20a411 = $(`<div id="html_ad8305ebba6fc71b250e29c7ca20a411" style="width: 100.0%; height: 100.0%;">             <b>Studio Integrado Mormaii Fitness João Pessoa Liv Mall</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Gov. Flávio Ribeiro Coutinho, 500 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_3fd2aeecfb6c7f8de1391be3c99c3165.setContent(html_ad8305ebba6fc71b250e29c7ca20a411);
+            
+        
+
+        marker_c8dfd5775a7af64f3a0da53a741ba0d4.bindPopup(popup_3fd2aeecfb6c7f8de1391be3c99c3165)
+        ;
+
+        
+    
+    
+                marker_c8dfd5775a7af64f3a0da53a741ba0d4.setIcon(icon_7deb6fc3356096155826037225cd4440);
+            
+    
+            var marker_27ffe1044cf214260fbbc94f963d40ed = L.marker(
+                [-7.1050583, -34.8298637],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_9aa24ec743413dcb3db84aa4045a8957 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_561321c59cf19c3d9c64579add6c1e5e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b26b6544a65f5de3f38dce0151bf952a = $(`<div id="html_b26b6544a65f5de3f38dce0151bf952a" style="width: 100.0%; height: 100.0%;">             <b>Academia Korpus Manaíra</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Cajazeiras, 394 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_561321c59cf19c3d9c64579add6c1e5e.setContent(html_b26b6544a65f5de3f38dce0151bf952a);
+            
+        
+
+        marker_27ffe1044cf214260fbbc94f963d40ed.bindPopup(popup_561321c59cf19c3d9c64579add6c1e5e)
+        ;
+
+        
+    
+    
+                marker_27ffe1044cf214260fbbc94f963d40ed.setIcon(icon_9aa24ec743413dcb3db84aa4045a8957);
+            
+    
+            var marker_9762e72045597ee646f9c4e69cda222a = L.marker(
+                [-7.1100723, -34.8300547],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_091dab78cad3e57700c0281bb76c1e29 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d5f41e3ae876c04ac9eec1eab0cb9514 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_949313305f0ad838058f6cf014761c07 = $(`<div id="html_949313305f0ad838058f6cf014761c07" style="width: 100.0%; height: 100.0%;">             <b>Sbelt Gym</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Esperança, 305 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_d5f41e3ae876c04ac9eec1eab0cb9514.setContent(html_949313305f0ad838058f6cf014761c07);
+            
+        
+
+        marker_9762e72045597ee646f9c4e69cda222a.bindPopup(popup_d5f41e3ae876c04ac9eec1eab0cb9514)
+        ;
+
+        
+    
+    
+                marker_9762e72045597ee646f9c4e69cda222a.setIcon(icon_091dab78cad3e57700c0281bb76c1e29);
+            
+    
+            var marker_24c8afaa48a626e3b3d6d7cb4644971e = L.marker(
+                [-7.104663299999999, -34.8367632],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_52f2b6006dac85585845090810af9b0b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_15fe6e109b03091e1540d7b440b16708 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4685b0179c91e8915a4620b9c261b1ff = $(`<div id="html_4685b0179c91e8915a4620b9c261b1ff" style="width: 100.0%; height: 100.0%;">             <b>Go Functional Fight</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Sapé, 1130 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_15fe6e109b03091e1540d7b440b16708.setContent(html_4685b0179c91e8915a4620b9c261b1ff);
+            
+        
+
+        marker_24c8afaa48a626e3b3d6d7cb4644971e.bindPopup(popup_15fe6e109b03091e1540d7b440b16708)
+        ;
+
+        
+    
+    
+                marker_24c8afaa48a626e3b3d6d7cb4644971e.setIcon(icon_52f2b6006dac85585845090810af9b0b);
+            
+    
+            var marker_e49a675ebd99127043ed9d23f03f7e73 = L.marker(
+                [-7.1158487, -34.8230769],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_bbdd1c054eb782c25aa177f939b573a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ee037ebacc2417e964fd40a4602f4dd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0aca17cc6edfda5f45b4d9fab7c1ff36 = $(`<div id="html_0aca17cc6edfda5f45b4d9fab7c1ff36" style="width: 100.0%; height: 100.0%;">             <b>Academia pública Tambaú praia</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Alm. Tamandaré, 668 - Tambaú, João Pessoa<br>             </div>`)[0];
+                popup_0ee037ebacc2417e964fd40a4602f4dd.setContent(html_0aca17cc6edfda5f45b4d9fab7c1ff36);
+            
+        
+
+        marker_e49a675ebd99127043ed9d23f03f7e73.bindPopup(popup_0ee037ebacc2417e964fd40a4602f4dd)
+        ;
+
+        
+    
+    
+                marker_e49a675ebd99127043ed9d23f03f7e73.setIcon(icon_bbdd1c054eb782c25aa177f939b573a9);
+            
+    
+            var marker_ffc6e517443f83a5bc4232dbd7b2a3a9 = L.marker(
+                [-7.0977215, -34.8338926],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_8d79c764394631fbf4cdea152ffe304d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_80f6c10d0b9e9501ff38fa789448aed8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f09d4634de3b3285c2fbc83a8f3adf6a = $(`<div id="html_f09d4634de3b3285c2fbc83a8f3adf6a" style="width: 100.0%; height: 100.0%;">             <b>Selfit Academias Mag Shopping</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Gov. Flávio Ribeiro Coutinho, 115 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_80f6c10d0b9e9501ff38fa789448aed8.setContent(html_f09d4634de3b3285c2fbc83a8f3adf6a);
+            
+        
+
+        marker_ffc6e517443f83a5bc4232dbd7b2a3a9.bindPopup(popup_80f6c10d0b9e9501ff38fa789448aed8)
+        ;
+
+        
+    
+    
+                marker_ffc6e517443f83a5bc4232dbd7b2a3a9.setIcon(icon_8d79c764394631fbf4cdea152ffe304d);
+            
+    
+            var marker_eaaf414cd874eb98059125fedc7d3a27 = L.marker(
+                [-7.1053105, -34.8352952],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_b228ef6b9a32134ea4fa289621731b70 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a9dfe596f502ef18121fbfda30fd1422 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8914769dc999f7421769d792765df97d = $(`<div id="html_8914769dc999f7421769d792765df97d" style="width: 100.0%; height: 100.0%;">             <b>Lift academia</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Eutiquiano Barreto, 563 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_a9dfe596f502ef18121fbfda30fd1422.setContent(html_8914769dc999f7421769d792765df97d);
+            
+        
+
+        marker_eaaf414cd874eb98059125fedc7d3a27.bindPopup(popup_a9dfe596f502ef18121fbfda30fd1422)
+        ;
+
+        
+    
+    
+                marker_eaaf414cd874eb98059125fedc7d3a27.setIcon(icon_b228ef6b9a32134ea4fa289621731b70);
+            
+    
+            var marker_41104bff8b780c231f842dcf30cb08e9 = L.marker(
+                [-7.1089892, -34.83297090000001],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_3fadcad62c420a84a9fb7bc59181b91c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e18c3f619dff14375af48ea2c241531a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fcd7ae5d96aae7359116852c293474fb = $(`<div id="html_fcd7ae5d96aae7359116852c293474fb" style="width: 100.0%; height: 100.0%;">             <b>Em breve: Academia Smart Fit - Av. João Câncio</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. João Câncio da Silva, 635 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_e18c3f619dff14375af48ea2c241531a.setContent(html_fcd7ae5d96aae7359116852c293474fb);
+            
+        
+
+        marker_41104bff8b780c231f842dcf30cb08e9.bindPopup(popup_e18c3f619dff14375af48ea2c241531a)
+        ;
+
+        
+    
+    
+                marker_41104bff8b780c231f842dcf30cb08e9.setIcon(icon_3fadcad62c420a84a9fb7bc59181b91c);
+            
+    
+            var marker_274d4279e19579595a8cbcab2b1b77e2 = L.marker(
+                [-7.1015447, -34.8358869],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_12cc3f12ef8f3f24be2115c3825a9029 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_68b33b16b82616a4ed1236a9450fe1cf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e277522a8b45686b2c77bb7e122401fd = $(`<div id="html_e277522a8b45686b2c77bb7e122401fd" style="width: 100.0%; height: 100.0%;">             <b>Cia Aquática Academia</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Pombal, 1667 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_68b33b16b82616a4ed1236a9450fe1cf.setContent(html_e277522a8b45686b2c77bb7e122401fd);
+            
+        
+
+        marker_274d4279e19579595a8cbcab2b1b77e2.bindPopup(popup_68b33b16b82616a4ed1236a9450fe1cf)
+        ;
+
+        
+    
+    
+                marker_274d4279e19579595a8cbcab2b1b77e2.setIcon(icon_12cc3f12ef8f3f24be2115c3825a9029);
+            
+    
+            var marker_f288b3e9f6d7899acbfb2d994dece1ba = L.marker(
+                [-7.097209599999999, -34.8375348],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_b3eb671daae1b62c080c832cbf0fd019 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_01832bf841bd0079cd59396370fb4048 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2aa01b383f8d9481f85bf858b2078546 = $(`<div id="html_2aa01b383f8d9481f85bf858b2078546" style="width: 100.0%; height: 100.0%;">             <b>Bluefit Liv Mall</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Gov. Flávio Ribeiro Coutinho, 500 - Aeroclube, João Pessoa<br>             </div>`)[0];
+                popup_01832bf841bd0079cd59396370fb4048.setContent(html_2aa01b383f8d9481f85bf858b2078546);
+            
+        
+
+        marker_f288b3e9f6d7899acbfb2d994dece1ba.bindPopup(popup_01832bf841bd0079cd59396370fb4048)
+        ;
+
+        
+    
+    
+                marker_f288b3e9f6d7899acbfb2d994dece1ba.setIcon(icon_b3eb671daae1b62c080c832cbf0fd019);
+            
+    
+            var marker_f6cbcb37d31dbfdf6473c635499650cb = L.marker(
+                [-7.115668899999999, -34.8227297],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_2874620363f95a2c46b77d798ea9324f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71c0f36bee5be80024fd6637501b3c3d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cec27cefdd3d0abbd0ef2a7e011a9a75 = $(`<div id="html_cec27cefdd3d0abbd0ef2a7e011a9a75" style="width: 100.0%; height: 100.0%;">             <b>Academia Solivre</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Alm. Tamandaré, 564 - Tambaú, João Pessoa<br>             </div>`)[0];
+                popup_71c0f36bee5be80024fd6637501b3c3d.setContent(html_cec27cefdd3d0abbd0ef2a7e011a9a75);
+            
+        
+
+        marker_f6cbcb37d31dbfdf6473c635499650cb.bindPopup(popup_71c0f36bee5be80024fd6637501b3c3d)
+        ;
+
+        
+    
+    
+                marker_f6cbcb37d31dbfdf6473c635499650cb.setIcon(icon_2874620363f95a2c46b77d798ea9324f);
+            
+    
+            var marker_da3a19bf20ee2ff00707c7fbc8ea1752 = L.marker(
+                [-7.1115029, -34.8333037],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_0ff3a2fe316cd96d3ff0b62636f3df81 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_82c2761191631d96a4f71c86815aaac7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fb6b491beb56ddc1d98654aae32bdc58 = $(`<div id="html_fb6b491beb56ddc1d98654aae32bdc58" style="width: 100.0%; height: 100.0%;">             <b>ESPAÇO FLUES - PILATES - FISIOTERAPIA - TREINAMENTO FUNCIONAL - DANÇA</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Maria Rosa, 315 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_82c2761191631d96a4f71c86815aaac7.setContent(html_fb6b491beb56ddc1d98654aae32bdc58);
+            
+        
+
+        marker_da3a19bf20ee2ff00707c7fbc8ea1752.bindPopup(popup_82c2761191631d96a4f71c86815aaac7)
+        ;
+
+        
+    
+    
+                marker_da3a19bf20ee2ff00707c7fbc8ea1752.setIcon(icon_0ff3a2fe316cd96d3ff0b62636f3df81);
+            
+    
+            var marker_6b83f62b78bbd57dc8f56ae4d568fa91 = L.marker(
+                [-7.0969827, -34.8376013],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_33ea0c0f3aff144df4d22c06658f2c82 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6866c45e4ecf3b70480c6a9bc4b436de = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ad9d36346c203807f1fdc169e56f1621 = $(`<div id="html_ad9d36346c203807f1fdc169e56f1621" style="width: 100.0%; height: 100.0%;">             <b>REFORM PILATES</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Gov. Flávio Ribeiro Coutinho, 500 SALA 435 - 4º ANDAR - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_6866c45e4ecf3b70480c6a9bc4b436de.setContent(html_ad9d36346c203807f1fdc169e56f1621);
+            
+        
+
+        marker_6b83f62b78bbd57dc8f56ae4d568fa91.bindPopup(popup_6866c45e4ecf3b70480c6a9bc4b436de)
+        ;
+
+        
+    
+    
+                marker_6b83f62b78bbd57dc8f56ae4d568fa91.setIcon(icon_33ea0c0f3aff144df4d22c06658f2c82);
+            
+    
+            var marker_3853e7766033e72c93f3f8ce5fa8cd15 = L.marker(
+                [-7.1143798, -34.8299191],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_7ffe8c725552853a7aac4c7097c5a400 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f9937b87172e6ff20fbd136cdb102ce = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_827fc5e1c102b49c8765d868bf6f1108 = $(`<div id="html_827fc5e1c102b49c8765d868bf6f1108" style="width: 100.0%; height: 100.0%;">             <b>Methode Espaço Pilates Unidade II</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: R. Sidney Clemente Dore, 272 - Tambaú, João Pessoa<br>             </div>`)[0];
+                popup_7f9937b87172e6ff20fbd136cdb102ce.setContent(html_827fc5e1c102b49c8765d868bf6f1108);
+            
+        
+
+        marker_3853e7766033e72c93f3f8ce5fa8cd15.bindPopup(popup_7f9937b87172e6ff20fbd136cdb102ce)
+        ;
+
+        
+    
+    
+                marker_3853e7766033e72c93f3f8ce5fa8cd15.setIcon(icon_7ffe8c725552853a7aac4c7097c5a400);
+            
+    
+            var marker_77706e22225571b626c245af5710d18a = L.marker(
+                [-7.107032599999999, -34.8297967],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_52600774582a98ed05995b700cce4815 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_39d7ffd3ec776d97424ab4dc7433403e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c67f95139248a2e5760e028911c43d19 = $(`<div id="html_c67f95139248a2e5760e028911c43d19" style="width: 100.0%; height: 100.0%;">             <b>Life Pilates</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Guarabira, 200 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_39d7ffd3ec776d97424ab4dc7433403e.setContent(html_c67f95139248a2e5760e028911c43d19);
+            
+        
+
+        marker_77706e22225571b626c245af5710d18a.bindPopup(popup_39d7ffd3ec776d97424ab4dc7433403e)
+        ;
+
+        
+    
+    
+                marker_77706e22225571b626c245af5710d18a.setIcon(icon_52600774582a98ed05995b700cce4815);
+            
+    
+            var marker_08c8b70000fe67d57e461b67089be74e = L.marker(
+                [-7.108241, -34.8308069],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_5aeb5d3863c374991ef22f1d5b05a629 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f46924beda4036d7fea2a389ea1613cb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f4ad601511077386c3009859c891d78b = $(`<div id="html_f4ad601511077386c3009859c891d78b" style="width: 100.0%; height: 100.0%;">             <b>Evolve Manaíra</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: R. Bananeiras, 396 - Sala 02 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_f46924beda4036d7fea2a389ea1613cb.setContent(html_f4ad601511077386c3009859c891d78b);
+            
+        
+
+        marker_08c8b70000fe67d57e461b67089be74e.bindPopup(popup_f46924beda4036d7fea2a389ea1613cb)
+        ;
+
+        
+    
+    
+                marker_08c8b70000fe67d57e461b67089be74e.setIcon(icon_5aeb5d3863c374991ef22f1d5b05a629);
+            
+    
+            var marker_46b7b7b8a8b630390875c029d40493cd = L.marker(
+                [-7.1155411, -34.8271486],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_3cd6163107687cc05c4fde86beb1ea70 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4196ef237b89ff1984ff0ad90cf93cdc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0a205e81a2393ef9d7a245ffc5074fe6 = $(`<div id="html_0a205e81a2393ef9d7a245ffc5074fe6" style="width: 100.0%; height: 100.0%;">             <b>céu fit</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: R. Helena Meira Lima, 554 - empresarial genuíno, João Pessoa<br>             </div>`)[0];
+                popup_4196ef237b89ff1984ff0ad90cf93cdc.setContent(html_0a205e81a2393ef9d7a245ffc5074fe6);
+            
+        
+
+        marker_46b7b7b8a8b630390875c029d40493cd.bindPopup(popup_4196ef237b89ff1984ff0ad90cf93cdc)
+        ;
+
+        
+    
+    
+                marker_46b7b7b8a8b630390875c029d40493cd.setIcon(icon_3cd6163107687cc05c4fde86beb1ea70);
+            
+    
+            var marker_fbb692dd4199730f55a4cdbe5706c329 = L.marker(
+                [-7.1080548, -34.83195480000001],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_d3596588a1fee40089a930814548667a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b22549c53bab72bad663771613384d2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e7ddeb67e180d7e8b8f12b2c1f63e78e = $(`<div id="html_e7ddeb67e180d7e8b8f12b2c1f63e78e" style="width: 100.0%; height: 100.0%;">             <b>AR FITNESS</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Manoel Morais, 453 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_4b22549c53bab72bad663771613384d2.setContent(html_e7ddeb67e180d7e8b8f12b2c1f63e78e);
+            
+        
+
+        marker_fbb692dd4199730f55a4cdbe5706c329.bindPopup(popup_4b22549c53bab72bad663771613384d2)
+        ;
+
+        
+    
+    
+                marker_fbb692dd4199730f55a4cdbe5706c329.setIcon(icon_d3596588a1fee40089a930814548667a);
+            
+    
+            var marker_05b5ab6c23126d1eb7e1fc65ea1ca9a8 = L.marker(
+                [-7.116405500000001, -34.8266278],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_c07d7c93ab4c83e59411ab230b8a6671 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1139471f6c126d84c80166ecd081511b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c23dfffbc95186616ade6a99b911e225 = $(`<div id="html_c23dfffbc95186616ade6a99b911e225" style="width: 100.0%; height: 100.0%;">             <b>Vitale Pilates Tambaú</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Infante Dom Henrique, 531 - SALA 104 - Tambaú, João Pessoa<br>             </div>`)[0];
+                popup_1139471f6c126d84c80166ecd081511b.setContent(html_c23dfffbc95186616ade6a99b911e225);
+            
+        
+
+        marker_05b5ab6c23126d1eb7e1fc65ea1ca9a8.bindPopup(popup_1139471f6c126d84c80166ecd081511b)
+        ;
+
+        
+    
+    
+                marker_05b5ab6c23126d1eb7e1fc65ea1ca9a8.setIcon(icon_c07d7c93ab4c83e59411ab230b8a6671);
+            
+    
+            var marker_13bc2053a135f073d876f60249ecfd17 = L.marker(
+                [-7.0974708, -34.836077],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_f691599c47f53ab4bc7cadb88a18665a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_842dd2b943c2b21dfd4df4aded1966b6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bc248f9e0ca40ce718b6c81bf257dc75 = $(`<div id="html_bc248f9e0ca40ce718b6c81bf257dc75" style="width: 100.0%; height: 100.0%;">             <b>Centro Paraibano de Pilates</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Empresarial Aline Almeida - Av. Gov. Flávio Ribeiro Coutinho, 305 - Sala 101 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_842dd2b943c2b21dfd4df4aded1966b6.setContent(html_bc248f9e0ca40ce718b6c81bf257dc75);
+            
+        
+
+        marker_13bc2053a135f073d876f60249ecfd17.bindPopup(popup_842dd2b943c2b21dfd4df4aded1966b6)
+        ;
+
+        
+    
+    
+                marker_13bc2053a135f073d876f60249ecfd17.setIcon(icon_f691599c47f53ab4bc7cadb88a18665a);
+            
+    
+            var marker_8437549e985dcf0b375989600657fb87 = L.marker(
+                [-7.1068097, -34.8347284],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_1479c44e877796cfda4546bb0b558307 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0141b0084b033aeafbd8a43abd7506a1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5d1f99c3f7566ce61887eb3abeec12c1 = $(`<div id="html_5d1f99c3f7566ce61887eb3abeec12c1" style="width: 100.0%; height: 100.0%;">             <b>Juliana Personal|Fisioterapeuta</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. João Câncio da Silva - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_0141b0084b033aeafbd8a43abd7506a1.setContent(html_5d1f99c3f7566ce61887eb3abeec12c1);
+            
+        
+
+        marker_8437549e985dcf0b375989600657fb87.bindPopup(popup_0141b0084b033aeafbd8a43abd7506a1)
+        ;
+
+        
+    
+    
+                marker_8437549e985dcf0b375989600657fb87.setIcon(icon_1479c44e877796cfda4546bb0b558307);
+            
+    
+            var marker_575e4001cfe61d0490fabd77a63c5e80 = L.marker(
+                [-7.110260599999999, -34.8265568],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_d26af1834cce39acabb98e0e258dfdfa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b3ad107771d95633c13baf2e4a6c6aa4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c8ae4c11f94327440c2ce8b55623bc7f = $(`<div id="html_c8ae4c11f94327440c2ce8b55623bc7f" style="width: 100.0%; height: 100.0%;">             <b>A. Number 1: Fisioterapia - Pilates</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Gen. Edson Ramalho, 100 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_b3ad107771d95633c13baf2e4a6c6aa4.setContent(html_c8ae4c11f94327440c2ce8b55623bc7f);
+            
+        
+
+        marker_575e4001cfe61d0490fabd77a63c5e80.bindPopup(popup_b3ad107771d95633c13baf2e4a6c6aa4)
+        ;
+
+        
+    
+    
+                marker_575e4001cfe61d0490fabd77a63c5e80.setIcon(icon_d26af1834cce39acabb98e0e258dfdfa);
+            
+    
+            var marker_035c0e68985516453356df9074ec485d = L.marker(
+                [-7.1136279, -34.8273701],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_35b82313efec2648115a6eca0dc796dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b82f4744001c7ce6aaf7bd9c63fef1b8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3b37a9682ea1b91de60a5fd048138ea5 = $(`<div id="html_3b37a9682ea1b91de60a5fd048138ea5" style="width: 100.0%; height: 100.0%;">             <b>Viver Bem</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Emp. Olinda Center - Av. Nego, 520 - Sala 106 - Tambaú, João Pessoa<br>             </div>`)[0];
+                popup_b82f4744001c7ce6aaf7bd9c63fef1b8.setContent(html_3b37a9682ea1b91de60a5fd048138ea5);
+            
+        
+
+        marker_035c0e68985516453356df9074ec485d.bindPopup(popup_b82f4744001c7ce6aaf7bd9c63fef1b8)
+        ;
+
+        
+    
+    
+                marker_035c0e68985516453356df9074ec485d.setIcon(icon_35b82313efec2648115a6eca0dc796dc);
+            
+    
+            var marker_7352b4cc0fee7fc43402b07befb7463c = L.marker(
+                [-7.116704299999999, -34.8252932],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_05d404911f2fa83a742c0fc5f7c35ae1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b5d9acee0a65d1acee046bef437a9b53 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c809baff0506b66781ad7f46debc083 = $(`<div id="html_0c809baff0506b66781ad7f46debc083" style="width: 100.0%; height: 100.0%;">             <b>VOLL Pilates Studios Tambaú</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Urban 750 - Av. Nossa Sra. Dos Navegantes, 750 - Sala 05 No - Tambaú, João Pessoa<br>             </div>`)[0];
+                popup_b5d9acee0a65d1acee046bef437a9b53.setContent(html_0c809baff0506b66781ad7f46debc083);
+            
+        
+
+        marker_7352b4cc0fee7fc43402b07befb7463c.bindPopup(popup_b5d9acee0a65d1acee046bef437a9b53)
+        ;
+
+        
+    
+    
+                marker_7352b4cc0fee7fc43402b07befb7463c.setIcon(icon_05d404911f2fa83a742c0fc5f7c35ae1);
+            
+    
+            var marker_d84f90953417bdf08ccb02b08c06a8ac = L.marker(
+                [-7.1060396, -34.8335056],
+                {
+}
+            ).addTo(feature_group_9eb81495818e78b2420667219d381f03);
+        
+    
+            var icon_d958edf987a330c86a5c04122f263a80 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f4ad989c0506f311c5ff80dbfc6a546 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_086d706ac60c74482afad5e6efc478ad = $(`<div id="html_086d706ac60c74482afad5e6efc478ad" style="width: 100.0%; height: 100.0%;">             <b>Elegance Pilates</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Empresarial Borba - Av. Esperança, 1000 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_8f4ad989c0506f311c5ff80dbfc6a546.setContent(html_086d706ac60c74482afad5e6efc478ad);
+            
+        
+
+        marker_d84f90953417bdf08ccb02b08c06a8ac.bindPopup(popup_8f4ad989c0506f311c5ff80dbfc6a546)
+        ;
+
+        
+    
+    
+                marker_d84f90953417bdf08ccb02b08c06a8ac.setIcon(icon_d958edf987a330c86a5c04122f263a80);
+            
+    
+            feature_group_9eb81495818e78b2420667219d381f03.addTo(map_51cd48d8143a7f4cb056ce5d74a2a245);
+        
+    
+            var feature_group_5080026eed0463eb52adb21068ecd0b9 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_25e4b020c4605c31e015ee3acadd63ad = L.marker(
+                [-7.1118004, -34.8306633],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_ec635e9fe00c2d42f0c38ea176c98025 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cdb86fab07e5e55c4c05c90ad3cce60c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_23fb2bfe7c6e44354c1bfbfb96bd4832 = $(`<div id="html_23fb2bfe7c6e44354c1bfbfb96bd4832" style="width: 100.0%; height: 100.0%;">             <b>Restaurante Casa Guireli Manaira</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: R. Eng. Luciano Vareda, 184 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_cdb86fab07e5e55c4c05c90ad3cce60c.setContent(html_23fb2bfe7c6e44354c1bfbfb96bd4832);
+            
+        
+
+        marker_25e4b020c4605c31e015ee3acadd63ad.bindPopup(popup_cdb86fab07e5e55c4c05c90ad3cce60c)
+        ;
+
+        
+    
+    
+                marker_25e4b020c4605c31e015ee3acadd63ad.setIcon(icon_ec635e9fe00c2d42f0c38ea176c98025);
+            
+    
+            var marker_840935983e73248b8823e111b5e5a191 = L.marker(
+                [-7.1081713, -34.82599510000001],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_2f161a6249cff429df96be706e3a1eff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b8c13263898beb46f10edfeddb4e2657 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_096c83e493c7a7adeb5aa97adf920003 = $(`<div id="html_096c83e493c7a7adeb5aa97adf920003" style="width: 100.0%; height: 100.0%;">             <b>Restaurante Maré Alta</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. João Maurício, 305 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_b8c13263898beb46f10edfeddb4e2657.setContent(html_096c83e493c7a7adeb5aa97adf920003);
+            
+        
+
+        marker_840935983e73248b8823e111b5e5a191.bindPopup(popup_b8c13263898beb46f10edfeddb4e2657)
+        ;
+
+        
+    
+    
+                marker_840935983e73248b8823e111b5e5a191.setIcon(icon_2f161a6249cff429df96be706e3a1eff);
+            
+    
+            var marker_77f6bbb46e8c467c1218346031de5e01 = L.marker(
+                [-7.1047584, -34.8326492],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_ca089d93a5649dfffa6a85a9cf2953cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_042997aeb4dd3368c8c7dc0359d30c10 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9f3981cba90ab8005c1b30e180f571bf = $(`<div id="html_9f3981cba90ab8005c1b30e180f571bf" style="width: 100.0%; height: 100.0%;">             <b>Quintal Di Casa Restaurantes</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Umbuzeiro, 592 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_042997aeb4dd3368c8c7dc0359d30c10.setContent(html_9f3981cba90ab8005c1b30e180f571bf);
+            
+        
+
+        marker_77f6bbb46e8c467c1218346031de5e01.bindPopup(popup_042997aeb4dd3368c8c7dc0359d30c10)
+        ;
+
+        
+    
+    
+                marker_77f6bbb46e8c467c1218346031de5e01.setIcon(icon_ca089d93a5649dfffa6a85a9cf2953cb);
+            
+    
+            var marker_3f32efc0fbad21df4e41dc7881bb7e62 = L.marker(
+                [-7.1015548, -34.8354916],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_4518dae9054032905252d95177555050 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a61977aded6743c044b7c92ac6d2534c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3fdb539c81c300e092d95f32afbe7e8d = $(`<div id="html_3fdb539c81c300e092d95f32afbe7e8d" style="width: 100.0%; height: 100.0%;">             <b>Restaurante Reserve Garden - João Pessoa</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Euzely Fabrício de Souza, 340 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_a61977aded6743c044b7c92ac6d2534c.setContent(html_3fdb539c81c300e092d95f32afbe7e8d);
+            
+        
+
+        marker_3f32efc0fbad21df4e41dc7881bb7e62.bindPopup(popup_a61977aded6743c044b7c92ac6d2534c)
+        ;
+
+        
+    
+    
+                marker_3f32efc0fbad21df4e41dc7881bb7e62.setIcon(icon_4518dae9054032905252d95177555050);
+            
+    
+            var marker_b88e59eb6ee1adb2c17384cf395abe0a = L.marker(
+                [-7.1084279, -34.8310479],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_b84bc37abc7353b1d5d4b8a96b280d08 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6b19055270157c9437c90bcba49b37fe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f2cbf80984fba8a237c557f28177a173 = $(`<div id="html_f2cbf80984fba8a237c557f28177a173" style="width: 100.0%; height: 100.0%;">             <b>Casa Pepe – Restaurante, Pizzaria e Trattoria Italiana com Chef Italiano | João Pessoa – Manaíra</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: R. Bananeiras, 424 A - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_6b19055270157c9437c90bcba49b37fe.setContent(html_f2cbf80984fba8a237c557f28177a173);
+            
+        
+
+        marker_b88e59eb6ee1adb2c17384cf395abe0a.bindPopup(popup_6b19055270157c9437c90bcba49b37fe)
+        ;
+
+        
+    
+    
+                marker_b88e59eb6ee1adb2c17384cf395abe0a.setIcon(icon_b84bc37abc7353b1d5d4b8a96b280d08);
+            
+    
+            var marker_6072898e3fe3d22410b5a674a08f577f = L.marker(
+                [-7.1123705, -34.8290748],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_c3b434ade18c0bd2e4db60a7702855b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_930c050bf5e9fc80013b9e6e89c60d72 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5755d96dacc7a75a249e2e12053ff4d0 = $(`<div id="html_5755d96dacc7a75a249e2e12053ff4d0" style="width: 100.0%; height: 100.0%;">             <b>Manaira Grill - bar e restaurante</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Sen. Ruy Carneiro, 648 A - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_930c050bf5e9fc80013b9e6e89c60d72.setContent(html_5755d96dacc7a75a249e2e12053ff4d0);
+            
+        
+
+        marker_6072898e3fe3d22410b5a674a08f577f.bindPopup(popup_930c050bf5e9fc80013b9e6e89c60d72)
+        ;
+
+        
+    
+    
+                marker_6072898e3fe3d22410b5a674a08f577f.setIcon(icon_c3b434ade18c0bd2e4db60a7702855b7);
+            
+    
+            var marker_0c4515fba33fab33a8469677acac9275 = L.marker(
+                [-7.104953399999999, -34.8303142],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_dd1627131a12e36e802c10bb69a39acc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7eca9a742cc162064706a1d148f5c0db = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bb238088262aa10d7f25f99122e76676 = $(`<div id="html_bb238088262aa10d7f25f99122e76676" style="width: 100.0%; height: 100.0%;">             <b>Adega Restaurante</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Ingá, 92 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_7eca9a742cc162064706a1d148f5c0db.setContent(html_bb238088262aa10d7f25f99122e76676);
+            
+        
+
+        marker_0c4515fba33fab33a8469677acac9275.bindPopup(popup_7eca9a742cc162064706a1d148f5c0db)
+        ;
+
+        
+    
+    
+                marker_0c4515fba33fab33a8469677acac9275.setIcon(icon_dd1627131a12e36e802c10bb69a39acc);
+            
+    
+            var marker_d3fcaf8dba3c02a356388ca30a804cfd = L.marker(
+                [-7.1065494, -34.8325229],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_a428ea749c9cd75e9e48df6e8a24f0b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_99139e1eaaeb26b47c61489b3913c4ee = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_83d8181570a0484030da2aed6d6b8995 = $(`<div id="html_83d8181570a0484030da2aed6d6b8995" style="width: 100.0%; height: 100.0%;">             <b>Tasquinha do Matinha</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Ingá, 400 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_99139e1eaaeb26b47c61489b3913c4ee.setContent(html_83d8181570a0484030da2aed6d6b8995);
+            
+        
+
+        marker_d3fcaf8dba3c02a356388ca30a804cfd.bindPopup(popup_99139e1eaaeb26b47c61489b3913c4ee)
+        ;
+
+        
+    
+    
+                marker_d3fcaf8dba3c02a356388ca30a804cfd.setIcon(icon_a428ea749c9cd75e9e48df6e8a24f0b4);
+            
+    
+            var marker_df2f02b783ab21bf6b1059c20b3f3e68 = L.marker(
+                [-7.1073385, -34.8330348],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_31b4e76cb7b5abc889c32cace8d2dd25 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8951b3c40e117adca2ec4c15dbafc90f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_edf1b8d94040dced3eacea8a466ce781 = $(`<div id="html_edf1b8d94040dced3eacea8a466ce781" style="width: 100.0%; height: 100.0%;">             <b>Seu Pexera</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Ingá, 499 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_8951b3c40e117adca2ec4c15dbafc90f.setContent(html_edf1b8d94040dced3eacea8a466ce781);
+            
+        
+
+        marker_df2f02b783ab21bf6b1059c20b3f3e68.bindPopup(popup_8951b3c40e117adca2ec4c15dbafc90f)
+        ;
+
+        
+    
+    
+                marker_df2f02b783ab21bf6b1059c20b3f3e68.setIcon(icon_31b4e76cb7b5abc889c32cace8d2dd25);
+            
+    
+            var marker_6edb91f3b547fb01b8d25a9321d9f2ee = L.marker(
+                [-7.1006993, -34.8334754],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_90c3762474c806ef3d15a19bd380d39f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_abb1ca735b14df9ab1cd863d4186e347 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_deeffab2b93f451e54968f5bbc1495fa = $(`<div id="html_deeffab2b93f451e54968f5bbc1495fa" style="width: 100.0%; height: 100.0%;">             <b>Picanha de Ouro Manaira</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: R. Dr. Seixas Maia, 15 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_abb1ca735b14df9ab1cd863d4186e347.setContent(html_deeffab2b93f451e54968f5bbc1495fa);
+            
+        
+
+        marker_6edb91f3b547fb01b8d25a9321d9f2ee.bindPopup(popup_abb1ca735b14df9ab1cd863d4186e347)
+        ;
+
+        
+    
+    
+                marker_6edb91f3b547fb01b8d25a9321d9f2ee.setIcon(icon_90c3762474c806ef3d15a19bd380d39f);
+            
+    
+            var marker_d16e7610e0a38a252892ded9a757a5c8 = L.marker(
+                [-7.108814799999999, -34.8257436],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_37c360094bdffc80939e682ddac54a42 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_120d328fd5b052fafcc0fb25ac63cf0c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9303cb64df4fd1bad1106c5245defc0d = $(`<div id="html_9303cb64df4fd1bad1106c5245defc0d" style="width: 100.0%; height: 100.0%;">             <b>Restaurante Citron</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: 010, Av. João Maurício, 255 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_120d328fd5b052fafcc0fb25ac63cf0c.setContent(html_9303cb64df4fd1bad1106c5245defc0d);
+            
+        
+
+        marker_d16e7610e0a38a252892ded9a757a5c8.bindPopup(popup_120d328fd5b052fafcc0fb25ac63cf0c)
+        ;
+
+        
+    
+    
+                marker_d16e7610e0a38a252892ded9a757a5c8.setIcon(icon_37c360094bdffc80939e682ddac54a42);
+            
+    
+            var marker_96ffa9fe84ed34a4a7f764dd4a127f08 = L.marker(
+                [-7.0973053, -34.8377668],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_cf870ccdd00b6c6523e5a44ec4350e3f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b93dc4a84b5ba2f5389f0036c6f33ff4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3d04fe9a99b2e15d362dcc0c405ba1f5 = $(`<div id="html_3d04fe9a99b2e15d362dcc0c405ba1f5" style="width: 100.0%; height: 100.0%;">             <b>Quitanda Restaurante Liv Mall - Restaurante Manaíra</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Gov. Flávio Ribeiro Coutinho, 500 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_b93dc4a84b5ba2f5389f0036c6f33ff4.setContent(html_3d04fe9a99b2e15d362dcc0c405ba1f5);
+            
+        
+
+        marker_96ffa9fe84ed34a4a7f764dd4a127f08.bindPopup(popup_b93dc4a84b5ba2f5389f0036c6f33ff4)
+        ;
+
+        
+    
+    
+                marker_96ffa9fe84ed34a4a7f764dd4a127f08.setIcon(icon_cf870ccdd00b6c6523e5a44ec4350e3f);
+            
+    
+            var marker_0b37a75f7f58c86ce322233fc13d9697 = L.marker(
+                [-7.0996026, -34.8327234],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_812596ba4f58c2e5d4f9f5b808d72826 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44202472056309340aefddafe5e253eb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4456fd094d164feece63930cca26652c = $(`<div id="html_4456fd094d164feece63930cca26652c" style="width: 100.0%; height: 100.0%;">             <b>Mero Restaurante</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. João Maurício, 1497 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_44202472056309340aefddafe5e253eb.setContent(html_4456fd094d164feece63930cca26652c);
+            
+        
+
+        marker_0b37a75f7f58c86ce322233fc13d9697.bindPopup(popup_44202472056309340aefddafe5e253eb)
+        ;
+
+        
+    
+    
+                marker_0b37a75f7f58c86ce322233fc13d9697.setIcon(icon_812596ba4f58c2e5d4f9f5b808d72826);
+            
+    
+            var marker_1da9be1d88744fb8af668c12eaf44184 = L.marker(
+                [-7.108210799999999, -34.8301548],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_0dfb71f3a9d1945ba20832b9e6419c1f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dc55d0b6c010c654ca6af195d218bb88 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7ec3c3b60797ffd0ac354931fff6b7a1 = $(`<div id="html_7ec3c3b60797ffd0ac354931fff6b7a1" style="width: 100.0%; height: 100.0%;">             <b>Restaurante San Sun Manaíra</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Bananeiras, 353 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_dc55d0b6c010c654ca6af195d218bb88.setContent(html_7ec3c3b60797ffd0ac354931fff6b7a1);
+            
+        
+
+        marker_1da9be1d88744fb8af668c12eaf44184.bindPopup(popup_dc55d0b6c010c654ca6af195d218bb88)
+        ;
+
+        
+    
+    
+                marker_1da9be1d88744fb8af668c12eaf44184.setIcon(icon_0dfb71f3a9d1945ba20832b9e6419c1f);
+            
+    
+            var marker_6a3bbec2856b0b1477bac89e78ce734d = L.marker(
+                [-7.1084324, -34.8259716],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_ab972bcecae5ab10a5e9a48b07c6fd85 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9e10d8f1ec4f7c901fd5fa9afac37a0b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7d074423ce66cec3cc00acd897434f4d = $(`<div id="html_7d074423ce66cec3cc00acd897434f4d" style="width: 100.0%; height: 100.0%;">             <b>Tramice Ristorante - Tratoria Italiano</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. João Maurício, 287 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_9e10d8f1ec4f7c901fd5fa9afac37a0b.setContent(html_7d074423ce66cec3cc00acd897434f4d);
+            
+        
+
+        marker_6a3bbec2856b0b1477bac89e78ce734d.bindPopup(popup_9e10d8f1ec4f7c901fd5fa9afac37a0b)
+        ;
+
+        
+    
+    
+                marker_6a3bbec2856b0b1477bac89e78ce734d.setIcon(icon_ab972bcecae5ab10a5e9a48b07c6fd85);
+            
+    
+            var marker_ca67bb916f6461f8063c344253006e92 = L.marker(
+                [-7.1059762, -34.831729],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_dba47fe456c600715a67d222fe840527 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2d68039efd2867faa8916f702adc3db5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1035e5f300618d87fbdfa4f73ea7ede9 = $(`<div id="html_1035e5f300618d87fbdfa4f73ea7ede9" style="width: 100.0%; height: 100.0%;">             <b>Limone & Capperi Trattoria - Restaurante Italiano em João Pessoa</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Ingá, 284 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_2d68039efd2867faa8916f702adc3db5.setContent(html_1035e5f300618d87fbdfa4f73ea7ede9);
+            
+        
+
+        marker_ca67bb916f6461f8063c344253006e92.bindPopup(popup_2d68039efd2867faa8916f702adc3db5)
+        ;
+
+        
+    
+    
+                marker_ca67bb916f6461f8063c344253006e92.setIcon(icon_dba47fe456c600715a67d222fe840527);
+            
+    
+            var marker_73073151b4b6e441546fc2e4684f5ac7 = L.marker(
+                [-7.102642299999999, -34.8356169],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_e02e828f8eb56c3e51763e849bd6e585 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_85279b4d41154e94e167da0e4164a268 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fc4cf473677c6a7210d42c537df21531 = $(`<div id="html_fc4cf473677c6a7210d42c537df21531" style="width: 100.0%; height: 100.0%;">             <b>Fabio Beach Bar e Restaurante especialista em frutos do mar e comida típica nordestina - Manaíra</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Esperança, 1048 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_85279b4d41154e94e167da0e4164a268.setContent(html_fc4cf473677c6a7210d42c537df21531);
+            
+        
+
+        marker_73073151b4b6e441546fc2e4684f5ac7.bindPopup(popup_85279b4d41154e94e167da0e4164a268)
+        ;
+
+        
+    
+    
+                marker_73073151b4b6e441546fc2e4684f5ac7.setIcon(icon_e02e828f8eb56c3e51763e849bd6e585);
+            
+    
+            var marker_8523e2bcbf78ddd22dbdd166a075e2a6 = L.marker(
+                [-7.1037379, -34.8358217],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_dfdda2387dc2a37e3758fc4d62e4148d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f3c20c4baf3dede2a33a003d9394fcab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f498e16d78632384ac270960f78a44a5 = $(`<div id="html_f498e16d78632384ac270960f78a44a5" style="width: 100.0%; height: 100.0%;">             <b>Oxente Manaíra - Restaurante Self Service</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. São Gonçalo, 491 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_f3c20c4baf3dede2a33a003d9394fcab.setContent(html_f498e16d78632384ac270960f78a44a5);
+            
+        
+
+        marker_8523e2bcbf78ddd22dbdd166a075e2a6.bindPopup(popup_f3c20c4baf3dede2a33a003d9394fcab)
+        ;
+
+        
+    
+    
+                marker_8523e2bcbf78ddd22dbdd166a075e2a6.setIcon(icon_dfdda2387dc2a37e3758fc4d62e4148d);
+            
+    
+            var marker_8368cbb1ec232c485136d9f21cb4d1fb = L.marker(
+                [-7.112514999999999, -34.8236749],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_261c2ddf4373444ee35e960c7fd617f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e600cf4ba27f3bd0484bb303e114a20 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e25e087eb7d6642c80aa78ee561e662f = $(`<div id="html_e25e087eb7d6642c80aa78ee561e662f" style="width: 100.0%; height: 100.0%;">             <b>CHIMICHURRIJP</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Antônio Lira, 105 - Tambaú, João Pessoa<br>             </div>`)[0];
+                popup_2e600cf4ba27f3bd0484bb303e114a20.setContent(html_e25e087eb7d6642c80aa78ee561e662f);
+            
+        
+
+        marker_8368cbb1ec232c485136d9f21cb4d1fb.bindPopup(popup_2e600cf4ba27f3bd0484bb303e114a20)
+        ;
+
+        
+    
+    
+                marker_8368cbb1ec232c485136d9f21cb4d1fb.setIcon(icon_261c2ddf4373444ee35e960c7fd617f1);
+            
+    
+            var marker_d97c981c5d185fc06d7cbc8e63eb4e2a = L.marker(
+                [-7.097475999999999, -34.83391],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_1d4887935d12eb7ee4ae29beea29fce0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ab4fcbca30d2a95b9e92c969ce5c3354 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fd8ff18a3c0871543618feb183d3ac2a = $(`<div id="html_fd8ff18a3c0871543618feb183d3ac2a" style="width: 100.0%; height: 100.0%;">             <b>Texas Grill Restaurante</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Gov. Flávio Ribeiro Coutinho, 115 - Lot. Oceania II, João Pessoa<br>             </div>`)[0];
+                popup_ab4fcbca30d2a95b9e92c969ce5c3354.setContent(html_fd8ff18a3c0871543618feb183d3ac2a);
+            
+        
+
+        marker_d97c981c5d185fc06d7cbc8e63eb4e2a.bindPopup(popup_ab4fcbca30d2a95b9e92c969ce5c3354)
+        ;
+
+        
+    
+    
+                marker_d97c981c5d185fc06d7cbc8e63eb4e2a.setIcon(icon_1d4887935d12eb7ee4ae29beea29fce0);
+            
+    
+            var marker_cc8c8d87c734843e92ea0ef32de60185 = L.marker(
+                [-7.0976553, -34.83912410000001],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_511418b2158a18cf2ad8e454edd4012a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_18b0e63c1fce8d2a8c7b1f3aa7faa0b0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_19d21a51c3e2612c516ddeb1581ef6dc = $(`<div id="html_19d21a51c3e2612c516ddeb1581ef6dc" style="width: 100.0%; height: 100.0%;">             <b>Bemais Restaurante</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Gov. Flávio Ribeiro Coutinho - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_18b0e63c1fce8d2a8c7b1f3aa7faa0b0.setContent(html_19d21a51c3e2612c516ddeb1581ef6dc);
+            
+        
+
+        marker_cc8c8d87c734843e92ea0ef32de60185.bindPopup(popup_18b0e63c1fce8d2a8c7b1f3aa7faa0b0)
+        ;
+
+        
+    
+    
+                marker_cc8c8d87c734843e92ea0ef32de60185.setIcon(icon_511418b2158a18cf2ad8e454edd4012a);
+            
+    
+            var marker_feb001b74368fbf75625db81ae65b386 = L.marker(
+                [-7.1069928, -34.8384258],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_9d8808c5097e51007abcda304d82fe8e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba36fc171ce886eb22f888256bb65114 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ecc7db003fa209b1419b9bbe22dfb757 = $(`<div id="html_ecc7db003fa209b1419b9bbe22dfb757" style="width: 100.0%; height: 100.0%;">             <b>Quintal Restô | Restaurante Contemporâneo</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Eutiquiano Barreto, 863 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_ba36fc171ce886eb22f888256bb65114.setContent(html_ecc7db003fa209b1419b9bbe22dfb757);
+            
+        
+
+        marker_feb001b74368fbf75625db81ae65b386.bindPopup(popup_ba36fc171ce886eb22f888256bb65114)
+        ;
+
+        
+    
+    
+                marker_feb001b74368fbf75625db81ae65b386.setIcon(icon_9d8808c5097e51007abcda304d82fe8e);
+            
+    
+            var marker_9fda57a0c7f2eb7e65ba1e62688a4237 = L.marker(
+                [-7.0969894, -34.8335794],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_ff7a142ba279b31b12a64eea602564e5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_04350db834e10a07824c7a05eff79131 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ca104c40d0c6b194ceb800c27e599ce7 = $(`<div id="html_ca104c40d0c6b194ceb800c27e599ce7" style="width: 100.0%; height: 100.0%;">             <b>Sabor Arrochado Restaurante</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. João Maurício, 1801 - Jardim Oceania, João Pessoa<br>             </div>`)[0];
+                popup_04350db834e10a07824c7a05eff79131.setContent(html_ca104c40d0c6b194ceb800c27e599ce7);
+            
+        
+
+        marker_9fda57a0c7f2eb7e65ba1e62688a4237.bindPopup(popup_04350db834e10a07824c7a05eff79131)
+        ;
+
+        
+    
+    
+                marker_9fda57a0c7f2eb7e65ba1e62688a4237.setIcon(icon_ff7a142ba279b31b12a64eea602564e5);
+            
+    
+            var marker_16de0de1d5bfe048d7e3776c20b0f7c0 = L.marker(
+                [-7.105948400000001, -34.8330944],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_02b9b87916659e60132ce21e8283c10b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_48f62771ac4000cb54ca63641ac703f4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0276f9f1d14402432d8e6b485e2523e5 = $(`<div id="html_0276f9f1d14402432d8e6b485e2523e5" style="width: 100.0%; height: 100.0%;">             <b>Cantina do Manoel</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Pombal, 771 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_48f62771ac4000cb54ca63641ac703f4.setContent(html_0276f9f1d14402432d8e6b485e2523e5);
+            
+        
+
+        marker_16de0de1d5bfe048d7e3776c20b0f7c0.bindPopup(popup_48f62771ac4000cb54ca63641ac703f4)
+        ;
+
+        
+    
+    
+                marker_16de0de1d5bfe048d7e3776c20b0f7c0.setIcon(icon_02b9b87916659e60132ce21e8283c10b);
+            
+    
+            var marker_597140ce82ec364c6e09a55ab53a4382 = L.marker(
+                [-7.097770700000001, -34.8368729],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_bd9fa1d4c0d07e402ce4c69867a13ca4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_072c732801f2b3d2a686f6297928ee73 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e5dbed13a65fa548a41fa5552b446b7c = $(`<div id="html_e5dbed13a65fa548a41fa5552b446b7c" style="width: 100.0%; height: 100.0%;">             <b>Manga Doce Restaurante</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: R. Universitário Walber Belo Rabelo Pessoa da Costa, 181 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_072c732801f2b3d2a686f6297928ee73.setContent(html_e5dbed13a65fa548a41fa5552b446b7c);
+            
+        
+
+        marker_597140ce82ec364c6e09a55ab53a4382.bindPopup(popup_072c732801f2b3d2a686f6297928ee73)
+        ;
+
+        
+    
+    
+                marker_597140ce82ec364c6e09a55ab53a4382.setIcon(icon_bd9fa1d4c0d07e402ce4c69867a13ca4);
+            
+    
+            var marker_ae6e898b46f7e633d887f931b5582e92 = L.marker(
+                [-7.097669799999999, -34.8342971],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_1c0c1e39e53cf52f652c6e6186213a9d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_41808d636ed8d2e30208f12f537b947e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_91812f74d80ebdae828046f8f05bf508 = $(`<div id="html_91812f74d80ebdae828046f8f05bf508" style="width: 100.0%; height: 100.0%;">             <b>Pacífico Sea Food - João Pessoa</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Gov. Flávio Ribeiro Coutinho, 115 - Lot. Oceania II, João Pessoa<br>             </div>`)[0];
+                popup_41808d636ed8d2e30208f12f537b947e.setContent(html_91812f74d80ebdae828046f8f05bf508);
+            
+        
+
+        marker_ae6e898b46f7e633d887f931b5582e92.bindPopup(popup_41808d636ed8d2e30208f12f537b947e)
+        ;
+
+        
+    
+    
+                marker_ae6e898b46f7e633d887f931b5582e92.setIcon(icon_1c0c1e39e53cf52f652c6e6186213a9d);
+            
+    
+            var marker_341ae0aa8f72b8bc17c71ba50a6aeac5 = L.marker(
+                [-7.109088, -34.8313415],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_68999bcf6aea3630f9b64acb80e654d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4dfae50b0a106af0bafb9eef5a2526a7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3e2e866ad65b1f7eaa4608ef1f64c4ba = $(`<div id="html_3e2e866ad65b1f7eaa4608ef1f64c4ba" style="width: 100.0%; height: 100.0%;">             <b>Avenida Restaurante e self service</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: R. Dr. João Franca, 500b - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_4dfae50b0a106af0bafb9eef5a2526a7.setContent(html_3e2e866ad65b1f7eaa4608ef1f64c4ba);
+            
+        
+
+        marker_341ae0aa8f72b8bc17c71ba50a6aeac5.bindPopup(popup_4dfae50b0a106af0bafb9eef5a2526a7)
+        ;
+
+        
+    
+    
+                marker_341ae0aa8f72b8bc17c71ba50a6aeac5.setIcon(icon_68999bcf6aea3630f9b64acb80e654d1);
+            
+    
+            var marker_b373b5d08af69ae828805e4b245148cb = L.marker(
+                [-7.1075464, -34.82697140000001],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_70fc5009ffe5f735e2d55afcaa5abe88 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_94bbb98a2b5bc3a25a9e0f2f77e686d0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2fc05ecc7adef36f61d7f96548af3913 = $(`<div id="html_2fc05ecc7adef36f61d7f96548af3913" style="width: 100.0%; height: 100.0%;">             <b>Zero51</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. João Maurício, 421 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_94bbb98a2b5bc3a25a9e0f2f77e686d0.setContent(html_2fc05ecc7adef36f61d7f96548af3913);
+            
+        
+
+        marker_b373b5d08af69ae828805e4b245148cb.bindPopup(popup_94bbb98a2b5bc3a25a9e0f2f77e686d0)
+        ;
+
+        
+    
+    
+                marker_b373b5d08af69ae828805e4b245148cb.setIcon(icon_70fc5009ffe5f735e2d55afcaa5abe88);
+            
+    
+            var marker_1d43cea8d1a7dbf58e6e223e25eacd6e = L.marker(
+                [-7.1122967, -34.8229757],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_ba413b70e390031d2a6609000f5bab66 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_93f138d71a851ae98379f1b2477ba152 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b5df342289c908f168ee3dfa8fdd0c3c = $(`<div id="html_b5df342289c908f168ee3dfa8fdd0c3c" style="width: 100.0%; height: 100.0%;">             <b>Tapiocódromo</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Alm. Tamandaré, 228 - Tambaú, João Pessoa<br>             </div>`)[0];
+                popup_93f138d71a851ae98379f1b2477ba152.setContent(html_b5df342289c908f168ee3dfa8fdd0c3c);
+            
+        
+
+        marker_1d43cea8d1a7dbf58e6e223e25eacd6e.bindPopup(popup_93f138d71a851ae98379f1b2477ba152)
+        ;
+
+        
+    
+    
+                marker_1d43cea8d1a7dbf58e6e223e25eacd6e.setIcon(icon_ba413b70e390031d2a6609000f5bab66);
+            
+    
+            var marker_84a515483af1132b05edca383e57a17e = L.marker(
+                [-7.108487900000001, -34.82748309999999],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_5d9e7ddc641a79f3ee7271c284e386d9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_80299ad29662919de38a625d9b252c1e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3becc6a52ef13786cc82936b061c49fb = $(`<div id="html_3becc6a52ef13786cc82936b061c49fb" style="width: 100.0%; height: 100.0%;">             <b>Salutte Restaurant</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: R. Geraldo Costa, 150 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_80299ad29662919de38a625d9b252c1e.setContent(html_3becc6a52ef13786cc82936b061c49fb);
+            
+        
+
+        marker_84a515483af1132b05edca383e57a17e.bindPopup(popup_80299ad29662919de38a625d9b252c1e)
+        ;
+
+        
+    
+    
+                marker_84a515483af1132b05edca383e57a17e.setIcon(icon_5d9e7ddc641a79f3ee7271c284e386d9);
+            
+    
+            var marker_5d7e1e1fd7a56dd94956181d669df85e = L.marker(
+                [-7.1116888, -34.8305401],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_30d7518922c47ccc985868e503cee568 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_92c23a1ce8e52b895c8a6e793bf713dd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8daee6afc30307d8b2febff1b4be0731 = $(`<div id="html_8daee6afc30307d8b2febff1b4be0731" style="width: 100.0%; height: 100.0%;">             <b>Restaurante Araçá Cozinha Afetiva</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. João Câncio da Silva, 168 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_92c23a1ce8e52b895c8a6e793bf713dd.setContent(html_8daee6afc30307d8b2febff1b4be0731);
+            
+        
+
+        marker_5d7e1e1fd7a56dd94956181d669df85e.bindPopup(popup_92c23a1ce8e52b895c8a6e793bf713dd)
+        ;
+
+        
+    
+    
+                marker_5d7e1e1fd7a56dd94956181d669df85e.setIcon(icon_30d7518922c47ccc985868e503cee568);
+            
+    
+            var marker_98759339b1e949f3f84372c2792350d6 = L.marker(
+                [-7.108671999999999, -34.8294941],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_c216d798d6403941745dda591dc8fc50 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2257b47b91d0046f63d99abaea2b8670 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_156f6637f3607af5fd3a29ecd4cbe838 = $(`<div id="html_156f6637f3607af5fd3a29ecd4cbe838" style="width: 100.0%; height: 100.0%;">             <b>Carbonara HAO - Unidade Manaíra</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Kelly Christine Center, Edifício Empresarial - Av. Umbuzeiro, 471 - Sala 02B - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_2257b47b91d0046f63d99abaea2b8670.setContent(html_156f6637f3607af5fd3a29ecd4cbe838);
+            
+        
+
+        marker_98759339b1e949f3f84372c2792350d6.bindPopup(popup_2257b47b91d0046f63d99abaea2b8670)
+        ;
+
+        
+    
+    
+                marker_98759339b1e949f3f84372c2792350d6.setIcon(icon_c216d798d6403941745dda591dc8fc50);
+            
+    
+            var marker_59ba8a4d05c763315172105718b6f654 = L.marker(
+                [-7.1121802, -34.8233459],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_549840ffe2dbfea92f6c0bb7ae9926a3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0eb2659529ae1080ae76f94d5d45f8dd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c200d4f9c9c555c1af33000aa6fa42a2 = $(`<div id="html_c200d4f9c9c555c1af33000aa6fa42a2" style="width: 100.0%; height: 100.0%;">             <b>Toka da Esfiha - Cozinha Árabe</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Olinda, 57 - Tambaú, João Pessoa<br>             </div>`)[0];
+                popup_0eb2659529ae1080ae76f94d5d45f8dd.setContent(html_c200d4f9c9c555c1af33000aa6fa42a2);
+            
+        
+
+        marker_59ba8a4d05c763315172105718b6f654.bindPopup(popup_0eb2659529ae1080ae76f94d5d45f8dd)
+        ;
+
+        
+    
+    
+                marker_59ba8a4d05c763315172105718b6f654.setIcon(icon_549840ffe2dbfea92f6c0bb7ae9926a3);
+            
+    
+            var marker_87151bb31724d9921e7612f4dedc1949 = L.marker(
+                [-7.111596800000001, -34.8378045],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_3ab78154717ea946519b8f840f2f7fb3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_925e7ca083d61b13c46df9588a22d5b0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d43d5f664fffda8f5e1fae9c2fa29139 = $(`<div id="html_d43d5f664fffda8f5e1fae9c2fa29139" style="width: 100.0%; height: 100.0%;">             <b>Ancoreta</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: R. Est. Eliane Coutinho De Oliveira, 165 - Brisamar, João Pessoa<br>             </div>`)[0];
+                popup_925e7ca083d61b13c46df9588a22d5b0.setContent(html_d43d5f664fffda8f5e1fae9c2fa29139);
+            
+        
+
+        marker_87151bb31724d9921e7612f4dedc1949.bindPopup(popup_925e7ca083d61b13c46df9588a22d5b0)
+        ;
+
+        
+    
+    
+                marker_87151bb31724d9921e7612f4dedc1949.setIcon(icon_3ab78154717ea946519b8f840f2f7fb3);
+            
+    
+            var marker_5aea0317e4ba1c64e2f4f8998714d0d7 = L.marker(
+                [-7.101018799999999, -34.8341981],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_933d71f35fc13445d7521923662ffa92 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bc27a0a963c787b200225e6dba429ff9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e3441fd71ebbfa62c622cfeaed469a6e = $(`<div id="html_e3441fd71ebbfa62c622cfeaed469a6e" style="width: 100.0%; height: 100.0%;">             <b>Amáz Restaurante</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Euzely Fabrício de Souza, 220 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_bc27a0a963c787b200225e6dba429ff9.setContent(html_e3441fd71ebbfa62c622cfeaed469a6e);
+            
+        
+
+        marker_5aea0317e4ba1c64e2f4f8998714d0d7.bindPopup(popup_bc27a0a963c787b200225e6dba429ff9)
+        ;
+
+        
+    
+    
+                marker_5aea0317e4ba1c64e2f4f8998714d0d7.setIcon(icon_933d71f35fc13445d7521923662ffa92);
+            
+    
+            var marker_5ce278d2951cddfd47f1c15a4f450629 = L.marker(
+                [-7.107187199999999, -34.8346043],
+                {
+}
+            ).addTo(feature_group_5080026eed0463eb52adb21068ecd0b9);
+        
+    
+            var icon_fec480f39d8747d717fd514caedf1636 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c77bfcff3e17c9831ce5cc54b43f55f2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8bc0198d1eacff27e227568182ad0718 = $(`<div id="html_8bc0198d1eacff27e227568182ad0718" style="width: 100.0%; height: 100.0%;">             <b>Terraço grill</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. João Câncio da Silva, 805 - Manaíra, João Pessoa<br>             </div>`)[0];
+                popup_c77bfcff3e17c9831ce5cc54b43f55f2.setContent(html_8bc0198d1eacff27e227568182ad0718);
+            
+        
+
+        marker_5ce278d2951cddfd47f1c15a4f450629.bindPopup(popup_c77bfcff3e17c9831ce5cc54b43f55f2)
+        ;
+
+        
+    
+    
+                marker_5ce278d2951cddfd47f1c15a4f450629.setIcon(icon_fec480f39d8747d717fd514caedf1636);
+            
+    
+            feature_group_5080026eed0463eb52adb21068ecd0b9.addTo(map_51cd48d8143a7f4cb056ce5d74a2a245);
+        
+    
+            var layer_control_c84a130ecce41a41e0bcf878d602c88f_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_96c47045019db1170eee146656c85ab4,
+                },
+                overlays :  {
+                    "Pr\u00f3ximos: Sa\u00fade" : feature_group_fc45dcd27783b07f65ce180284e22e87,
+                    "Pr\u00f3ximos: Educa\u00e7\u00e3o" : feature_group_a98d0027f521994253a9c1d3ea670893,
+                    "Pr\u00f3ximos: Com\u00e9rcio" : feature_group_cfc299b21f08c004eab6a7dcfe83bf4d,
+                    "Pr\u00f3ximos: Servi\u00e7os" : feature_group_16ba5928d952c27b4d676dae1434031e,
+                    "Pr\u00f3ximos: Lazer/Fitness" : feature_group_9eb81495818e78b2420667219d381f03,
+                    "Pr\u00f3ximos: Alimenta\u00e7\u00e3o" : feature_group_5080026eed0463eb52adb21068ecd0b9,
+                },
+            };
+            let layer_control_c84a130ecce41a41e0bcf878d602c88f = L.control.layers(
+                layer_control_c84a130ecce41a41e0bcf878d602c88f_layers.base_layers,
+                layer_control_c84a130ecce41a41e0bcf878d602c88f_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_51cd48d8143a7f4cb056ce5d74a2a245);
+
+        
+</script>
+</html>
