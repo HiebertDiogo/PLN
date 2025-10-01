@@ -1,0 +1,23 @@
+{
+    "matricula": "85.648",
+    "cartorio": "2º Ofício do Registro de Imóveis Zona Norte",
+    "ordem": "85.648",
+    "data_abertura": "05 de outubro de 2009",
+    "imovel": {
+        "tipo": "UNIDADE AUTONOMA RESTAURANTE n.º 506, do Edifício MANAÍRA PALACE RESIDENCE",
+        "endereco": "Avenida João Mauricio, nº 581, esquina com a Avenida, Bananeiras, no Bairro de Manaíra",
+        "areas": {
+            "privativa": 177.8,
+            "uso_comum": 82.88,
+            "total": 260.68,
+            "equiv_constr_tt": 176.48,
+            "fração_ideal": 2.775,
+            "cota_terreno": 51.07
+        },
+        "composicao": "Restaurante, câmara frigorífica, sala de lavagem, duas salas de preparo e sala de cocção,"
+    },
+    "proprietario_inicial": {
+        "nome": "Firma SAGRES CONSTRUTORA E EMPREENDIMENTOS IMOBILIÁRIOS LTDA.",
+        "identificador_tipo": "CNPJ 07.373.382/0001-48"
+    }
+}

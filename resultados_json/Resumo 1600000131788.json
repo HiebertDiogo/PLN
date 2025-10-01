@@ -1,0 +1,23 @@
+{
+    "matricula": "87.950",
+    "cartorio": "2º Ofício do Registro de Imóveis Zona Norte",
+    "ordem": "87.950",
+    "data_abertura": "26 de março de 2010",
+    "imovel": {
+        "tipo": "APARTAMENTO n.º 1802, do EDIFICIO MANOÁ RESIDENCE",
+        "endereco": "Rua Bacharel José de Oliveira Curchatuz, nº 527, esquina com a Rua Vanja Viana Sales, no bairro Aeroclube",
+        "areas": {
+            "privativa": 234.84,
+            "uso_comum": 129.11,
+            "total": 363.95,
+            "equiv_constr_tt": 280.2,
+            "fração_ideal": 2.18,
+            "cota_terreno": 64.61
+        },
+        "composicao": "Varanda, sala de estar, sala de jantar, estar intimo, lavabo, quatro suítes sendo uma máster com varanda, cozinha, despensa, área de serviço, dependência de empregada e quatro vagas de garagem, sendo duas cobertas e duas descobertas,"
+    },
+    "proprietario_inicial": {
+        "nome": "Firma CONSTRUTORA MASHIA LTDA.",
+        "identificador_tipo": "CGC 04.534.882/0001-26"
+    }
+}

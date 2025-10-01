@@ -1,0 +1,23 @@
+{
+    "matricula": "115.751",
+    "cartorio": "2º Ofício do Registro de Imóveis Zona Norte",
+    "ordem": "115.751",
+    "data_abertura": "02 de outubro de 2014",
+    "imovel": {
+        "tipo": "UNIDADE AUTÔNOMA DE Nº 3102 DA TORRE B, NÃO AVERBADA, APENAS INCORPORADA, do Edifício Residencial que terá a denominação de EDIFÍCIO NEXT TOWERS, a ser edificado no Lote de terreno próprio sob nº 107 da Quadra 435",
+        "endereco": "Rua Iracema Guedes Lins, no bairro Altiplano Cabo Branco",
+        "areas": {
+            "privativa": 71.9,
+            "uso_comum": 55.59,
+            "total": 148.42,
+            "privativa_acessoria": 20.93,
+            "privativa_total": 92.83,
+            "coef_proporcionalidade": 0.004
+        },
+        "composicao": "varanda, sala de estar/jantar, 3 (três) quartos sendo um social , um suíte com varanda e um suíte reversível, wcb social reversível a suíte, cozinha/área de serviço e no pavimento de garagem duas vagas cobertas sendo uma confinada, localizadas no semi-subsolo,"
+    },
+    "proprietario_inicial": {
+        "nome": "Firma FIBRA CONSTRUTORA E INCORPORADORA LTDA",
+        "identificador_tipo": "CNPJ 08.864.917/0001-46"
+    }
+}
