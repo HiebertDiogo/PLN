@@ -1,0 +1,30 @@
+{
+    "matricula": "87.950",
+    "cartorio": "2º Ofício do Registro de Imóveis Zona Norte",
+    "ordem": "87.950",
+    "data_abertura": "26 de março de 2010",
+    "imovel": {
+        "tipo": "APARTAMENTO n.º 1802, do EDIFICIO MANOÁ RESIDENCE",
+        "endereco": "Rua Bacharel José de Oliveira Curchatuz, nº 527, esquina com a Rua Vanja Viana Sales, no bairro Aeroclube",
+        "areas": {
+            "privativa": 234.84,
+            "uso_comum": 129.11,
+            "total": 363.95,
+            "equiv_constr_tt": 280.2,
+            "fração_ideal": 2.18,
+            "cota_terreno": 64.61
+        },
+        "composicao": "Varanda, sala de estar, sala de jantar, estar intimo, lavabo, quatro suítes sendo uma máster com varanda, cozinha, despensa, área de serviço, dependência de empregada e quatro vagas de garagem, sendo duas cobertas e duas descobertas,"
+    },
+    "proprietario_inicial": {
+        "nome": "Firma CONSTRUTORA MASHIA LTDA.",
+        "identificador_tipo": "CGC 04.534.882/0001-26"
+    },
+    "avaliacoes": [
+        {
+            "data": "10 de fevereiro de 2025",
+            "valor": "R$ 1.417.966,00"
+        }
+    ],
+    "resumo": "Matrícula nº 87.950 do 2º Ofício do Registro de Imóveis Zona Norte (Ordem 87.950, aberta em 26 de março de 2010). Trata-se de apartamento n.º 1802, do edificio manoá residence, localizado em Rua Bacharel José de Oliveira Curchatuz, nº 527, esquina com a Rua Vanja Viana Sales, no bairro Aeroclube. Possui área privativa de 234.84 m², área de uso comum de 129.11 m², área total de 363.95 m², fração ideal de 2.18, cota ideal do terreno de 64.61 m². O imóvel é composto por Varanda, sala de estar, sala de jantar, estar intimo, lavabo, quatro suítes sendo uma máster com varanda, cozinha, despensa, área de serviço, dependência de empregada e quatro vagas de garagem, sendo duas cobertas e duas descobertas,. Proprietário inicial: Firma CONSTRUTORA MASHIA LTDA.. O imóvel teve uma avaliação registrada em 10 de fevereiro de 2025, no valor de R$ R$ 1.417.966,00."
+}
