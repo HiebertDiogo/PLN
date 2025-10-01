@@ -1,0 +1,29 @@
+{
+    "matricula": "56.068",
+    "cartorio": "2º Ofício do Registro de Imóveis Zona Norte",
+    "ordem": "56.068",
+    "data_abertura": "15 de maio de 2001",
+    "imovel": {
+        "tipo": "APARTAMENTO sob n.º 405, do Edifício Residencial D´UOMO DI MILANO",
+        "endereco": "Rua Tertuliano de Castro, n.º 101, esquina com a Rua Mirocem Cunha Lima, no bairro do Bessa",
+        "areas": {
+            "privativa": 129.38,
+            "uso_comum": 94.44,
+            "total": 223.82,
+            "equiv_constr_tt": 181.51,
+            "cota_terreno": 39.92
+        },
+        "composicao": "Varanda, estar/jantar, WC social, 04(quatro) quartos sociais, sendo dois suites, WC social, cozinha, circulação, quarto de empregada, WC de empregada, área de serviço e duas vagas de garagem cobertas no estacionamento,"
+    },
+    "proprietario_inicial": {
+        "nome": "Firma ARIMATEIA IMÓVEIS E CONSTRUÇÕES LTDA.",
+        "identificador_tipo": "CGC/MF 12.926.861/0001-84."
+    },
+    "avaliacoes": [
+        {
+            "data": "12 de dezembro de 2024",
+            "valor": "R$ 418.000,00"
+        }
+    ],
+    "resumo": "Matrícula nº 56.068 do 2º Ofício do Registro de Imóveis Zona Norte (Ordem 56.068, aberta em 15 de maio de 2001). Trata-se de apartamento sob n.º 405, do edifício residencial d´uomo di milano, localizado em Rua Tertuliano de Castro, n.º 101, esquina com a Rua Mirocem Cunha Lima, no bairro do Bessa. Possui área privativa de 129.38 m², área de uso comum de 94.44 m², área total de 223.82 m², cota ideal do terreno de 39.92 m². O imóvel é composto por Varanda, estar/jantar, WC social, 04(quatro) quartos sociais, sendo dois suites, WC social, cozinha, circulação, quarto de empregada, WC de empregada, área de serviço e duas vagas de garagem cobertas no estacionamento,. Proprietário inicial: Firma ARIMATEIA IMÓVEIS E CONSTRUÇÕES LTDA.. O imóvel teve uma avaliação registrada em 12 de dezembro de 2024, no valor de R$ R$ 418.000,00."
+}

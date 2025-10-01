@@ -1,0 +1,30 @@
+{
+    "matricula": "85.648",
+    "cartorio": "2º Ofício do Registro de Imóveis Zona Norte",
+    "ordem": "85.648",
+    "data_abertura": "05 de outubro de 2009",
+    "imovel": {
+        "tipo": "UNIDADE AUTONOMA RESTAURANTE n.º 506, do Edifício MANAÍRA PALACE RESIDENCE",
+        "endereco": "Avenida João Mauricio, nº 581, esquina com a Avenida, Bananeiras, no Bairro de Manaíra",
+        "areas": {
+            "privativa": 177.8,
+            "uso_comum": 82.88,
+            "total": 260.68,
+            "equiv_constr_tt": 176.48,
+            "fração_ideal": 2.775,
+            "cota_terreno": 51.07
+        },
+        "composicao": "Restaurante, câmara frigorífica, sala de lavagem, duas salas de preparo e sala de cocção,"
+    },
+    "proprietario_inicial": {
+        "nome": "Firma SAGRES CONSTRUTORA E EMPREENDIMENTOS IMOBILIÁRIOS LTDA.",
+        "identificador_tipo": "CNPJ 07.373.382/0001-48"
+    },
+    "avaliacoes": [
+        {
+            "data": "24 de Abril de 2025",
+            "valor": "R$ 1.807.000,00"
+        }
+    ],
+    "resumo": "Matrícula nº 85.648 do 2º Ofício do Registro de Imóveis Zona Norte (Ordem 85.648, aberta em 05 de outubro de 2009). Trata-se de unidade autonoma restaurante n.º 506, do edifício manaíra palace residence, localizado em Avenida João Mauricio, nº 581, esquina com a Avenida, Bananeiras, no Bairro de Manaíra. Possui área privativa de 177.8 m², área de uso comum de 82.88 m², área total de 260.68 m², fração ideal de 2.775, cota ideal do terreno de 51.07 m². O imóvel é composto por Restaurante, câmara frigorífica, sala de lavagem, duas salas de preparo e sala de cocção,. Proprietário inicial: Firma SAGRES CONSTRUTORA E EMPREENDIMENTOS IMOBILIÁRIOS LTDA.. O imóvel teve uma avaliação registrada em 24 de Abril de 2025, no valor de R$ R$ 1.807.000,00."
+}
