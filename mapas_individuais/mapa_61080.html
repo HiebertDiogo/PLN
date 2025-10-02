@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_21f015418fba1795834325319fff4085 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_21f015418fba1795834325319fff4085" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_21f015418fba1795834325319fff4085 = L.map(
+                "map_21f015418fba1795834325319fff4085",
+                {
+                    center: [-7.1206734, -34.8429262],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6aa3fd7c069c5c207d06e49e20dc322e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_6aa3fd7c069c5c207d06e49e20dc322e.addTo(map_21f015418fba1795834325319fff4085);
+        
+    
+            var marker_daec1c9dd2a78330101e24833c564a75 = L.marker(
+                [-7.1206734, -34.8429262],
+                {}
+            ).addTo(map_21f015418fba1795834325319fff4085);
+        
+    
+            var icon_0ba47aafb205a493210ff56ad6438d91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_daec1c9dd2a78330101e24833c564a75.setIcon(icon_0ba47aafb205a493210ff56ad6438d91);
+        
+    
+        var popup_3a92a35c78057a35877065acf8c9b52b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad804cd58feeeadcb38a8de91027da64 = $(`<div id="html_ad804cd58feeeadcb38a8de91027da64" style="width: 100.0%; height: 100.0%;">RESIDÊNCIA: <b>Residencial Sandalos</b><br>Endereço: R. Maj. Salustino Ribeiro, 125 - Tambauzinho, João Pessoa - PB, 58042-090, Brasil</div>`)[0];
+                popup_3a92a35c78057a35877065acf8c9b52b.setContent(html_ad804cd58feeeadcb38a8de91027da64);
+            
+        
+
+        marker_daec1c9dd2a78330101e24833c564a75.bindPopup(popup_3a92a35c78057a35877065acf8c9b52b)
+        ;
+
+        
+    
+    
+            var feature_group_75fce5f4497e4ee22b408a000e1bee84 = L.featureGroup(
+                {}
+            );
+        
+    
+            feature_group_75fce5f4497e4ee22b408a000e1bee84.addTo(map_21f015418fba1795834325319fff4085);
+        
+    
+            var feature_group_2d8b0ccb8436c6b94351357154a681ca = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_0718d984b686f4a709fc4062df74a979 = L.marker(
+                [-7.1164318, -34.8393016],
+                {}
+            ).addTo(feature_group_2d8b0ccb8436c6b94351357154a681ca);
+        
+    
+            var icon_500ff6843a45eedec78242dce19c8ac7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0718d984b686f4a709fc4062df74a979.setIcon(icon_500ff6843a45eedec78242dce19c8ac7);
+        
+    
+        var popup_6a017dd78ac37db12711e32817505547 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_622939cb1f59153b968ef06711e1086e = $(`<div id="html_622939cb1f59153b968ef06711e1086e" style="width: 100.0%; height: 100.0%;">             <b>Lunapharma</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: R. Cassimiro de Abreu, 36 - Brisamar, João Pessoa<br>             </div>`)[0];
+                popup_6a017dd78ac37db12711e32817505547.setContent(html_622939cb1f59153b968ef06711e1086e);
+            
+        
+
+        marker_0718d984b686f4a709fc4062df74a979.bindPopup(popup_6a017dd78ac37db12711e32817505547)
+        ;
+
+        
+    
+    
+            var marker_9963d62b023cf087888a831afa59ab71 = L.marker(
+                [-7.1198685, -34.838244],
+                {}
+            ).addTo(feature_group_2d8b0ccb8436c6b94351357154a681ca);
+        
+    
+            var icon_ff1de62368f626e7d76a5e371ea3552e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9963d62b023cf087888a831afa59ab71.setIcon(icon_ff1de62368f626e7d76a5e371ea3552e);
+        
+    
+        var popup_e5af726045cb1cacdf97d3335e7a978b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4d1894c46cc1f71053630141a059c7b1 = $(`<div id="html_4d1894c46cc1f71053630141a059c7b1" style="width: 100.0%; height: 100.0%;">             <b>Farmácia Preço Popular</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: R. João de Pessoa, 15 - Miramar, João Pessoa<br>             </div>`)[0];
+                popup_e5af726045cb1cacdf97d3335e7a978b.setContent(html_4d1894c46cc1f71053630141a059c7b1);
+            
+        
+
+        marker_9963d62b023cf087888a831afa59ab71.bindPopup(popup_e5af726045cb1cacdf97d3335e7a978b)
+        ;
+
+        
+    
+    
+            var marker_a36d42a8308d93a4a81884a932ab41ec = L.marker(
+                [-7.1224133, -34.8484837],
+                {}
+            ).addTo(feature_group_2d8b0ccb8436c6b94351357154a681ca);
+        
+    
+            var icon_76a4ba10800895d23f882b1560fc58a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a36d42a8308d93a4a81884a932ab41ec.setIcon(icon_76a4ba10800895d23f882b1560fc58a1);
+        
+    
+        var popup_b8f3bca6551ce307cfb8763610f3d6d7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c1ffb12e3cda1d62d4728969f67efa0c = $(`<div id="html_c1ffb12e3cda1d62d4728969f67efa0c" style="width: 100.0%; height: 100.0%;">             <b>Farmácia Aires Neves</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: R. Arquiteto Hermenegildo Di Lascio, 230 - Tambauzinho, João Pessoa<br>             </div>`)[0];
+                popup_b8f3bca6551ce307cfb8763610f3d6d7.setContent(html_c1ffb12e3cda1d62d4728969f67efa0c);
+            
+        
+
+        marker_a36d42a8308d93a4a81884a932ab41ec.bindPopup(popup_b8f3bca6551ce307cfb8763610f3d6d7)
+        ;
+
+        
+    
+    
+            var marker_e10ea086184c39a0944130b87707e3bd = L.marker(
+                [-7.1190858, -34.8416851],
+                {}
+            ).addTo(feature_group_2d8b0ccb8436c6b94351357154a681ca);
+        
+    
+            var icon_177b4af0d7d4a8266d564d6a77fde5b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e10ea086184c39a0944130b87707e3bd.setIcon(icon_177b4af0d7d4a8266d564d6a77fde5b9);
+        
+    
+        var popup_c7867cbeaf007be6276dfde85400a21a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0ca8e24c30a81658574353ff9250bca7 = $(`<div id="html_0ca8e24c30a81658574353ff9250bca7" style="width: 100.0%; height: 100.0%;">             <b>A Visual Farmácia</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: Av. Sen. Ruy Carneiro, 148 - Tambauzinho, João Pessoa<br>             </div>`)[0];
+                popup_c7867cbeaf007be6276dfde85400a21a.setContent(html_0ca8e24c30a81658574353ff9250bca7);
+            
+        
+
+        marker_e10ea086184c39a0944130b87707e3bd.bindPopup(popup_c7867cbeaf007be6276dfde85400a21a)
+        ;
+
+        
+    
+    
+            var marker_2dcaac13abdf814af166c17b44ed0afe = L.marker(
+                [-7.119495799999999, -34.8450118],
+                {}
+            ).addTo(feature_group_2d8b0ccb8436c6b94351357154a681ca);
+        
+    
+            var icon_c0b40c27b6b02b4dff8d1d1df3776a14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2dcaac13abdf814af166c17b44ed0afe.setIcon(icon_c0b40c27b6b02b4dff8d1d1df3776a14);
+        
+    
+        var popup_b628fbd120cff3fbebd22103b87674ae = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_677f47aea45f5a32e926c44e4d15075f = $(`<div id="html_677f47aea45f5a32e926c44e4d15075f" style="width: 100.0%; height: 100.0%;">             <b>Farmácia Tropicana Colinas</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: Brisamar, João Pessoa<br>             </div>`)[0];
+                popup_b628fbd120cff3fbebd22103b87674ae.setContent(html_677f47aea45f5a32e926c44e4d15075f);
+            
+        
+
+        marker_2dcaac13abdf814af166c17b44ed0afe.bindPopup(popup_b628fbd120cff3fbebd22103b87674ae)
+        ;
+
+        
+    
+    
+            var marker_6a30fa3b06ea809a77cf51bda4c2f7eb = L.marker(
+                [-7.11837, -34.8402425],
+                {}
+            ).addTo(feature_group_2d8b0ccb8436c6b94351357154a681ca);
+        
+    
+            var icon_1804b269c0c316c4e8b811b8cddc9a06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6a30fa3b06ea809a77cf51bda4c2f7eb.setIcon(icon_1804b269c0c316c4e8b811b8cddc9a06);
+        
+    
+        var popup_ca14904ef52a4804f8ff6d9d7f46d5bd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ff5fd38861acf447184ef7cf2522d1b6 = $(`<div id="html_ff5fd38861acf447184ef7cf2522d1b6" style="width: 100.0%; height: 100.0%;">             <b>Farmácia Pague Menos</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: R. Cel. Júlio de Souza Cousseior, 135 - Miramar, João Pessoa<br>             </div>`)[0];
+                popup_ca14904ef52a4804f8ff6d9d7f46d5bd.setContent(html_ff5fd38861acf447184ef7cf2522d1b6);
+            
+        
+
+        marker_6a30fa3b06ea809a77cf51bda4c2f7eb.bindPopup(popup_ca14904ef52a4804f8ff6d9d7f46d5bd)
+        ;
+
+        
+    
+    
+            var marker_1fd1b9b54852a12b3bb19d3244a6df9c = L.marker(
+                [-7.1197756, -34.8371754],
+                {}
+            ).addTo(feature_group_2d8b0ccb8436c6b94351357154a681ca);
+        
+    
+            var icon_6ed7fb180e191d8a1d431c0ab4f371a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1fd1b9b54852a12b3bb19d3244a6df9c.setIcon(icon_6ed7fb180e191d8a1d431c0ab4f371a5);
+        
+    
+        var popup_d2d524ee88d45b79d66976103cdbc37d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ffb83e1cb5bfd86bb7d4716b0db3ffa0 = $(`<div id="html_ffb83e1cb5bfd86bb7d4716b0db3ffa0" style="width: 100.0%; height: 100.0%;">             <b>Redepharma 66</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: Av. Pres. Epitácio Pessoa, 3678 - Miramar, João Pessoa<br>             </div>`)[0];
+                popup_d2d524ee88d45b79d66976103cdbc37d.setContent(html_ffb83e1cb5bfd86bb7d4716b0db3ffa0);
+            
+        
+
+        marker_1fd1b9b54852a12b3bb19d3244a6df9c.bindPopup(popup_d2d524ee88d45b79d66976103cdbc37d)
+        ;
+
+        
+    
+    
+            var marker_42fc11cb20425a6520c29228728ca49b = L.marker(
+                [-7.116211799999999, -34.8428014],
+                {}
+            ).addTo(feature_group_2d8b0ccb8436c6b94351357154a681ca);
+        
+    
+            var icon_2db60277e4117da13d6d2c3fe6000b83 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_42fc11cb20425a6520c29228728ca49b.setIcon(icon_2db60277e4117da13d6d2c3fe6000b83);
+        
+    
+        var popup_50a5b0d1e7e7af22d8e6ca65e352c5c5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2de7b67c31386ca6fee03b13679b656d = $(`<div id="html_2de7b67c31386ca6fee03b13679b656d" style="width: 100.0%; height: 100.0%;">             <b>Hospital de Emergência e Trauma Senador Humberto Lucena</b><br>             Tipo: Saúde (hospital)<br>             Endereço: R. Orestes Lisboa, SN - Pedro Gondim, João Pessoa<br>             </div>`)[0];
+                popup_50a5b0d1e7e7af22d8e6ca65e352c5c5.setContent(html_2de7b67c31386ca6fee03b13679b656d);
+            
+        
+
+        marker_42fc11cb20425a6520c29228728ca49b.bindPopup(popup_50a5b0d1e7e7af22d8e6ca65e352c5c5)
+        ;
+
+        
+    
+    
+            feature_group_2d8b0ccb8436c6b94351357154a681ca.addTo(map_21f015418fba1795834325319fff4085);
+        
+    
+            var feature_group_96242142a2a062cc8156bf506485a8d1 = L.featureGroup(
+                {}
+            );
+        
+    
+            feature_group_96242142a2a062cc8156bf506485a8d1.addTo(map_21f015418fba1795834325319fff4085);
+        
+    
+            var feature_group_faf99c768d8d81f077208af929cde36e = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_460b9883a340970a38bb45821af7ce13 = L.marker(
+                [-7.1172625, -34.8388997],
+                {}
+            ).addTo(feature_group_faf99c768d8d81f077208af929cde36e);
+        
+    
+            var icon_ef23bb84adfce116add3aa68874791ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_460b9883a340970a38bb45821af7ce13.setIcon(icon_ef23bb84adfce116add3aa68874791ee);
+        
+    
+        var popup_5f49e7d6e37c9a5592c50e69ec601d7e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e157356160f1fcbc2bd667b7745b3514 = $(`<div id="html_e157356160f1fcbc2bd667b7745b3514" style="width: 100.0%; height: 100.0%;">             <b>Escola Luz - Unidade 1</b><br>             Tipo: Educação (school)<br>             Endereço: Av. Sen. Ruy Carneiro, 539 - Brisamar, João Pessoa<br>             </div>`)[0];
+                popup_5f49e7d6e37c9a5592c50e69ec601d7e.setContent(html_e157356160f1fcbc2bd667b7745b3514);
+            
+        
+
+        marker_460b9883a340970a38bb45821af7ce13.bindPopup(popup_5f49e7d6e37c9a5592c50e69ec601d7e)
+        ;
+
+        
+    
+    
+            var marker_c45dfa1dff3cc30d6a8436371a0f94ec = L.marker(
+                [-7.1233783, -34.8403657],
+                {}
+            ).addTo(feature_group_faf99c768d8d81f077208af929cde36e);
+        
+    
+            var icon_0d72de01e2dde26159d6e994043b1540 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c45dfa1dff3cc30d6a8436371a0f94ec.setIcon(icon_0d72de01e2dde26159d6e994043b1540);
+        
+    
+        var popup_6b5ad8cfca739eef3a68d1ffdaa19faf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f6eb3d85bf862f1096158cce98e17511 = $(`<div id="html_f6eb3d85bf862f1096158cce98e17511" style="width: 100.0%; height: 100.0%;">             <b>Educandário Santa Cecília</b><br>             Tipo: Educação (school)<br>             Endereço: Rua Evaldo Wanderley, 819 - Tambauzinho, João Pessoa<br>             </div>`)[0];
+                popup_6b5ad8cfca739eef3a68d1ffdaa19faf.setContent(html_f6eb3d85bf862f1096158cce98e17511);
+            
+        
+
+        marker_c45dfa1dff3cc30d6a8436371a0f94ec.bindPopup(popup_6b5ad8cfca739eef3a68d1ffdaa19faf)
+        ;
+
+        
+    
+    
+            var marker_a1be43b39c613a81aaa21c0148aa190b = L.marker(
+                [-7.1198344, -34.8412763],
+                {}
+            ).addTo(feature_group_faf99c768d8d81f077208af929cde36e);
+        
+    
+            var icon_39ff0b0720029f7c1ce7d2bd31ef7c6d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a1be43b39c613a81aaa21c0148aa190b.setIcon(icon_39ff0b0720029f7c1ce7d2bd31ef7c6d);
+        
+    
+        var popup_22f96a231939c27a2dde7d0f510f4852 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dcfa8f68f7b5e5b93c16c7c29adae1ac = $(`<div id="html_dcfa8f68f7b5e5b93c16c7c29adae1ac" style="width: 100.0%; height: 100.0%;">             <b>Colégio Kairós - Epitácio</b><br>             Tipo: Educação (school)<br>             Endereço: Av. Pres. Epitácio Pessoa, 3240 - Tambauzinho, João Pessoa<br>             </div>`)[0];
+                popup_22f96a231939c27a2dde7d0f510f4852.setContent(html_dcfa8f68f7b5e5b93c16c7c29adae1ac);
+            
+        
+
+        marker_a1be43b39c613a81aaa21c0148aa190b.bindPopup(popup_22f96a231939c27a2dde7d0f510f4852)
+        ;
+
+        
+    
+    
+            var marker_4fb749e0f018ca3e138905d509c89e99 = L.marker(
+                [-7.122150299999999, -34.8444518],
+                {}
+            ).addTo(feature_group_faf99c768d8d81f077208af929cde36e);
+        
+    
+            var icon_d29871a19b33a6f5a61b8bedd747e7fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_4fb749e0f018ca3e138905d509c89e99.setIcon(icon_d29871a19b33a6f5a61b8bedd747e7fc);
+        
+    
+        var popup_e5d71b83a9fb212cac04cfd2b0effa5d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8fa6f8d1addde6fa259d3cdfc09e90f6 = $(`<div id="html_8fa6f8d1addde6fa259d3cdfc09e90f6" style="width: 100.0%; height: 100.0%;">             <b>EEEF JOSE VIEIRA</b><br>             Tipo: Educação (school)<br>             Endereço: R. Abdias Gomes de Almeida, S/N - Tambauzinho, João Pessoa<br>             </div>`)[0];
+                popup_e5d71b83a9fb212cac04cfd2b0effa5d.setContent(html_8fa6f8d1addde6fa259d3cdfc09e90f6);
+            
+        
+
+        marker_4fb749e0f018ca3e138905d509c89e99.bindPopup(popup_e5d71b83a9fb212cac04cfd2b0effa5d)
+        ;
+
+        
+    
+    
+            var marker_17cbad68a36a901af0ba8754d43e1eec = L.marker(
+                [-7.1150701, -34.8468748],
+                {}
+            ).addTo(feature_group_faf99c768d8d81f077208af929cde36e);
+        
+    
+            var icon_1017e680eea9746ae2fac3abe776ace8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_17cbad68a36a901af0ba8754d43e1eec.setIcon(icon_1017e680eea9746ae2fac3abe776ace8);
+        
+    
+        var popup_dc619bb16d1129a4280c390503a43a29 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2cf4cc930dc46bd564944e8c61b51b23 = $(`<div id="html_2cf4cc930dc46bd564944e8c61b51b23" style="width: 100.0%; height: 100.0%;">             <b>CEEEA Sesquicentenário</b><br>             Tipo: Educação (school)<br>             Endereço: R. Manoel França, s/n - Pedro Gondim, João Pessoa<br>             </div>`)[0];
+                popup_dc619bb16d1129a4280c390503a43a29.setContent(html_2cf4cc930dc46bd564944e8c61b51b23);
+            
+        
+
+        marker_17cbad68a36a901af0ba8754d43e1eec.bindPopup(popup_dc619bb16d1129a4280c390503a43a29)
+        ;
+
+        
+    
+    
+            var marker_51e9b32b6d4fb7d27589a64d61003bf5 = L.marker(
+                [-7.117598099999999, -34.8405997],
+                {}
+            ).addTo(feature_group_faf99c768d8d81f077208af929cde36e);
+        
+    
+            var icon_a7ef380c11837d4712715ebd49c701d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_51e9b32b6d4fb7d27589a64d61003bf5.setIcon(icon_a7ef380c11837d4712715ebd49c701d5);
+        
+    
+        var popup_3fb02ebed9f1c6b3d02a099494e497cb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f7d2abbd778db50d367041a21a998759 = $(`<div id="html_f7d2abbd778db50d367041a21a998759" style="width: 100.0%; height: 100.0%;">             <b>Escola Luz - Unidade 2</b><br>             Tipo: Educação (school)<br>             Endereço: R. Prof. Francisco Oliveira Pôrto, 65 - Brisamar, João Pessoa<br>             </div>`)[0];
+                popup_3fb02ebed9f1c6b3d02a099494e497cb.setContent(html_f7d2abbd778db50d367041a21a998759);
+            
+        
+
+        marker_51e9b32b6d4fb7d27589a64d61003bf5.bindPopup(popup_3fb02ebed9f1c6b3d02a099494e497cb)
+        ;
+
+        
+    
+    
+            var marker_299faabdc44fded5ecc0fffc99ac5af6 = L.marker(
+                [-7.117785899999999, -34.8400703],
+                {}
+            ).addTo(feature_group_faf99c768d8d81f077208af929cde36e);
+        
+    
+            var icon_eb78287aef606e7343b68749879d3bae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_299faabdc44fded5ecc0fffc99ac5af6.setIcon(icon_eb78287aef606e7343b68749879d3bae);
+        
+    
+        var popup_54c7cf6d31e3886aababf9ff899f8c1e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dae83bf766003790278a9a6c5ca6f7cc = $(`<div id="html_dae83bf766003790278a9a6c5ca6f7cc" style="width: 100.0%; height: 100.0%;">             <b>Colégio New Way</b><br>             Tipo: Educação (school)<br>             Endereço: Av. Sen. Ruy Carneiro, 405 - Miramar, João Pessoa<br>             </div>`)[0];
+                popup_54c7cf6d31e3886aababf9ff899f8c1e.setContent(html_dae83bf766003790278a9a6c5ca6f7cc);
+            
+        
+
+        marker_299faabdc44fded5ecc0fffc99ac5af6.bindPopup(popup_54c7cf6d31e3886aababf9ff899f8c1e)
+        ;
+
+        
+    
+    
+            var marker_375998a343614c1a58a7f649238befda = L.marker(
+                [-7.1175333, -34.84056169999999],
+                {}
+            ).addTo(feature_group_faf99c768d8d81f077208af929cde36e);
+        
+    
+            var icon_092b111ed328646cd750e0ea8e976a9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_375998a343614c1a58a7f649238befda.setIcon(icon_092b111ed328646cd750e0ea8e976a9c);
+        
+    
+        var popup_a71e4b168f77dad453086f1890c24b26 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_62007324d88fd44df72f34bf779a8590 = $(`<div id="html_62007324d88fd44df72f34bf779a8590" style="width: 100.0%; height: 100.0%;">             <b>Colégio Meta Kids Jardim Luna</b><br>             Tipo: Educação (school)<br>             Endereço: R. Prof. Francisco Oliveira Pôrto, 65 - Brisamar, João Pessoa<br>             </div>`)[0];
+                popup_a71e4b168f77dad453086f1890c24b26.setContent(html_62007324d88fd44df72f34bf779a8590);
+            
+        
+
+        marker_375998a343614c1a58a7f649238befda.bindPopup(popup_a71e4b168f77dad453086f1890c24b26)
+        ;
+
+        
+    
+    
+            var marker_71828d1f6940b4dacbcbd3956c626366 = L.marker(
+                [-7.1154126, -34.8380473],
+                {}
+            ).addTo(feature_group_faf99c768d8d81f077208af929cde36e);
+        
+    
+            var icon_efde7af9203d473ce8025537471dd5c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_71828d1f6940b4dacbcbd3956c626366.setIcon(icon_efde7af9203d473ce8025537471dd5c9);
+        
+    
+        var popup_d4de53cc4d36be8efd6d6b18c450531f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d864d658735e1e3111e9a0698e21db6b = $(`<div id="html_d864d658735e1e3111e9a0698e21db6b" style="width: 100.0%; height: 100.0%;">             <b>College Divine Space</b><br>             Tipo: Educação (school)<br>             Endereço: R. Maria Facunda de Oliveira Dias, 58 - Jardim Luna, João Pessoa<br>             </div>`)[0];
+                popup_d4de53cc4d36be8efd6d6b18c450531f.setContent(html_d864d658735e1e3111e9a0698e21db6b);
+            
+        
+
+        marker_71828d1f6940b4dacbcbd3956c626366.bindPopup(popup_d4de53cc4d36be8efd6d6b18c450531f)
+        ;
+
+        
+    
+    
+            var marker_f1e13018a190182ce5bfaed87978984f = L.marker(
+                [-7.1198942, -34.8391657],
+                {}
+            ).addTo(feature_group_faf99c768d8d81f077208af929cde36e);
+        
+    
+            var icon_094ef1361b648c73dc0ebdf8be0a065c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f1e13018a190182ce5bfaed87978984f.setIcon(icon_094ef1361b648c73dc0ebdf8be0a065c);
+        
+    
+        var popup_266a8dba612c63447f2b910094c1817b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c5753dfd535b22295b08ec8a9917bdf4 = $(`<div id="html_c5753dfd535b22295b08ec8a9917bdf4" style="width: 100.0%; height: 100.0%;">             <b>Wizard by Pearson João Pessoa - MIRAMAR</b><br>             Tipo: Educação (school)<br>             Endereço: Av. Pres. Epitácio Pessoa, 3440 - Miramar, João Pessoa<br>             </div>`)[0];
+                popup_266a8dba612c63447f2b910094c1817b.setContent(html_c5753dfd535b22295b08ec8a9917bdf4);
+            
+        
+
+        marker_f1e13018a190182ce5bfaed87978984f.bindPopup(popup_266a8dba612c63447f2b910094c1817b)
+        ;
+
+        
+    
+    
+            var marker_1bd8ad72bb25bf32c67582b1df24e96e = L.marker(
+                [-7.1172026, -34.8371247],
+                {}
+            ).addTo(feature_group_faf99c768d8d81f077208af929cde36e);
+        
+    
+            var icon_c8e57318752aac9ed5bf120329fad7d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_1bd8ad72bb25bf32c67582b1df24e96e.setIcon(icon_c8e57318752aac9ed5bf120329fad7d2);
+        
+    
+        var popup_d61b7856783d6f6642f7f22f5b5f8f69 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4a3367fc413cf81afa169ecb1092308d = $(`<div id="html_4a3367fc413cf81afa169ecb1092308d" style="width: 100.0%; height: 100.0%;">             <b>College Motiva - Miramar Unit</b><br>             Tipo: Educação (school)<br>             Endereço: R. Antônio Rabelo Júnior, 270 - Miramar, João Pessoa<br>             </div>`)[0];
+                popup_d61b7856783d6f6642f7f22f5b5f8f69.setContent(html_4a3367fc413cf81afa169ecb1092308d);
+            
+        
+
+        marker_1bd8ad72bb25bf32c67582b1df24e96e.bindPopup(popup_d61b7856783d6f6642f7f22f5b5f8f69)
+        ;
+
+        
+    
+    
+            var marker_1568b8269308e48048fc775c3a4feeb1 = L.marker(
+                [-7.1193941, -34.8443668],
+                {}
+            ).addTo(feature_group_faf99c768d8d81f077208af929cde36e);
+        
+    
+            var icon_9ee2df76b37b88b01f0bba269591c411 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_1568b8269308e48048fc775c3a4feeb1.setIcon(icon_9ee2df76b37b88b01f0bba269591c411);
+        
+    
+        var popup_38dae8350543c3f7238598ecff50e61f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e3aae1f80e375cd6d1e25a4d8733821e = $(`<div id="html_e3aae1f80e375cd6d1e25a4d8733821e" style="width: 100.0%; height: 100.0%;">             <b>Escola Municipal Francisca Moura</b><br>             Tipo: Educação (school)<br>             Endereço: Av. Pres. Epitácio Pessoa, 2981 - Estados, João Pessoa<br>             </div>`)[0];
+                popup_38dae8350543c3f7238598ecff50e61f.setContent(html_e3aae1f80e375cd6d1e25a4d8733821e);
+            
+        
+
+        marker_1568b8269308e48048fc775c3a4feeb1.bindPopup(popup_38dae8350543c3f7238598ecff50e61f)
+        ;
+
+        
+    
+    
+            var marker_ebc44a28e6c687ee74aab0eb70e635de = L.marker(
+                [-7.124154099999999, -34.8470385],
+                {}
+            ).addTo(feature_group_faf99c768d8d81f077208af929cde36e);
+        
+    
+            var icon_2e575a219c8cb7b5b95709668cf65344 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ebc44a28e6c687ee74aab0eb70e635de.setIcon(icon_2e575a219c8cb7b5b95709668cf65344);
+        
+    
+        var popup_2a7a2c649c55b566f4da1577b72d2cd7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dc5aff0a00175dd2ca0d3adabc2ac321 = $(`<div id="html_dc5aff0a00175dd2ca0d3adabc2ac321" style="width: 100.0%; height: 100.0%;">             <b>EMAI GOV LEONEL BRIZOLA</b><br>             Tipo: Educação (school)<br>             Endereço: R. Maria Caetano Fernandes de Lima, 488 - Tambauzinho, João Pessoa<br>             </div>`)[0];
+                popup_2a7a2c649c55b566f4da1577b72d2cd7.setContent(html_dc5aff0a00175dd2ca0d3adabc2ac321);
+            
+        
+
+        marker_ebc44a28e6c687ee74aab0eb70e635de.bindPopup(popup_2a7a2c649c55b566f4da1577b72d2cd7)
+        ;
+
+        
+    
+    
+            var marker_27e136c3965ce30bc6ab3f88ec246cb3 = L.marker(
+                [-7.117297, -34.8381129],
+                {}
+            ).addTo(feature_group_faf99c768d8d81f077208af929cde36e);
+        
+    
+            var icon_9ef01c670831684852ed7f5a652875e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_27e136c3965ce30bc6ab3f88ec246cb3.setIcon(icon_9ef01c670831684852ed7f5a652875e1);
+        
+    
+        var popup_1425858c5fedf62e64e090fbdc720b0f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7eb84a1100ed46a0ea57ea2f19d9565a = $(`<div id="html_7eb84a1100ed46a0ea57ea2f19d9565a" style="width: 100.0%; height: 100.0%;">             <b>Unep</b><br>             Tipo: Educação (university)<br>             Endereço: Av. Sen. Ruy Carneiro, 539 - Brisamar, João Pessoa<br>             </div>`)[0];
+                popup_1425858c5fedf62e64e090fbdc720b0f.setContent(html_7eb84a1100ed46a0ea57ea2f19d9565a);
+            
+        
+
+        marker_27e136c3965ce30bc6ab3f88ec246cb3.bindPopup(popup_1425858c5fedf62e64e090fbdc720b0f)
+        ;
+
+        
+    
+    
+            var marker_016423aab941e06969c6ac7826e8b77d = L.marker(
+                [-7.1201886, -34.847185],
+                {}
+            ).addTo(feature_group_faf99c768d8d81f077208af929cde36e);
+        
+    
+            var icon_2a32f87716deec172b5a1f02e4cf4982 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_016423aab941e06969c6ac7826e8b77d.setIcon(icon_2a32f87716deec172b5a1f02e4cf4982);
+        
+    
+        var popup_3a2255ac24c960a1cc22f1b998c69e3f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_607515d554f699f4334b6e10c7b318a8 = $(`<div id="html_607515d554f699f4334b6e10c7b318a8" style="width: 100.0%; height: 100.0%;">             <b>UNIP João Pessoa - Polo Epitácio Pessoa</b><br>             Tipo: Educação (university)<br>             Endereço: Shopping Moriah - Av. Pres. Epitácio Pessoa, 2580 - Tambauzinho, João Pessoa<br>             </div>`)[0];
+                popup_3a2255ac24c960a1cc22f1b998c69e3f.setContent(html_607515d554f699f4334b6e10c7b318a8);
+            
+        
+
+        marker_016423aab941e06969c6ac7826e8b77d.bindPopup(popup_3a2255ac24c960a1cc22f1b998c69e3f)
+        ;
+
+        
+    
+    
+            var marker_18de2d06ceeca7d56206615efbe8d347 = L.marker(
+                [-7.1172217, -34.839783],
+                {}
+            ).addTo(feature_group_faf99c768d8d81f077208af929cde36e);
+        
+    
+            var icon_d5e8ff1af44f411809e5385af8302d36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_18de2d06ceeca7d56206615efbe8d347.setIcon(icon_d5e8ff1af44f411809e5385af8302d36);
+        
+    
+        var popup_df1d1387dd1b0d5966b79d44c9b6cb2b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e3df99565e28785ed091659c25db11fc = $(`<div id="html_e3df99565e28785ed091659c25db11fc" style="width: 100.0%; height: 100.0%;">             <b>POLO UNINTA BRISAMAR</b><br>             Tipo: Educação (university)<br>             Endereço: Rua Hevangelina Francisca Diniz, 245 - Brisamar, João Pessoa<br>             </div>`)[0];
+                popup_df1d1387dd1b0d5966b79d44c9b6cb2b.setContent(html_e3df99565e28785ed091659c25db11fc);
+            
+        
+
+        marker_18de2d06ceeca7d56206615efbe8d347.bindPopup(popup_df1d1387dd1b0d5966b79d44c9b6cb2b)
+        ;
+
+        
+    
+    
+            feature_group_faf99c768d8d81f077208af929cde36e.addTo(map_21f015418fba1795834325319fff4085);
+        
+    
+            var feature_group_4fe8f97d88cd98a8456c3ed6c68b709f = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_0f0375c44859b6c706b58fe8b4c17996 = L.marker(
+                [-7.116959, -34.8474219],
+                {}
+            ).addTo(feature_group_4fe8f97d88cd98a8456c3ed6c68b709f);
+        
+    
+            var icon_5b3c696f3ec963ed68e4daeb75d9d079 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0f0375c44859b6c706b58fe8b4c17996.setIcon(icon_5b3c696f3ec963ed68e4daeb75d9d079);
+        
+    
+        var popup_99d6bb0151eb57b64bc331bdf4b5c578 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8f0f21461d3c6163a0b0d82d1cfd472e = $(`<div id="html_8f0f21461d3c6163a0b0d82d1cfd472e" style="width: 100.0%; height: 100.0%;">             <b>Chegou a Feira | Supermercado</b><br>             Tipo: Comércio (supermarket)<br>             Endereço: R. João Vieira Carneiro, 306 - Pedro Gondim, João Pessoa<br>             </div>`)[0];
+                popup_99d6bb0151eb57b64bc331bdf4b5c578.setContent(html_8f0f21461d3c6163a0b0d82d1cfd472e);
+            
+        
+
+        marker_0f0375c44859b6c706b58fe8b4c17996.bindPopup(popup_99d6bb0151eb57b64bc331bdf4b5c578)
+        ;
+
+        
+    
+    
+            var marker_79fad379cd3ddefce180b807b8df87bd = L.marker(
+                [-7.116653599999999, -34.847465],
+                {}
+            ).addTo(feature_group_4fe8f97d88cd98a8456c3ed6c68b709f);
+        
+    
+            var icon_1a727798b28ce089c575df95e1983f0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_79fad379cd3ddefce180b807b8df87bd.setIcon(icon_1a727798b28ce089c575df95e1983f0f);
+        
+    
+        var popup_9330e4e8440557fc3950748d3885ff30 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c707a5f80421ebc48b5152cbc2d4ef4c = $(`<div id="html_c707a5f80421ebc48b5152cbc2d4ef4c" style="width: 100.0%; height: 100.0%;">             <b>Mercado Conjunto Pedro Gondim</b><br>             Tipo: Comércio (supermarket)<br>             Endereço: R. Leonel Coelho, 226 - Pedro Gondim, João Pessoa<br>             </div>`)[0];
+                popup_9330e4e8440557fc3950748d3885ff30.setContent(html_c707a5f80421ebc48b5152cbc2d4ef4c);
+            
+        
+
+        marker_79fad379cd3ddefce180b807b8df87bd.bindPopup(popup_9330e4e8440557fc3950748d3885ff30)
+        ;
+
+        
+    
+    
+            var marker_59f64341563d165b042111e86dafc293 = L.marker(
+                [-7.125640799999999, -34.8399412],
+                {}
+            ).addTo(feature_group_4fe8f97d88cd98a8456c3ed6c68b709f);
+        
+    
+            var icon_5339924e2b88f4de08b28a1804463544 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_59f64341563d165b042111e86dafc293.setIcon(icon_5339924e2b88f4de08b28a1804463544);
+        
+    
+        var popup_be3cab2276011f75b36a47ea4af5ded3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_46f2d781a477aa424a3fd812ac51275a = $(`<div id="html_46f2d781a477aa424a3fd812ac51275a" style="width: 100.0%; height: 100.0%;">             <b>Mercadinho Beira Rio</b><br>             Tipo: Comércio (supermarket)<br>             Endereço: Av. Min. José Américo de Almeida, 127 - Torre, João Pessoa<br>             </div>`)[0];
+                popup_be3cab2276011f75b36a47ea4af5ded3.setContent(html_46f2d781a477aa424a3fd812ac51275a);
+            
+        
+
+        marker_59f64341563d165b042111e86dafc293.bindPopup(popup_be3cab2276011f75b36a47ea4af5ded3)
+        ;
+
+        
+    
+    
+            var marker_484c45986b162baaaa7a7da44016724b = L.marker(
+                [-7.121566800000001, -34.8430847],
+                {}
+            ).addTo(feature_group_4fe8f97d88cd98a8456c3ed6c68b709f);
+        
+    
+            var icon_d965c395c5be79168a59d859c4bb4358 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_484c45986b162baaaa7a7da44016724b.setIcon(icon_d965c395c5be79168a59d859c4bb4358);
+        
+    
+        var popup_18cdca3f9979f4b8c40bfcd14af3eeca = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_052be61b74b70c97d3abc781bcf105fe = $(`<div id="html_052be61b74b70c97d3abc781bcf105fe" style="width: 100.0%; height: 100.0%;">             <b>Mercadinho Leão de Judá</b><br>             Tipo: Comércio (supermarket)<br>             Endereço: R. Abdias Gomes de Almeida, 216 - Sala 101 - Tambauzinho, João Pessoa<br>             </div>`)[0];
+                popup_18cdca3f9979f4b8c40bfcd14af3eeca.setContent(html_052be61b74b70c97d3abc781bcf105fe);
+            
+        
+
+        marker_484c45986b162baaaa7a7da44016724b.bindPopup(popup_18cdca3f9979f4b8c40bfcd14af3eeca)
+        ;
+
+        
+    
+    
+            feature_group_4fe8f97d88cd98a8456c3ed6c68b709f.addTo(map_21f015418fba1795834325319fff4085);
+        
+    
+            var feature_group_6c99c2436fdc8877f81bc3ac17017844 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_c4ad3a300a028c8de44718685f0954bf = L.marker(
+                [-7.1194057, -34.8406117],
+                {}
+            ).addTo(feature_group_6c99c2436fdc8877f81bc3ac17017844);
+        
+    
+            var icon_b83575a5ce84d70b875eda27b380771c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_c4ad3a300a028c8de44718685f0954bf.setIcon(icon_b83575a5ce84d70b875eda27b380771c);
+        
+    
+        var popup_04797323e66033cbce39e43618076f2b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8fade1f66c897abb66266c26940e8fad = $(`<div id="html_8fade1f66c897abb66266c26940e8fad" style="width: 100.0%; height: 100.0%;">             <b>Master Gás | Posto de combustível em João Pessoa + GNV (Epitácio Pessoa)</b><br>             Tipo: Serviços (gas_station)<br>             Endereço: Av. Pres. Epitácio Pessoa, 3313 - Pedro Gondim, João Pessoa<br>             </div>`)[0];
+                popup_04797323e66033cbce39e43618076f2b.setContent(html_8fade1f66c897abb66266c26940e8fad);
+            
+        
+
+        marker_c4ad3a300a028c8de44718685f0954bf.bindPopup(popup_04797323e66033cbce39e43618076f2b)
+        ;
+
+        
+    
+    
+            var marker_5387217b420b61b15bc21adaf44a55d0 = L.marker(
+                [-7.11733, -34.8402699],
+                {}
+            ).addTo(feature_group_6c99c2436fdc8877f81bc3ac17017844);
+        
+    
+            var icon_4f55da2c8a358e84f50f57bbd39219bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_5387217b420b61b15bc21adaf44a55d0.setIcon(icon_4f55da2c8a358e84f50f57bbd39219bf);
+        
+    
+        var popup_d3884c48e47ea047e9e41fcfab8d454d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fdf5d831c5e0886a3d6bd4f08bfd8e7f = $(`<div id="html_fdf5d831c5e0886a3d6bd4f08bfd8e7f" style="width: 100.0%; height: 100.0%;">             <b>Posto Almeida</b><br>             Tipo: Serviços (gas_station)<br>             Endereço: Rua Hevangelina Francisca Diniz, 140 - Brisamar, João Pessoa<br>             </div>`)[0];
+                popup_d3884c48e47ea047e9e41fcfab8d454d.setContent(html_fdf5d831c5e0886a3d6bd4f08bfd8e7f);
+            
+        
+
+        marker_5387217b420b61b15bc21adaf44a55d0.bindPopup(popup_d3884c48e47ea047e9e41fcfab8d454d)
+        ;
+
+        
+    
+    
+            var marker_752bb9f34362e6d61ccd0c45f4ed2062 = L.marker(
+                [-7.1193985, -34.84226659999999],
+                {}
+            ).addTo(feature_group_6c99c2436fdc8877f81bc3ac17017844);
+        
+    
+            var icon_30b1571279696cc2324f330bd8a9d818 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_752bb9f34362e6d61ccd0c45f4ed2062.setIcon(icon_30b1571279696cc2324f330bd8a9d818);
+        
+    
+        var popup_f7e5c3b5e5163d99e4a1ed25a95a1556 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_47ad07d900f1437fff9a070f3e933699 = $(`<div id="html_47ad07d900f1437fff9a070f3e933699" style="width: 100.0%; height: 100.0%;">             <b>Posto Shell - Freeway</b><br>             Tipo: Serviços (gas_station)<br>             Endereço: Av. Sen. Ruy Carneiro, 98 - Miramar, João Pessoa<br>             </div>`)[0];
+                popup_f7e5c3b5e5163d99e4a1ed25a95a1556.setContent(html_47ad07d900f1437fff9a070f3e933699);
+            
+        
+
+        marker_752bb9f34362e6d61ccd0c45f4ed2062.bindPopup(popup_f7e5c3b5e5163d99e4a1ed25a95a1556)
+        ;
+
+        
+    
+    
+            feature_group_6c99c2436fdc8877f81bc3ac17017844.addTo(map_21f015418fba1795834325319fff4085);
+        
+    
+            var feature_group_e7eface1b38abcda4ee4e7560cf93f2e = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_eef409d198978ad1136c10e7cffc86fa = L.marker(
+                [-7.1199374, -34.8462484],
+                {}
+            ).addTo(feature_group_e7eface1b38abcda4ee4e7560cf93f2e);
+        
+    
+            var icon_54e1cda76e8f8609f04e75baf27ba94d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_eef409d198978ad1136c10e7cffc86fa.setIcon(icon_54e1cda76e8f8609f04e75baf27ba94d);
+        
+    
+        var popup_83178516fe66f3ffdbcea4e176fce5ab = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b7d687ecf45cac8bd65d48bd59be83b2 = $(`<div id="html_b7d687ecf45cac8bd65d48bd59be83b2" style="width: 100.0%; height: 100.0%;">             <b>Academia Gaviões 24hs</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Pres. Epitácio Pessoa, 2690 - Tambauzinho, João Pessoa<br>             </div>`)[0];
+                popup_83178516fe66f3ffdbcea4e176fce5ab.setContent(html_b7d687ecf45cac8bd65d48bd59be83b2);
+            
+        
+
+        marker_eef409d198978ad1136c10e7cffc86fa.bindPopup(popup_83178516fe66f3ffdbcea4e176fce5ab)
+        ;
+
+        
+    
+    
+            var marker_3bfbf77883e5d7d1f89c26ddbbb99966 = L.marker(
+                [-7.119232299999999, -34.8434826],
+                {}
+            ).addTo(feature_group_e7eface1b38abcda4ee4e7560cf93f2e);
+        
+    
+            var icon_66f157286c869cb4a9f267197217a8ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_3bfbf77883e5d7d1f89c26ddbbb99966.setIcon(icon_66f157286c869cb4a9f267197217a8ea);
+        
+    
+        var popup_837df0eb1ebc0ed64386f841e5c2017e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_846854a170c2f79663a2ee2de5e3d268 = $(`<div id="html_846854a170c2f79663a2ee2de5e3d268" style="width: 100.0%; height: 100.0%;">             <b>Selfit Academias Epitácio Pessoa</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Pres. Epitácio Pessoa, 3001 - Brisamar, João Pessoa<br>             </div>`)[0];
+                popup_837df0eb1ebc0ed64386f841e5c2017e.setContent(html_846854a170c2f79663a2ee2de5e3d268);
+            
+        
+
+        marker_3bfbf77883e5d7d1f89c26ddbbb99966.bindPopup(popup_837df0eb1ebc0ed64386f841e5c2017e)
+        ;
+
+        
+    
+    
+            var marker_ae54cf3414171cad3584654d5f758abf = L.marker(
+                [-7.115966999999999, -34.8400244],
+                {}
+            ).addTo(feature_group_e7eface1b38abcda4ee4e7560cf93f2e);
+        
+    
+            var icon_e2746196f7827c563d34f009b22a996c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_ae54cf3414171cad3584654d5f758abf.setIcon(icon_e2746196f7827c563d34f009b22a996c);
+        
+    
+        var popup_fb3223607178839f4c0ac4f835065614 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0c599e1acc39c06c9c22e53f4d18e9f3 = $(`<div id="html_0c599e1acc39c06c9c22e53f4d18e9f3" style="width: 100.0%; height: 100.0%;">             <b>TH Fit Academia</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Jardim Luna - R. Zulmira Félix de Carvalho, 205 - Brisamar, João Pessoa<br>             </div>`)[0];
+                popup_fb3223607178839f4c0ac4f835065614.setContent(html_0c599e1acc39c06c9c22e53f4d18e9f3);
+            
+        
+
+        marker_ae54cf3414171cad3584654d5f758abf.bindPopup(popup_fb3223607178839f4c0ac4f835065614)
+        ;
+
+        
+    
+    
+            var marker_604110b6df4a3af1d793f88c084f1fe4 = L.marker(
+                [-7.117320599999999, -34.8475142],
+                {}
+            ).addTo(feature_group_e7eface1b38abcda4ee4e7560cf93f2e);
+        
+    
+            var icon_398f5db994af1e2981ad2f98c7c910d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_604110b6df4a3af1d793f88c084f1fe4.setIcon(icon_398f5db994af1e2981ad2f98c7c910d6);
+        
+    
+        var popup_a6ae4c1da7b66ab1513da8f91e05136e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_92251c088dfcbbaf60d523e45a13070e = $(`<div id="html_92251c088dfcbbaf60d523e45a13070e" style="width: 100.0%; height: 100.0%;">             <b>Academia Studio MG Personal</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: R. João Vieira Carneiro - Pedro Gondim, João Pessoa<br>             </div>`)[0];
+                popup_a6ae4c1da7b66ab1513da8f91e05136e.setContent(html_92251c088dfcbbaf60d523e45a13070e);
+            
+        
+
+        marker_604110b6df4a3af1d793f88c084f1fe4.bindPopup(popup_a6ae4c1da7b66ab1513da8f91e05136e)
+        ;
+
+        
+    
+    
+            var marker_920b39c97921ef4fd3e8cb4790c4ce62 = L.marker(
+                [-7.1198172, -34.8436809],
+                {}
+            ).addTo(feature_group_e7eface1b38abcda4ee4e7560cf93f2e);
+        
+    
+            var icon_c740643f62beaab5c196e02eea9050c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_920b39c97921ef4fd3e8cb4790c4ce62.setIcon(icon_c740643f62beaab5c196e02eea9050c3);
+        
+    
+        var popup_e68ebfb8047fee529a29068d829a1cdb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_39f64032181011315acfb741c5e80ffa = $(`<div id="html_39f64032181011315acfb741c5e80ffa" style="width: 100.0%; height: 100.0%;">             <b>Serfit</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Pres. Epitácio Pessoa, 2980 - Miramar, João Pessoa<br>             </div>`)[0];
+                popup_e68ebfb8047fee529a29068d829a1cdb.setContent(html_39f64032181011315acfb741c5e80ffa);
+            
+        
+
+        marker_920b39c97921ef4fd3e8cb4790c4ce62.bindPopup(popup_e68ebfb8047fee529a29068d829a1cdb)
+        ;
+
+        
+    
+    
+            var marker_66d2e94484cbb0ee1a0f22aca0002dfc = L.marker(
+                [-7.123726, -34.8459903],
+                {}
+            ).addTo(feature_group_e7eface1b38abcda4ee4e7560cf93f2e);
+        
+    
+            var icon_b234d11f3df3cbe22077b46cdb631422 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_66d2e94484cbb0ee1a0f22aca0002dfc.setIcon(icon_b234d11f3df3cbe22077b46cdb631422);
+        
+    
+        var popup_4a187783b55aa232c99aaeae3c7e96e3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6a70f162d33bf74052adb4d0e5009956 = $(`<div id="html_6a70f162d33bf74052adb4d0e5009956" style="width: 100.0%; height: 100.0%;">             <b>Base 3 | Centro de Artes Marciais</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: R. Saffa Said Abel da Cunha, 474 - Tambauzinho, João Pessoa<br>             </div>`)[0];
+                popup_4a187783b55aa232c99aaeae3c7e96e3.setContent(html_6a70f162d33bf74052adb4d0e5009956);
+            
+        
+
+        marker_66d2e94484cbb0ee1a0f22aca0002dfc.bindPopup(popup_4a187783b55aa232c99aaeae3c7e96e3)
+        ;
+
+        
+    
+    
+            var marker_c85fd34f1079c5870275217de431d3c1 = L.marker(
+                [-7.1251511, -34.8420037],
+                {}
+            ).addTo(feature_group_e7eface1b38abcda4ee4e7560cf93f2e);
+        
+    
+            var icon_7a7e997de320dfe0d300c4800f88c91b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_c85fd34f1079c5870275217de431d3c1.setIcon(icon_7a7e997de320dfe0d300c4800f88c91b);
+        
+    
+        var popup_e160014a74a92fcbf146167129c45ca8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_78415123eee2174a81cd1dcab10fdc27 = $(`<div id="html_78415123eee2174a81cd1dcab10fdc27" style="width: 100.0%; height: 100.0%;">             <b>CF083 Tambauzinho - João Pessoa</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Min. José Américo de Almeida - Tambauzinho, João Pessoa<br>             </div>`)[0];
+                popup_e160014a74a92fcbf146167129c45ca8.setContent(html_78415123eee2174a81cd1dcab10fdc27);
+            
+        
+
+        marker_c85fd34f1079c5870275217de431d3c1.bindPopup(popup_e160014a74a92fcbf146167129c45ca8)
+        ;
+
+        
+    
+    
+            var marker_7c766f939d7e90e22367f11ecbcf6888 = L.marker(
+                [-7.121484499999999, -34.8419229],
+                {}
+            ).addTo(feature_group_e7eface1b38abcda4ee4e7560cf93f2e);
+        
+    
+            var icon_1c5db32c4faf851cee0121132b0b4be1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_7c766f939d7e90e22367f11ecbcf6888.setIcon(icon_1c5db32c4faf851cee0121132b0b4be1);
+        
+    
+        var popup_b931431d41d9461a40e339da0b2bd0c2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_743c8808d5603c69f7e4dc224f272a08 = $(`<div id="html_743c8808d5603c69f7e4dc224f272a08" style="width: 100.0%; height: 100.0%;">             <b>Lamoví</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: R. Abdias Gomes de Almeida, 947 - Loja 1 - Tambauzinho, João Pessoa<br>             </div>`)[0];
+                popup_b931431d41d9461a40e339da0b2bd0c2.setContent(html_743c8808d5603c69f7e4dc224f272a08);
+            
+        
+
+        marker_7c766f939d7e90e22367f11ecbcf6888.bindPopup(popup_b931431d41d9461a40e339da0b2bd0c2)
+        ;
+
+        
+    
+    
+            var marker_839fbdc3a16bb22636c851f7653f2d84 = L.marker(
+                [-7.117123599999999, -34.8394877],
+                {}
+            ).addTo(feature_group_e7eface1b38abcda4ee4e7560cf93f2e);
+        
+    
+            var icon_22b1d3b627d93c4da1a61e1a7672ae5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_839fbdc3a16bb22636c851f7653f2d84.setIcon(icon_22b1d3b627d93c4da1a61e1a7672ae5b);
+        
+    
+        var popup_0c3e70b5ecb4b154842c334e3a94fbf7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_77406152d152e72cdc68539baf57b261 = $(`<div id="html_77406152d152e72cdc68539baf57b261" style="width: 100.0%; height: 100.0%;">             <b>Cross Experience</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: R. Cassimiro de Abreu, 61 - Brisamar, João Pessoa<br>             </div>`)[0];
+                popup_0c3e70b5ecb4b154842c334e3a94fbf7.setContent(html_77406152d152e72cdc68539baf57b261);
+            
+        
+
+        marker_839fbdc3a16bb22636c851f7653f2d84.bindPopup(popup_0c3e70b5ecb4b154842c334e3a94fbf7)
+        ;
+
+        
+    
+    
+            feature_group_e7eface1b38abcda4ee4e7560cf93f2e.addTo(map_21f015418fba1795834325319fff4085);
+        
+    
+            var feature_group_6e77e52d72791d7a001cdd66a09f77d5 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_f4643f6b3d2f92d095ad7236c9c5c999 = L.marker(
+                [-7.1198329, -34.8387362],
+                {}
+            ).addTo(feature_group_6e77e52d72791d7a001cdd66a09f77d5);
+        
+    
+            var icon_28e8dd5787b3a9bd14c084fb2c514daf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_f4643f6b3d2f92d095ad7236c9c5c999.setIcon(icon_28e8dd5787b3a9bd14c084fb2c514daf);
+        
+    
+        var popup_733c73f562e29ba9a2f5f9b13d419e22 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fa2fe4c1c39ac0181906e0649b0f74a4 = $(`<div id="html_fa2fe4c1c39ac0181906e0649b0f74a4" style="width: 100.0%; height: 100.0%;">             <b>Restaurante Lagulla</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Pres. Epitácio Pessoa, 3500 - Miramar, João Pessoa<br>             </div>`)[0];
+                popup_733c73f562e29ba9a2f5f9b13d419e22.setContent(html_fa2fe4c1c39ac0181906e0649b0f74a4);
+            
+        
+
+        marker_f4643f6b3d2f92d095ad7236c9c5c999.bindPopup(popup_733c73f562e29ba9a2f5f9b13d419e22)
+        ;
+
+        
+    
+    
+            var marker_3bcd0ca4a9377828d301c5abeae0ecc8 = L.marker(
+                [-7.1198047, -34.8373029],
+                {}
+            ).addTo(feature_group_6e77e52d72791d7a001cdd66a09f77d5);
+        
+    
+            var icon_0303128c9dab99bcadae3b093ab9586c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_3bcd0ca4a9377828d301c5abeae0ecc8.setIcon(icon_0303128c9dab99bcadae3b093ab9586c);
+        
+    
+        var popup_b0010b22c86e15961f64b035de3c80c3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_90faa7c3aaef0d8c293cbbb1c8d80b49 = $(`<div id="html_90faa7c3aaef0d8c293cbbb1c8d80b49" style="width: 100.0%; height: 100.0%;">             <b>Dom Carlos Restaurante</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Pres. Epitácio Pessoa, 3664 - Miramar, João Pessoa<br>             </div>`)[0];
+                popup_b0010b22c86e15961f64b035de3c80c3.setContent(html_90faa7c3aaef0d8c293cbbb1c8d80b49);
+            
+        
+
+        marker_3bcd0ca4a9377828d301c5abeae0ecc8.bindPopup(popup_b0010b22c86e15961f64b035de3c80c3)
+        ;
+
+        
+    
+    
+            var marker_01ad0e4131ee11738e39ebbd19e8e3e0 = L.marker(
+                [-7.121168699999999, -34.8431905],
+                {}
+            ).addTo(feature_group_6e77e52d72791d7a001cdd66a09f77d5);
+        
+    
+            var icon_4df0b660f650faecc38c4f85e2339edc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_01ad0e4131ee11738e39ebbd19e8e3e0.setIcon(icon_4df0b660f650faecc38c4f85e2339edc);
+        
+    
+        var popup_515911879348015676a253071a7e55a1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0b78e6cb7d134666cd2111530fed346b = $(`<div id="html_0b78e6cb7d134666cd2111530fed346b" style="width: 100.0%; height: 100.0%;">             <b>Restaurante San Sun Tambauzinho</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: R. Maj. Salustino Ribeiro, 178 - Tambauzinho, João Pessoa<br>             </div>`)[0];
+                popup_515911879348015676a253071a7e55a1.setContent(html_0b78e6cb7d134666cd2111530fed346b);
+            
+        
+
+        marker_01ad0e4131ee11738e39ebbd19e8e3e0.bindPopup(popup_515911879348015676a253071a7e55a1)
+        ;
+
+        
+    
+    
+            var marker_29fa9df3807c33ab663f1cac24fe302d = L.marker(
+                [-7.1236739, -34.840578],
+                {}
+            ).addTo(feature_group_6e77e52d72791d7a001cdd66a09f77d5);
+        
+    
+            var icon_2f38239fc2ef75910dcb7b8e8d753d2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_29fa9df3807c33ab663f1cac24fe302d.setIcon(icon_2f38239fc2ef75910dcb7b8e8d753d2c);
+        
+    
+        var popup_4ca476dfefabbdf524e793face667598 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f632b019b5a09e62ecc9abd44f9c3e72 = $(`<div id="html_f632b019b5a09e62ecc9abd44f9c3e72" style="width: 100.0%; height: 100.0%;">             <b>Seu Almoço</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Casa, Portão Branco - Rua Evaldo Wanderley, 780 - Miramar, João Pessoa<br>             </div>`)[0];
+                popup_4ca476dfefabbdf524e793face667598.setContent(html_f632b019b5a09e62ecc9abd44f9c3e72);
+            
+        
+
+        marker_29fa9df3807c33ab663f1cac24fe302d.bindPopup(popup_4ca476dfefabbdf524e793face667598)
+        ;
+
+        
+    
+    
+            feature_group_6e77e52d72791d7a001cdd66a09f77d5.addTo(map_21f015418fba1795834325319fff4085);
+        
+    
+            var layer_control_bb8e9508e5f6146b507c9902daeb8ab2_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_6aa3fd7c069c5c207d06e49e20dc322e,
+                },
+                overlays :  {
+                    "Pr\u00f3ximos: Sa\u00fade" : feature_group_2d8b0ccb8436c6b94351357154a681ca,
+                    "Pr\u00f3ximos: Educa\u00e7\u00e3o" : feature_group_faf99c768d8d81f077208af929cde36e,
+                    "Pr\u00f3ximos: Com\u00e9rcio" : feature_group_4fe8f97d88cd98a8456c3ed6c68b709f,
+                    "Pr\u00f3ximos: Servi\u00e7os" : feature_group_6c99c2436fdc8877f81bc3ac17017844,
+                    "Pr\u00f3ximos: Lazer/Fitness" : feature_group_e7eface1b38abcda4ee4e7560cf93f2e,
+                    "Pr\u00f3ximos: Alimenta\u00e7\u00e3o" : feature_group_6e77e52d72791d7a001cdd66a09f77d5,
+                },
+            };
+            let layer_control_bb8e9508e5f6146b507c9902daeb8ab2 = L.control.layers(
+                layer_control_bb8e9508e5f6146b507c9902daeb8ab2_layers.base_layers,
+                layer_control_bb8e9508e5f6146b507c9902daeb8ab2_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_21f015418fba1795834325319fff4085);
+
+        
+</script>
+</html>
