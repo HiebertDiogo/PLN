@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8f5e3436afa8776ad0e2b0deed9e738c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8f5e3436afa8776ad0e2b0deed9e738c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8f5e3436afa8776ad0e2b0deed9e738c = L.map(
+                "map_8f5e3436afa8776ad0e2b0deed9e738c",
+                {
+                    center: [-7.1291331, -34.8303962],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cc93d7d682a33ae37df270d41b447da2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_cc93d7d682a33ae37df270d41b447da2.addTo(map_8f5e3436afa8776ad0e2b0deed9e738c);
+        
+    
+            var marker_203fa7bee9ecb97b5022f7e17cf1da74 = L.marker(
+                [-7.1291331, -34.8303962],
+                {}
+            ).addTo(map_8f5e3436afa8776ad0e2b0deed9e738c);
+        
+    
+            var icon_3f50f51477fc60e0c7c550a064b99aa9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_203fa7bee9ecb97b5022f7e17cf1da74.setIcon(icon_3f50f51477fc60e0c7c550a064b99aa9);
+        
+    
+        var popup_86d41e319913e9388a0541e22985bf6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9481d7a7c96408523419dd6f4d04355c = $(`<div id="html_9481d7a7c96408523419dd6f4d04355c" style="width: 100.0%; height: 100.0%;">RESIDÊNCIA: <b>Edifício Next Towers</b><br>Endereço: Edifício Next Towers - R. Iracema Guedes Lins, 430 - Altiplano Cabo Branco, João Pessoa - PB, 58046-135, Brasil</div>`)[0];
+                popup_86d41e319913e9388a0541e22985bf6b.setContent(html_9481d7a7c96408523419dd6f4d04355c);
+            
+        
+
+        marker_203fa7bee9ecb97b5022f7e17cf1da74.bindPopup(popup_86d41e319913e9388a0541e22985bf6b)
+        ;
+
+        
+    
+    
+            var feature_group_9552e2366d0ccc55c881d6f41540e998 = L.featureGroup(
+                {}
+            );
+        
+    
+            feature_group_9552e2366d0ccc55c881d6f41540e998.addTo(map_8f5e3436afa8776ad0e2b0deed9e738c);
+        
+    
+            var feature_group_9a7fec29db4ad8cf7c2b67a83e8b4a1d = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_aad7e0a179d90dad7a5d39ae5607e41f = L.marker(
+                [-7.125111899999999, -34.826258],
+                {}
+            ).addTo(feature_group_9a7fec29db4ad8cf7c2b67a83e8b4a1d);
+        
+    
+            var icon_d818a047928cd6d3a6646b985c2c08dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_aad7e0a179d90dad7a5d39ae5607e41f.setIcon(icon_d818a047928cd6d3a6646b985c2c08dc);
+        
+    
+        var popup_0ccb59dc429f526f04d35fcf614be1c5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_341f9f36f2b91b1e891a7023674bb5f4 = $(`<div id="html_341f9f36f2b91b1e891a7023674bb5f4" style="width: 100.0%; height: 100.0%;">             <b>Farmácia Pague Menos</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: R. Dr. Frutuoso Dantas, 200 - Cabo Branco, João Pessoa<br>             </div>`)[0];
+                popup_0ccb59dc429f526f04d35fcf614be1c5.setContent(html_341f9f36f2b91b1e891a7023674bb5f4);
+            
+        
+
+        marker_aad7e0a179d90dad7a5d39ae5607e41f.bindPopup(popup_0ccb59dc429f526f04d35fcf614be1c5)
+        ;
+
+        
+    
+    
+            var marker_c1de7569fc9659daf32306e6a3ce70c6 = L.marker(
+                [-7.1336549, -34.8293331],
+                {}
+            ).addTo(feature_group_9a7fec29db4ad8cf7c2b67a83e8b4a1d);
+        
+    
+            var icon_6bef10b73207a3f4de5ddac82a5ef8ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c1de7569fc9659daf32306e6a3ce70c6.setIcon(icon_6bef10b73207a3f4de5ddac82a5ef8ed);
+        
+    
+        var popup_5e0079f0233620d9fd08ff501d144445 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bbd71011aaf0cc01f2d2246c6897a025 = $(`<div id="html_bbd71011aaf0cc01f2d2246c6897a025" style="width: 100.0%; height: 100.0%;">             <b>REDEPHARMA</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: R. Helena Freire, 553 - Altiplano Cabo Branco, João Pessoa<br>             </div>`)[0];
+                popup_5e0079f0233620d9fd08ff501d144445.setContent(html_bbd71011aaf0cc01f2d2246c6897a025);
+            
+        
+
+        marker_c1de7569fc9659daf32306e6a3ce70c6.bindPopup(popup_5e0079f0233620d9fd08ff501d144445)
+        ;
+
+        
+    
+    
+            var marker_86de9dad2d82bee8b150fa41704926d7 = L.marker(
+                [-7.1253435, -34.8284117],
+                {}
+            ).addTo(feature_group_9a7fec29db4ad8cf7c2b67a83e8b4a1d);
+        
+    
+            var icon_e38753b23f6d7968fb743f56a08e2c02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_86de9dad2d82bee8b150fa41704926d7.setIcon(icon_e38753b23f6d7968fb743f56a08e2c02);
+        
+    
+        var popup_c93424cce0cd3d180b566b7c4b25324d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_95b8493b9f61e7b21bfa681bb3c6d9a6 = $(`<div id="html_95b8493b9f61e7b21bfa681bb3c6d9a6" style="width: 100.0%; height: 100.0%;">             <b>Drogasil</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: Av. Min. José Américo de Almeida, 4902 - Altiplano Cabo Branco, João Pessoa<br>             </div>`)[0];
+                popup_c93424cce0cd3d180b566b7c4b25324d.setContent(html_95b8493b9f61e7b21bfa681bb3c6d9a6);
+            
+        
+
+        marker_86de9dad2d82bee8b150fa41704926d7.bindPopup(popup_c93424cce0cd3d180b566b7c4b25324d)
+        ;
+
+        
+    
+    
+            var marker_5c74d555f085b6431c6702d8b94bf757 = L.marker(
+                [-7.133523899999999, -34.8293485],
+                {}
+            ).addTo(feature_group_9a7fec29db4ad8cf7c2b67a83e8b4a1d);
+        
+    
+            var icon_2078223996740f28a8de0765b371d9b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5c74d555f085b6431c6702d8b94bf757.setIcon(icon_2078223996740f28a8de0765b371d9b6);
+        
+    
+        var popup_7958683c8c655e96b3a495088c114a13 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_83d796d7d748df17b3ceabddb1e26d5e = $(`<div id="html_83d796d7d748df17b3ceabddb1e26d5e" style="width: 100.0%; height: 100.0%;">             <b>Condomínio Residencial Parque Jardim Do Mar - Rua Maurício de Araújo Gama Filho - Portal do Sol, João Pessoa - PB</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: R. Helena Freire, 575 - Altiplano Cabo Branco, João Pessoa<br>             </div>`)[0];
+                popup_7958683c8c655e96b3a495088c114a13.setContent(html_83d796d7d748df17b3ceabddb1e26d5e);
+            
+        
+
+        marker_5c74d555f085b6431c6702d8b94bf757.bindPopup(popup_7958683c8c655e96b3a495088c114a13)
+        ;
+
+        
+    
+    
+            var marker_9c0f85db5c2e3140a0d33795f19e53bc = L.marker(
+                [-7.133035, -34.8288022],
+                {}
+            ).addTo(feature_group_9a7fec29db4ad8cf7c2b67a83e8b4a1d);
+        
+    
+            var icon_9c7fc2be75e714f6cc210f3f145dd0a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9c0f85db5c2e3140a0d33795f19e53bc.setIcon(icon_9c7fc2be75e714f6cc210f3f145dd0a7);
+        
+    
+        var popup_d7b0692462696c555d788e188f05ffbd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_362e74ce7c1a8b4c97b5e470cf6e7beb = $(`<div id="html_362e74ce7c1a8b4c97b5e470cf6e7beb" style="width: 100.0%; height: 100.0%;">             <b>IMUNOPHARMA - Farmácia</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: Empresarial Hyde Park - R. Emílio de Araújo Chaves, 525 - Sala 13 - Altiplano Cabo Branco, João Pessoa<br>             </div>`)[0];
+                popup_d7b0692462696c555d788e188f05ffbd.setContent(html_362e74ce7c1a8b4c97b5e470cf6e7beb);
+            
+        
+
+        marker_9c0f85db5c2e3140a0d33795f19e53bc.bindPopup(popup_d7b0692462696c555d788e188f05ffbd)
+        ;
+
+        
+    
+    
+            var marker_09124be42dae015d6b2b07596a48c52c = L.marker(
+                [-7.1304684, -34.8258766],
+                {}
+            ).addTo(feature_group_9a7fec29db4ad8cf7c2b67a83e8b4a1d);
+        
+    
+            var icon_6582a80169ce2d893559b6a4af2c70ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_09124be42dae015d6b2b07596a48c52c.setIcon(icon_6582a80169ce2d893559b6a4af2c70ca);
+        
+    
+        var popup_5dac20e6670be22135460f20d416d6bd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c79f729514131b2cf1f45a9c79ee1de6 = $(`<div id="html_c79f729514131b2cf1f45a9c79ee1de6" style="width: 100.0%; height: 100.0%;">             <b>Roval Farmácia de Manipulação Pátio Altiplano: Suplementos, Chás, Nutrição, PB</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: R. Poe. Targino Teixeira, 251 - Altiplano Cabo Branco, João Pessoa<br>             </div>`)[0];
+                popup_5dac20e6670be22135460f20d416d6bd.setContent(html_c79f729514131b2cf1f45a9c79ee1de6);
+            
+        
+
+        marker_09124be42dae015d6b2b07596a48c52c.bindPopup(popup_5dac20e6670be22135460f20d416d6bd)
+        ;
+
+        
+    
+    
+            var marker_6a9d891f24c8ae37e39cdf17bec90f9d = L.marker(
+                [-7.1333628, -34.82934],
+                {}
+            ).addTo(feature_group_9a7fec29db4ad8cf7c2b67a83e8b4a1d);
+        
+    
+            var icon_5a499b5c6c51130ae496546136c9371a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6a9d891f24c8ae37e39cdf17bec90f9d.setIcon(icon_5a499b5c6c51130ae496546136c9371a);
+        
+    
+        var popup_653529048163fc1f6f94b9b68cc4cf04 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_804ef6974e60f8217fe66297975b13ed = $(`<div id="html_804ef6974e60f8217fe66297975b13ed" style="width: 100.0%; height: 100.0%;">             <b>DROGASIL FARMACIA</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: R. Helena Freire, 597 - Altiplano Cabo Branco, João Pessoa<br>             </div>`)[0];
+                popup_653529048163fc1f6f94b9b68cc4cf04.setContent(html_804ef6974e60f8217fe66297975b13ed);
+            
+        
+
+        marker_6a9d891f24c8ae37e39cdf17bec90f9d.bindPopup(popup_653529048163fc1f6f94b9b68cc4cf04)
+        ;
+
+        
+    
+    
+            feature_group_9a7fec29db4ad8cf7c2b67a83e8b4a1d.addTo(map_8f5e3436afa8776ad0e2b0deed9e738c);
+        
+    
+            var feature_group_beab2e88ebd18d104da738ca4527a775 = L.featureGroup(
+                {}
+            );
+        
+    
+            feature_group_beab2e88ebd18d104da738ca4527a775.addTo(map_8f5e3436afa8776ad0e2b0deed9e738c);
+        
+    
+            var feature_group_518a4c1644226ec6a6b6e7ee6df69eb0 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_0d3858e8281112533aec332b492b9293 = L.marker(
+                [-7.1344895, -34.8278792],
+                {}
+            ).addTo(feature_group_518a4c1644226ec6a6b6e7ee6df69eb0);
+        
+    
+            var icon_40c376872e62273ce201b79df4044c75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_0d3858e8281112533aec332b492b9293.setIcon(icon_40c376872e62273ce201b79df4044c75);
+        
+    
+        var popup_4946551efd0ecf0649e20786bf9b044d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e56f6c4ba480922da94819e5b32425ea = $(`<div id="html_e56f6c4ba480922da94819e5b32425ea" style="width: 100.0%; height: 100.0%;">             <b>Escola Estadual de Educação Infantil e Ensino Fundamental Padre Roma</b><br>             Tipo: Educação (school)<br>             Endereço: Conj. Altiplano Cabo Branco, João Pessoa<br>             </div>`)[0];
+                popup_4946551efd0ecf0649e20786bf9b044d.setContent(html_e56f6c4ba480922da94819e5b32425ea);
+            
+        
+
+        marker_0d3858e8281112533aec332b492b9293.bindPopup(popup_4946551efd0ecf0649e20786bf9b044d)
+        ;
+
+        
+    
+    
+            var marker_4f5232bcc05212a725427e06890fb6fd = L.marker(
+                [-7.134673599999999, -34.8287233],
+                {}
+            ).addTo(feature_group_518a4c1644226ec6a6b6e7ee6df69eb0);
+        
+    
+            var icon_2ef0bda671cc274e049cc0c32df522e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_4f5232bcc05212a725427e06890fb6fd.setIcon(icon_2ef0bda671cc274e049cc0c32df522e8);
+        
+    
+        var popup_28641e0388a2d4ee5b195f9512d37392 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2afe5b1fde9d412f0528544c8485ea2f = $(`<div id="html_2afe5b1fde9d412f0528544c8485ea2f" style="width: 100.0%; height: 100.0%;">             <b>Escola Espaço Infantil Girassol</b><br>             Tipo: Educação (school)<br>             Endereço: Rua: Helena Freire, 434 - Altiplano Cabo Branco, João Pessoa<br>             </div>`)[0];
+                popup_28641e0388a2d4ee5b195f9512d37392.setContent(html_2afe5b1fde9d412f0528544c8485ea2f);
+            
+        
+
+        marker_4f5232bcc05212a725427e06890fb6fd.bindPopup(popup_28641e0388a2d4ee5b195f9512d37392)
+        ;
+
+        
+    
+    
+            var marker_288a5b9b0c7810131c8847dbebe315cf = L.marker(
+                [-7.1302954, -34.8259638],
+                {}
+            ).addTo(feature_group_518a4c1644226ec6a6b6e7ee6df69eb0);
+        
+    
+            var icon_b2311634a7f6e92a517f31981a7ba673 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_288a5b9b0c7810131c8847dbebe315cf.setIcon(icon_b2311634a7f6e92a517f31981a7ba673);
+        
+    
+        var popup_8fbacf5e3070beaf4a4c99562a19ff9c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_308039d2ead5e8a6c60a33f3a3792e1c = $(`<div id="html_308039d2ead5e8a6c60a33f3a3792e1c" style="width: 100.0%; height: 100.0%;">             <b>Squalis - Educação, Pesquisa e Tecnologia</b><br>             Tipo: Educação (university)<br>             Endereço: R. Poe. Targino Teixeira, Sala 60 - Lot. Panoramica I e II, João Pessoa<br>             </div>`)[0];
+                popup_8fbacf5e3070beaf4a4c99562a19ff9c.setContent(html_308039d2ead5e8a6c60a33f3a3792e1c);
+            
+        
+
+        marker_288a5b9b0c7810131c8847dbebe315cf.bindPopup(popup_8fbacf5e3070beaf4a4c99562a19ff9c)
+        ;
+
+        
+    
+    
+            feature_group_518a4c1644226ec6a6b6e7ee6df69eb0.addTo(map_8f5e3436afa8776ad0e2b0deed9e738c);
+        
+    
+            var feature_group_f4e1596b9a8d983ef671135fe2b66739 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_55126ecb5f64503fd26477f9fabb325b = L.marker(
+                [-7.125070300000001, -34.8259366],
+                {}
+            ).addTo(feature_group_f4e1596b9a8d983ef671135fe2b66739);
+        
+    
+            var icon_5bc0453c08252ceda937ea30050435c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_55126ecb5f64503fd26477f9fabb325b.setIcon(icon_5bc0453c08252ceda937ea30050435c8);
+        
+    
+        var popup_e199ab5d9432e698742813ead3319222 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5ef46bf171ec263fa93dc9a67ad289ec = $(`<div id="html_5ef46bf171ec263fa93dc9a67ad289ec" style="width: 100.0%; height: 100.0%;">             <b>Mercado Jampa 24 Horas</b><br>             Tipo: Comércio (supermarket)<br>             Endereço: Av. Monsenhor Odilon Coutinho, 235 - Cabo Branco, João Pessoa<br>             </div>`)[0];
+                popup_e199ab5d9432e698742813ead3319222.setContent(html_5ef46bf171ec263fa93dc9a67ad289ec);
+            
+        
+
+        marker_55126ecb5f64503fd26477f9fabb325b.bindPopup(popup_e199ab5d9432e698742813ead3319222)
+        ;
+
+        
+    
+    
+            var marker_999c3df04909319a43dc3f62ca7840c1 = L.marker(
+                [-7.1333138, -34.8280267],
+                {}
+            ).addTo(feature_group_f4e1596b9a8d983ef671135fe2b66739);
+        
+    
+            var icon_8345d27de953dc0aebcfe9d80fe702f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_999c3df04909319a43dc3f62ca7840c1.setIcon(icon_8345d27de953dc0aebcfe9d80fe702f6);
+        
+    
+        var popup_0fdd15b6d84ecfdbb86f08c4eab5db81 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e0811ea35325424b97f55156087d4a98 = $(`<div id="html_e0811ea35325424b97f55156087d4a98" style="width: 100.0%; height: 100.0%;">             <b>Supermercado Litoral Altiplano</b><br>             Tipo: Comércio (supermarket)<br>             Endereço: R. Orlando di Cavalcanti Villar, 51 - Altiplano Cabo Branco, João Pessoa<br>             </div>`)[0];
+                popup_0fdd15b6d84ecfdbb86f08c4eab5db81.setContent(html_e0811ea35325424b97f55156087d4a98);
+            
+        
+
+        marker_999c3df04909319a43dc3f62ca7840c1.bindPopup(popup_0fdd15b6d84ecfdbb86f08c4eab5db81)
+        ;
+
+        
+    
+    
+            var marker_1f8d5ad21e401b430c1f872cd76962ec = L.marker(
+                [-7.1255497, -34.8275771],
+                {}
+            ).addTo(feature_group_f4e1596b9a8d983ef671135fe2b66739);
+        
+    
+            var icon_81c8dfad8c5a4ad670ce243572b70b43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1f8d5ad21e401b430c1f872cd76962ec.setIcon(icon_81c8dfad8c5a4ad670ce243572b70b43);
+        
+    
+        var popup_f0cc5c9dd5594c15925e149b1bf69992 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ca3d8021fdeec2801d7ae3268a3e0611 = $(`<div id="html_ca3d8021fdeec2801d7ae3268a3e0611" style="width: 100.0%; height: 100.0%;">             <b>Mercadinho Cabo Branco</b><br>             Tipo: Comércio (supermarket)<br>             Endereço: R. Desportista José Eduardo de Holanda, 1483 - Cabo Branco, João Pessoa<br>             </div>`)[0];
+                popup_f0cc5c9dd5594c15925e149b1bf69992.setContent(html_ca3d8021fdeec2801d7ae3268a3e0611);
+            
+        
+
+        marker_1f8d5ad21e401b430c1f872cd76962ec.bindPopup(popup_f0cc5c9dd5594c15925e149b1bf69992)
+        ;
+
+        
+    
+    
+            var marker_22d43a047fe6c1575d19c53e3886525d = L.marker(
+                [-7.127979000000001, -34.8257474],
+                {}
+            ).addTo(feature_group_f4e1596b9a8d983ef671135fe2b66739);
+        
+    
+            var icon_d9dd3ddb43e26816b73ec86ea82169bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_22d43a047fe6c1575d19c53e3886525d.setIcon(icon_d9dd3ddb43e26816b73ec86ea82169bc);
+        
+    
+        var popup_3e19e0392f643b6e1d3065bef6e603af = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4897b91ce33fc4473cdea2097354fc56 = $(`<div id="html_4897b91ce33fc4473cdea2097354fc56" style="width: 100.0%; height: 100.0%;">             <b>Mercadinho Bom Jesus</b><br>             Tipo: Comércio (supermarket)<br>             Endereço: R. Dr. Frutuoso Dantas, 1597 - Cabo Branco, João Pessoa<br>             </div>`)[0];
+                popup_3e19e0392f643b6e1d3065bef6e603af.setContent(html_4897b91ce33fc4473cdea2097354fc56);
+            
+        
+
+        marker_22d43a047fe6c1575d19c53e3886525d.bindPopup(popup_3e19e0392f643b6e1d3065bef6e603af)
+        ;
+
+        
+    
+    
+            var marker_c36bcb3e287c8157b3ec2e71bd601b63 = L.marker(
+                [-7.130090800000001, -34.82853160000001],
+                {}
+            ).addTo(feature_group_f4e1596b9a8d983ef671135fe2b66739);
+        
+    
+            var icon_28c7e180b843006f5ca0fd788b2adfba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c36bcb3e287c8157b3ec2e71bd601b63.setIcon(icon_28c7e180b843006f5ca0fd788b2adfba);
+        
+    
+        var popup_ffc7321188f9fec22cfa0c7476d2de13 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0899fe2aeca4de1aa53f8f329bee0ddd = $(`<div id="html_0899fe2aeca4de1aa53f8f329bee0ddd" style="width: 100.0%; height: 100.0%;">             <b>PORTO DE FRUTOS **ORGÂNICO**</b><br>             Tipo: Comércio (supermarket)<br>             Endereço: R. Abelardo da Silva Guimarães Barreto, 148 - Altiplano Cabo Branco, João Pessoa<br>             </div>`)[0];
+                popup_ffc7321188f9fec22cfa0c7476d2de13.setContent(html_0899fe2aeca4de1aa53f8f329bee0ddd);
+            
+        
+
+        marker_c36bcb3e287c8157b3ec2e71bd601b63.bindPopup(popup_ffc7321188f9fec22cfa0c7476d2de13)
+        ;
+
+        
+    
+    
+            feature_group_f4e1596b9a8d983ef671135fe2b66739.addTo(map_8f5e3436afa8776ad0e2b0deed9e738c);
+        
+    
+            var feature_group_409506f0a8d4c78aa38f3f863067ded2 = L.featureGroup(
+                {}
+            );
+        
+    
+            feature_group_409506f0a8d4c78aa38f3f863067ded2.addTo(map_8f5e3436afa8776ad0e2b0deed9e738c);
+        
+    
+            var feature_group_e61dd18d943cb8c80f32167470cf91a1 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_4e3db9eac7964c9d55a7cdc0398c5408 = L.marker(
+                [-7.1300964, -34.8260612],
+                {}
+            ).addTo(feature_group_e61dd18d943cb8c80f32167470cf91a1);
+        
+    
+            var icon_b571ee7d8722191c19c94aa890716cf8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_4e3db9eac7964c9d55a7cdc0398c5408.setIcon(icon_b571ee7d8722191c19c94aa890716cf8);
+        
+    
+        var popup_cd285218cc5cd65b4bd8ca360bf3aa62 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b875097551bd7761d1d879514013a34c = $(`<div id="html_b875097551bd7761d1d879514013a34c" style="width: 100.0%; height: 100.0%;">             <b>Academia Korpus Altiplano</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: R. Poe. Targino Teixeira, 251 - Lot. Panoramica I e II, João Pessoa<br>             </div>`)[0];
+                popup_cd285218cc5cd65b4bd8ca360bf3aa62.setContent(html_b875097551bd7761d1d879514013a34c);
+            
+        
+
+        marker_4e3db9eac7964c9d55a7cdc0398c5408.bindPopup(popup_cd285218cc5cd65b4bd8ca360bf3aa62)
+        ;
+
+        
+    
+    
+            var marker_a1393a4920a015da42415c1bd70dc6de = L.marker(
+                [-7.1246503, -34.8249413],
+                {}
+            ).addTo(feature_group_e61dd18d943cb8c80f32167470cf91a1);
+        
+    
+            var icon_271e3bd6a33f1e9287b4f6a2088663e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_a1393a4920a015da42415c1bd70dc6de.setIcon(icon_271e3bd6a33f1e9287b4f6a2088663e5);
+        
+    
+        var popup_f8034a9c45d9665ca18fc284c91adc5f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bf76861c3c4525a8f1f59b3a8f5262cc = $(`<div id="html_bf76861c3c4525a8f1f59b3a8f5262cc" style="width: 100.0%; height: 100.0%;">             <b>Academia Smart Fit - Tambaú</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Monsenhor Odilon Coutinho, 128 - Cabo Branco, João Pessoa<br>             </div>`)[0];
+                popup_f8034a9c45d9665ca18fc284c91adc5f.setContent(html_bf76861c3c4525a8f1f59b3a8f5262cc);
+            
+        
+
+        marker_a1393a4920a015da42415c1bd70dc6de.bindPopup(popup_f8034a9c45d9665ca18fc284c91adc5f)
+        ;
+
+        
+    
+    
+            var marker_20e8d4e1fc274c6af292525b38e64276 = L.marker(
+                [-7.1339131, -34.8261157],
+                {}
+            ).addTo(feature_group_e61dd18d943cb8c80f32167470cf91a1);
+        
+    
+            var icon_7013735a4263a129821079012b563786 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_20e8d4e1fc274c6af292525b38e64276.setIcon(icon_7013735a4263a129821079012b563786);
+        
+    
+        var popup_19a3e5aca736aa689168b27dc3c42083 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fb1c57d5a8b7cf05288426a24023bc24 = $(`<div id="html_fb1c57d5a8b7cf05288426a24023bc24" style="width: 100.0%; height: 100.0%;">             <b>Praça Alliance</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Lot. Jardim Bela Vista, João Pessoa<br>             </div>`)[0];
+                popup_19a3e5aca736aa689168b27dc3c42083.setContent(html_fb1c57d5a8b7cf05288426a24023bc24);
+            
+        
+
+        marker_20e8d4e1fc274c6af292525b38e64276.bindPopup(popup_19a3e5aca736aa689168b27dc3c42083)
+        ;
+
+        
+    
+    
+            var marker_ab85c7967d8c9bb510d092537892b7c2 = L.marker(
+                [-7.1325642, -34.8316947],
+                {}
+            ).addTo(feature_group_e61dd18d943cb8c80f32167470cf91a1);
+        
+    
+            var icon_cdd2ca2de07c46fdb4cb3afd4dfcb473 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_ab85c7967d8c9bb510d092537892b7c2.setIcon(icon_cdd2ca2de07c46fdb4cb3afd4dfcb473);
+        
+    
+        var popup_83e3957f19a00a510bee9c826759539f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a7963093e9becbc340d4d9f2135880ed = $(`<div id="html_a7963093e9becbc340d4d9f2135880ed" style="width: 100.0%; height: 100.0%;">             <b>Nature Balance</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: R. Bancário Elias Feliciano Madruga, 709 - Altiplano Cabo Branco, João Pessoa<br>             </div>`)[0];
+                popup_83e3957f19a00a510bee9c826759539f.setContent(html_a7963093e9becbc340d4d9f2135880ed);
+            
+        
+
+        marker_ab85c7967d8c9bb510d092537892b7c2.bindPopup(popup_83e3957f19a00a510bee9c826759539f)
+        ;
+
+        
+    
+    
+            feature_group_e61dd18d943cb8c80f32167470cf91a1.addTo(map_8f5e3436afa8776ad0e2b0deed9e738c);
+        
+    
+            var feature_group_109dc56d3c319db5c76ed7ccd8c37191 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_faba9f595712a440396f3036c8937a8c = L.marker(
+                [-7.129987700000001, -34.8273488],
+                {}
+            ).addTo(feature_group_109dc56d3c319db5c76ed7ccd8c37191);
+        
+    
+            var icon_5af5fc7dae083d5f8c90fcf97cdfe0a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_faba9f595712a440396f3036c8937a8c.setIcon(icon_5af5fc7dae083d5f8c90fcf97cdfe0a3);
+        
+    
+        var popup_c0d3627b558840f3c87d22242412bcc0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2cf0a9cbc2e7153b13d9e279fe73e4f7 = $(`<div id="html_2cf0a9cbc2e7153b13d9e279fe73e4f7" style="width: 100.0%; height: 100.0%;">             <b>Sky Restô Restaurante</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: R. Maria das Dores Souza, 58046-095 - Altiplano Cabo Branco, João Pessoa<br>             </div>`)[0];
+                popup_c0d3627b558840f3c87d22242412bcc0.setContent(html_2cf0a9cbc2e7153b13d9e279fe73e4f7);
+            
+        
+
+        marker_faba9f595712a440396f3036c8937a8c.bindPopup(popup_c0d3627b558840f3c87d22242412bcc0)
+        ;
+
+        
+    
+    
+            var marker_13609fd8f664de47c17048d1ea4ff1a1 = L.marker(
+                [-7.126707499999999, -34.825563],
+                {}
+            ).addTo(feature_group_109dc56d3c319db5c76ed7ccd8c37191);
+        
+    
+            var icon_8bbd6b45ec0a55db89f1a7b22f123417 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_13609fd8f664de47c17048d1ea4ff1a1.setIcon(icon_8bbd6b45ec0a55db89f1a7b22f123417);
+        
+    
+        var popup_6e2266c6e6a97ff6aa0a41b5f3062d7c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_602ed832a4c36157ca2cb64152faeea3 = $(`<div id="html_602ed832a4c36157ca2cb64152faeea3" style="width: 100.0%; height: 100.0%;">             <b>Jardim Cabo Branco</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Maria Elizabeth, 225 - Cabo Branco, João Pessoa<br>             </div>`)[0];
+                popup_6e2266c6e6a97ff6aa0a41b5f3062d7c.setContent(html_602ed832a4c36157ca2cb64152faeea3);
+            
+        
+
+        marker_13609fd8f664de47c17048d1ea4ff1a1.bindPopup(popup_6e2266c6e6a97ff6aa0a41b5f3062d7c)
+        ;
+
+        
+    
+    
+            var marker_de9bad78a4d85e1ae923136f20d16ca8 = L.marker(
+                [-7.1254408, -34.825897],
+                {}
+            ).addTo(feature_group_109dc56d3c319db5c76ed7ccd8c37191);
+        
+    
+            var icon_07d4147e591160f9a3186420cb9c95f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_de9bad78a4d85e1ae923136f20d16ca8.setIcon(icon_07d4147e591160f9a3186420cb9c95f1);
+        
+    
+        var popup_1d88d2b9746f4b99369bd1b195f5053b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e232a0a6486752a0e045b094103bdf53 = $(`<div id="html_e232a0a6486752a0e045b094103bdf53" style="width: 100.0%; height: 100.0%;">             <b>Taipa Restaurante</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Buarque, 210 - Cabo Branco, João Pessoa<br>             </div>`)[0];
+                popup_1d88d2b9746f4b99369bd1b195f5053b.setContent(html_e232a0a6486752a0e045b094103bdf53);
+            
+        
+
+        marker_de9bad78a4d85e1ae923136f20d16ca8.bindPopup(popup_1d88d2b9746f4b99369bd1b195f5053b)
+        ;
+
+        
+    
+    
+            var marker_557b6897f112e69d2145c099adfba84f = L.marker(
+                [-7.1297687, -34.8269027],
+                {}
+            ).addTo(feature_group_109dc56d3c319db5c76ed7ccd8c37191);
+        
+    
+            var icon_c937d640af7773bd655a24e64e4ba320 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_557b6897f112e69d2145c099adfba84f.setIcon(icon_c937d640af7773bd655a24e64e4ba320);
+        
+    
+        var popup_60f723075ad76ec53e4cb20ab8f2c8bb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dea7a73fc18be159db3b41cadc414022 = $(`<div id="html_dea7a73fc18be159db3b41cadc414022" style="width: 100.0%; height: 100.0%;">             <b>JOHN'S Grill Wine Salad</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: R. Ana Guedes De Vasconcelos, 81 - LOJA 07A e 07B - Altiplano Cabo Branco, João Pessoa<br>             </div>`)[0];
+                popup_60f723075ad76ec53e4cb20ab8f2c8bb.setContent(html_dea7a73fc18be159db3b41cadc414022);
+            
+        
+
+        marker_557b6897f112e69d2145c099adfba84f.bindPopup(popup_60f723075ad76ec53e4cb20ab8f2c8bb)
+        ;
+
+        
+    
+    
+            feature_group_109dc56d3c319db5c76ed7ccd8c37191.addTo(map_8f5e3436afa8776ad0e2b0deed9e738c);
+        
+    
+            var layer_control_6ee684329f04e39fb1b9ddb3e0615027_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_cc93d7d682a33ae37df270d41b447da2,
+                },
+                overlays :  {
+                    "Pr\u00f3ximos: Sa\u00fade" : feature_group_9a7fec29db4ad8cf7c2b67a83e8b4a1d,
+                    "Pr\u00f3ximos: Educa\u00e7\u00e3o" : feature_group_518a4c1644226ec6a6b6e7ee6df69eb0,
+                    "Pr\u00f3ximos: Com\u00e9rcio" : feature_group_f4e1596b9a8d983ef671135fe2b66739,
+                    "Pr\u00f3ximos: Servi\u00e7os" : feature_group_409506f0a8d4c78aa38f3f863067ded2,
+                    "Pr\u00f3ximos: Lazer/Fitness" : feature_group_e61dd18d943cb8c80f32167470cf91a1,
+                    "Pr\u00f3ximos: Alimenta\u00e7\u00e3o" : feature_group_109dc56d3c319db5c76ed7ccd8c37191,
+                },
+            };
+            let layer_control_6ee684329f04e39fb1b9ddb3e0615027 = L.control.layers(
+                layer_control_6ee684329f04e39fb1b9ddb3e0615027_layers.base_layers,
+                layer_control_6ee684329f04e39fb1b9ddb3e0615027_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_8f5e3436afa8776ad0e2b0deed9e738c);
+
+        
+</script>
+</html>

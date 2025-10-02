@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_904a46692ec468399404d4f7fdf4da81 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_904a46692ec468399404d4f7fdf4da81" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_904a46692ec468399404d4f7fdf4da81 = L.map(
+                "map_904a46692ec468399404d4f7fdf4da81",
+                {
+                    center: [-7.0674243, -34.84472179999999],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7bb9bf32aeb6e973cc9cfdc3752f6527 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_7bb9bf32aeb6e973cc9cfdc3752f6527.addTo(map_904a46692ec468399404d4f7fdf4da81);
+        
+    
+            var marker_2b4264a84e1eb238f374a5b6f9749f92 = L.marker(
+                [-7.0674243, -34.84472179999999],
+                {}
+            ).addTo(map_904a46692ec468399404d4f7fdf4da81);
+        
+    
+            var icon_dc781bdd85d877af961a6c41ee71edde = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2b4264a84e1eb238f374a5b6f9749f92.setIcon(icon_dc781bdd85d877af961a6c41ee71edde);
+        
+    
+        var popup_e6d87cc901babded5ad74d780333b830 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f183223ab907ac544b77ae3a0a53e448 = $(`<div id="html_f183223ab907ac544b77ae3a0a53e448" style="width: 100.0%; height: 100.0%;">RESIDÊNCIA: <b>Condomínio Residencial St. Tropez Residence</b><br>Endereço: R. Tertuliano Castro, 101 - Bessa, João Pessoa - PB, 58035-170, Brasil</div>`)[0];
+                popup_e6d87cc901babded5ad74d780333b830.setContent(html_f183223ab907ac544b77ae3a0a53e448);
+            
+        
+
+        marker_2b4264a84e1eb238f374a5b6f9749f92.bindPopup(popup_e6d87cc901babded5ad74d780333b830)
+        ;
+
+        
+    
+    
+            var feature_group_44e45ea5dd365b76791b45e27ea66217 = L.featureGroup(
+                {}
+            );
+        
+    
+            feature_group_44e45ea5dd365b76791b45e27ea66217.addTo(map_904a46692ec468399404d4f7fdf4da81);
+        
+    
+            var feature_group_d8513f45f8f3eb38d49b70b92a252d2e = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_c516bf5cbd3652cd6cd7cf1ac0d68b1e = L.marker(
+                [-7.0676438, -34.8433654],
+                {}
+            ).addTo(feature_group_d8513f45f8f3eb38d49b70b92a252d2e);
+        
+    
+            var icon_bfeacd11f5da5193af3433d99cbbbb0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c516bf5cbd3652cd6cd7cf1ac0d68b1e.setIcon(icon_bfeacd11f5da5193af3433d99cbbbb0d);
+        
+    
+        var popup_cb1f260af722b8b2d6d95a8814dcabea = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2265b8a0ca3cf8efac7e6c1b63ef39ba = $(`<div id="html_2265b8a0ca3cf8efac7e6c1b63ef39ba" style="width: 100.0%; height: 100.0%;">             <b>Drogasil</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: Av. Pres. Nilo Peçanha, 404 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_cb1f260af722b8b2d6d95a8814dcabea.setContent(html_2265b8a0ca3cf8efac7e6c1b63ef39ba);
+            
+        
+
+        marker_c516bf5cbd3652cd6cd7cf1ac0d68b1e.bindPopup(popup_cb1f260af722b8b2d6d95a8814dcabea)
+        ;
+
+        
+    
+    
+            var marker_d2ef73d479d7ee040df45c7009c79f74 = L.marker(
+                [-7.0668199, -34.8399155],
+                {}
+            ).addTo(feature_group_d8513f45f8f3eb38d49b70b92a252d2e);
+        
+    
+            var icon_e51135a626246d8eed459cfe5020fcc5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d2ef73d479d7ee040df45c7009c79f74.setIcon(icon_e51135a626246d8eed459cfe5020fcc5);
+        
+    
+        var popup_646c14c38bf541f00dfd43fcb66b02eb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d9f64624d25dd25cbdd984251f7913af = $(`<div id="html_d9f64624d25dd25cbdd984251f7913af" style="width: 100.0%; height: 100.0%;">             <b>Farmácia Pague Menos</b><br>             Tipo: Saúde (pharmacy)<br>             Endereço: Av. Pres. Afonso Pena, 769 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_646c14c38bf541f00dfd43fcb66b02eb.setContent(html_d9f64624d25dd25cbdd984251f7913af);
+            
+        
+
+        marker_d2ef73d479d7ee040df45c7009c79f74.bindPopup(popup_646c14c38bf541f00dfd43fcb66b02eb)
+        ;
+
+        
+    
+    
+            feature_group_d8513f45f8f3eb38d49b70b92a252d2e.addTo(map_904a46692ec468399404d4f7fdf4da81);
+        
+    
+            var feature_group_a54492884e8c5a43b2067f8057348d2c = L.featureGroup(
+                {}
+            );
+        
+    
+            feature_group_a54492884e8c5a43b2067f8057348d2c.addTo(map_904a46692ec468399404d4f7fdf4da81);
+        
+    
+            var feature_group_51152d289acec3e4832b69c122c6d306 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_11b178736a086d487459a9a51f67dc4d = L.marker(
+                [-7.072953399999999, -34.8480955],
+                {}
+            ).addTo(feature_group_51152d289acec3e4832b69c122c6d306);
+        
+    
+            var icon_482ede2367e79ebbe4f6931744a5fc00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_11b178736a086d487459a9a51f67dc4d.setIcon(icon_482ede2367e79ebbe4f6931744a5fc00);
+        
+    
+        var popup_d6f7b37f1a6c1f2cc05c0ac21081e7bc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_002d14be41157eb71122894dc4266b1c = $(`<div id="html_002d14be41157eb71122894dc4266b1c" style="width: 100.0%; height: 100.0%;">             <b>ESC MUNICIPAL PROFESSORA MARIA DAS GRAÇAS CARLOS REZENDE</b><br>             Tipo: Educação (school)<br>             Endereço: R. Severino Luís de França, SN - Jardim America, Cabedelo<br>             </div>`)[0];
+                popup_d6f7b37f1a6c1f2cc05c0ac21081e7bc.setContent(html_002d14be41157eb71122894dc4266b1c);
+            
+        
+
+        marker_11b178736a086d487459a9a51f67dc4d.bindPopup(popup_d6f7b37f1a6c1f2cc05c0ac21081e7bc)
+        ;
+
+        
+    
+    
+            var marker_bc591285a78a18f39e19269f6b897523 = L.marker(
+                [-7.0723455, -34.8427635],
+                {}
+            ).addTo(feature_group_51152d289acec3e4832b69c122c6d306);
+        
+    
+            var icon_1677e457b08b3f268b03b324340ad40b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_bc591285a78a18f39e19269f6b897523.setIcon(icon_1677e457b08b3f268b03b324340ad40b);
+        
+    
+        var popup_55216c6e68edf6f5ecb8fc800b915562 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4c4bf64e691cb72c49283a56066e86ea = $(`<div id="html_4c4bf64e691cb72c49283a56066e86ea" style="width: 100.0%; height: 100.0%;">             <b>CREI PROFESSORA ANTONIETA ARANHA DE MACEDO</b><br>             Tipo: Educação (school)<br>             Endereço: R. Irmão Antônio Reginaldo, s/n - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_55216c6e68edf6f5ecb8fc800b915562.setContent(html_4c4bf64e691cb72c49283a56066e86ea);
+            
+        
+
+        marker_bc591285a78a18f39e19269f6b897523.bindPopup(popup_55216c6e68edf6f5ecb8fc800b915562)
+        ;
+
+        
+    
+    
+            var marker_a2fa64041fc23dd88b9954505206e656 = L.marker(
+                [-7.064755399999999, -34.8419083],
+                {}
+            ).addTo(feature_group_51152d289acec3e4832b69c122c6d306);
+        
+    
+            var icon_6982d1166250c76285241a67db5cb18d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a2fa64041fc23dd88b9954505206e656.setIcon(icon_6982d1166250c76285241a67db5cb18d);
+        
+    
+        var popup_cf2d44ad5eeb8b6cc23fa47ee56235c2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b9481996507520d78443662b66ddafd6 = $(`<div id="html_b9481996507520d78443662b66ddafd6" style="width: 100.0%; height: 100.0%;">             <b>College Goal Education Network</b><br>             Tipo: Educação (school)<br>             Endereço: R. Maria Rosa Jacinto, 71 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_cf2d44ad5eeb8b6cc23fa47ee56235c2.setContent(html_b9481996507520d78443662b66ddafd6);
+            
+        
+
+        marker_a2fa64041fc23dd88b9954505206e656.bindPopup(popup_cf2d44ad5eeb8b6cc23fa47ee56235c2)
+        ;
+
+        
+    
+    
+            var marker_5f6c0b62f5f81337eceffef489647b24 = L.marker(
+                [-7.0646759, -34.8421946],
+                {}
+            ).addTo(feature_group_51152d289acec3e4832b69c122c6d306);
+        
+    
+            var icon_480bee6693da9d34255149e95fb90b9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_5f6c0b62f5f81337eceffef489647b24.setIcon(icon_480bee6693da9d34255149e95fb90b9b);
+        
+    
+        var popup_8c1320712eaef0756942080c2bb6930c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5b1ce644d463d94ee28dae66fd56e159 = $(`<div id="html_5b1ce644d463d94ee28dae66fd56e159" style="width: 100.0%; height: 100.0%;">             <b>Escola Meta kids</b><br>             Tipo: Educação (school)<br>             Endereço: R. Maria Rosa Jacinto, 86 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_8c1320712eaef0756942080c2bb6930c.setContent(html_5b1ce644d463d94ee28dae66fd56e159);
+            
+        
+
+        marker_5f6c0b62f5f81337eceffef489647b24.bindPopup(popup_8c1320712eaef0756942080c2bb6930c)
+        ;
+
+        
+    
+    
+            var marker_886379069aa34857da52d896de5948f8 = L.marker(
+                [-7.061903399999999, -34.8474144],
+                {}
+            ).addTo(feature_group_51152d289acec3e4832b69c122c6d306);
+        
+    
+            var icon_16fe0f611ad45f062eecba12c74597b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_886379069aa34857da52d896de5948f8.setIcon(icon_16fe0f611ad45f062eecba12c74597b9);
+        
+    
+        var popup_9478f65e7fb252123994d671899a8bb1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_596bb6e36e5b0130005a48297913e050 = $(`<div id="html_596bb6e36e5b0130005a48297913e050" style="width: 100.0%; height: 100.0%;">             <b>Reforço Nota 10 - Bessa</b><br>             Tipo: Educação (school)<br>             Endereço: R. Julieta Marinho Marsicano, n° 143 - AP. 102 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_9478f65e7fb252123994d671899a8bb1.setContent(html_596bb6e36e5b0130005a48297913e050);
+            
+        
+
+        marker_886379069aa34857da52d896de5948f8.bindPopup(popup_9478f65e7fb252123994d671899a8bb1)
+        ;
+
+        
+    
+    
+            var marker_b684016514ffcefa1c1704ef7de407dc = L.marker(
+                [-7.069552, -34.8440938],
+                {}
+            ).addTo(feature_group_51152d289acec3e4832b69c122c6d306);
+        
+    
+            var icon_bbecca6fd3470242836356ab21655156 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b684016514ffcefa1c1704ef7de407dc.setIcon(icon_bbecca6fd3470242836356ab21655156);
+        
+    
+        var popup_70ebc57e86e0d05bf691831e7a06728b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d2e937791504fdc4ff3f990263e1284d = $(`<div id="html_d2e937791504fdc4ff3f990263e1284d" style="width: 100.0%; height: 100.0%;">             <b>Cativar Casa do Saber</b><br>             Tipo: Educação (school)<br>             Endereço: R. Pastor José Ferreira da Silva, 21 - sala 402 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_70ebc57e86e0d05bf691831e7a06728b.setContent(html_d2e937791504fdc4ff3f990263e1284d);
+            
+        
+
+        marker_b684016514ffcefa1c1704ef7de407dc.bindPopup(popup_70ebc57e86e0d05bf691831e7a06728b)
+        ;
+
+        
+    
+    
+            var marker_ed55a210c64de87d907e16a60649d326 = L.marker(
+                [-7.0693695, -34.8473154],
+                {}
+            ).addTo(feature_group_51152d289acec3e4832b69c122c6d306);
+        
+    
+            var icon_9443165cd2646bcb82097ad1059582d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ed55a210c64de87d907e16a60649d326.setIcon(icon_9443165cd2646bcb82097ad1059582d4);
+        
+    
+        var popup_ab887fa017bb411da330d98c46c2f0eb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_098fd66922fc5b38c3ef5f6cef037255 = $(`<div id="html_098fd66922fc5b38c3ef5f6cef037255" style="width: 100.0%; height: 100.0%;">             <b>Interactive College Courses - Unit Bessa</b><br>             Tipo: Educação (school)<br>             Endereço: Av. Pres. Café Filho, 692 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_ab887fa017bb411da330d98c46c2f0eb.setContent(html_098fd66922fc5b38c3ef5f6cef037255);
+            
+        
+
+        marker_ed55a210c64de87d907e16a60649d326.bindPopup(popup_ab887fa017bb411da330d98c46c2f0eb)
+        ;
+
+        
+    
+    
+            var marker_2683b6b4d9eecd561ca9a89f8c70c58d = L.marker(
+                [-7.068292199999999, -34.84568660000001],
+                {}
+            ).addTo(feature_group_51152d289acec3e4832b69c122c6d306);
+        
+    
+            var icon_1c60f404cef234eba5f5ec090d9b6f1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_2683b6b4d9eecd561ca9a89f8c70c58d.setIcon(icon_1c60f404cef234eba5f5ec090d9b6f1a);
+        
+    
+        var popup_4edd50f70d051d1c253d664cefed0898 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0e369dc3eb5584fda0a772d8d1ad7691 = $(`<div id="html_0e369dc3eb5584fda0a772d8d1ad7691" style="width: 100.0%; height: 100.0%;">             <b>Escola Viver e Aprender</b><br>             Tipo: Educação (school)<br>             Endereço: Av. Pres. Nilo Peçanha, 675 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_4edd50f70d051d1c253d664cefed0898.setContent(html_0e369dc3eb5584fda0a772d8d1ad7691);
+            
+        
+
+        marker_2683b6b4d9eecd561ca9a89f8c70c58d.bindPopup(popup_4edd50f70d051d1c253d664cefed0898)
+        ;
+
+        
+    
+    
+            feature_group_51152d289acec3e4832b69c122c6d306.addTo(map_904a46692ec468399404d4f7fdf4da81);
+        
+    
+            var feature_group_068d4373fd7b865fe0ef1ecf116fae73 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_0891a55eae6f6ed25080054e3c676aa0 = L.marker(
+                [-7.067142199999999, -34.8411163],
+                {}
+            ).addTo(feature_group_068d4373fd7b865fe0ef1ecf116fae73);
+        
+    
+            var icon_da2158ea4e11737f6204f9f8164770a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0891a55eae6f6ed25080054e3c676aa0.setIcon(icon_da2158ea4e11737f6204f9f8164770a0);
+        
+    
+        var popup_44ec5bc1ddcf5789ce4a12fc28a90b2f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6c871ede8b4114b0a3de31732ede6a62 = $(`<div id="html_6c871ede8b4114b0a3de31732ede6a62" style="width: 100.0%; height: 100.0%;">             <b>Supermercado Arruda Bessa</b><br>             Tipo: Comércio (supermarket)<br>             Endereço: Av. Pres. Nilo Peçanha, 154 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_44ec5bc1ddcf5789ce4a12fc28a90b2f.setContent(html_6c871ede8b4114b0a3de31732ede6a62);
+            
+        
+
+        marker_0891a55eae6f6ed25080054e3c676aa0.bindPopup(popup_44ec5bc1ddcf5789ce4a12fc28a90b2f)
+        ;
+
+        
+    
+    
+            var marker_8b8c082ea52af05ef87eb90111831c3c = L.marker(
+                [-7.0638089, -34.848096],
+                {}
+            ).addTo(feature_group_068d4373fd7b865fe0ef1ecf116fae73);
+        
+    
+            var icon_4ed54684f0fea9fba0439ce64e692f9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8b8c082ea52af05ef87eb90111831c3c.setIcon(icon_4ed54684f0fea9fba0439ce64e692f9e);
+        
+    
+        var popup_3ed211fed73c4db7b6199a7ac563c3b4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d577fbc9aaffa4b35bb9916a532dead4 = $(`<div id="html_d577fbc9aaffa4b35bb9916a532dead4" style="width: 100.0%; height: 100.0%;">             <b>Mercadinho Rodrigues</b><br>             Tipo: Comércio (supermarket)<br>             Endereço: R. Pres. Washington Luís, 738 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_3ed211fed73c4db7b6199a7ac563c3b4.setContent(html_d577fbc9aaffa4b35bb9916a532dead4);
+            
+        
+
+        marker_8b8c082ea52af05ef87eb90111831c3c.bindPopup(popup_3ed211fed73c4db7b6199a7ac563c3b4)
+        ;
+
+        
+    
+    
+            var marker_c622c12696e308aa1533d8a9c169adfc = L.marker(
+                [-7.064497599999999, -34.8491899],
+                {}
+            ).addTo(feature_group_068d4373fd7b865fe0ef1ecf116fae73);
+        
+    
+            var icon_51593b81dcbafd0e9ab39cf1ee956727 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c622c12696e308aa1533d8a9c169adfc.setIcon(icon_51593b81dcbafd0e9ab39cf1ee956727);
+        
+    
+        var popup_a8e90dbcd5d2cd7f37af602fb5cf6690 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_76e5c6d4f3324c495ed946e95fb91ef7 = $(`<div id="html_76e5c6d4f3324c495ed946e95fb91ef7" style="width: 100.0%; height: 100.0%;">             <b>Mercadinho Estrela</b><br>             Tipo: Comércio (supermarket)<br>             Endereço: R. Pres. Washington Luís, 713 - Jardim America, Cabedelo<br>             </div>`)[0];
+                popup_a8e90dbcd5d2cd7f37af602fb5cf6690.setContent(html_76e5c6d4f3324c495ed946e95fb91ef7);
+            
+        
+
+        marker_c622c12696e308aa1533d8a9c169adfc.bindPopup(popup_a8e90dbcd5d2cd7f37af602fb5cf6690)
+        ;
+
+        
+    
+    
+            feature_group_068d4373fd7b865fe0ef1ecf116fae73.addTo(map_904a46692ec468399404d4f7fdf4da81);
+        
+    
+            var feature_group_26abbfff5fbe89e3bc5bf44e00bffc84 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_02957b258fba1f35620383eaae3f7b62 = L.marker(
+                [-7.0692433, -34.8495796],
+                {}
+            ).addTo(feature_group_26abbfff5fbe89e3bc5bf44e00bffc84);
+        
+    
+            var icon_379e4b5ec655bce14fee060eb3cf54d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_02957b258fba1f35620383eaae3f7b62.setIcon(icon_379e4b5ec655bce14fee060eb3cf54d4);
+        
+    
+        var popup_4ebd4eb1d71e72372181f917a084f3cb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ede59f1726079d102b905cd02bf61442 = $(`<div id="html_ede59f1726079d102b905cd02bf61442" style="width: 100.0%; height: 100.0%;">             <b>LARCO</b><br>             Tipo: Serviços (gas_station)<br>             Endereço: Av. Pres. Venceslau Braz - Jardim Beta, Cabedelo<br>             </div>`)[0];
+                popup_4ebd4eb1d71e72372181f917a084f3cb.setContent(html_ede59f1726079d102b905cd02bf61442);
+            
+        
+
+        marker_02957b258fba1f35620383eaae3f7b62.bindPopup(popup_4ebd4eb1d71e72372181f917a084f3cb)
+        ;
+
+        
+    
+    
+            feature_group_26abbfff5fbe89e3bc5bf44e00bffc84.addTo(map_904a46692ec468399404d4f7fdf4da81);
+        
+    
+            var feature_group_19070f888a8ded9fa0a9c0468a97a80f = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_15d9280f1e7bcbb2ebe35359ca6ad626 = L.marker(
+                [-7.0685518, -34.8425307],
+                {}
+            ).addTo(feature_group_19070f888a8ded9fa0a9c0468a97a80f);
+        
+    
+            var icon_1b4b8c1240ac8f6015e3c309020c58e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_15d9280f1e7bcbb2ebe35359ca6ad626.setIcon(icon_1b4b8c1240ac8f6015e3c309020c58e0);
+        
+    
+        var popup_4cece3e0dd0e6195b221c85040bbf6ca = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_982ad82f65bb3ee3acbfc9c590dad072 = $(`<div id="html_982ad82f65bb3ee3acbfc9c590dad072" style="width: 100.0%; height: 100.0%;">             <b>Aquazul Academia</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Pres. Café Filho, 477 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_4cece3e0dd0e6195b221c85040bbf6ca.setContent(html_982ad82f65bb3ee3acbfc9c590dad072);
+            
+        
+
+        marker_15d9280f1e7bcbb2ebe35359ca6ad626.bindPopup(popup_4cece3e0dd0e6195b221c85040bbf6ca)
+        ;
+
+        
+    
+    
+            var marker_3db234bd467b758fa30e97309b1b7d7f = L.marker(
+                [-7.0692775, -34.8441296],
+                {}
+            ).addTo(feature_group_19070f888a8ded9fa0a9c0468a97a80f);
+        
+    
+            var icon_a0982eb7b694c5dfe4ab23bd72c84518 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_3db234bd467b758fa30e97309b1b7d7f.setIcon(icon_a0982eb7b694c5dfe4ab23bd72c84518);
+        
+    
+        var popup_16e520c9672d56cf710902b896a18f7f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1be039949ae611d4d373defd7a986dad = $(`<div id="html_1be039949ae611d4d373defd7a986dad" style="width: 100.0%; height: 100.0%;">             <b>GStudio Pilates</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: R. Tertuliano Castro, 670 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_16e520c9672d56cf710902b896a18f7f.setContent(html_1be039949ae611d4d373defd7a986dad);
+            
+        
+
+        marker_3db234bd467b758fa30e97309b1b7d7f.bindPopup(popup_16e520c9672d56cf710902b896a18f7f)
+        ;
+
+        
+    
+    
+            var marker_141b91eff3a7da0c30b77d36e972f956 = L.marker(
+                [-7.064905, -34.8402428],
+                {}
+            ).addTo(feature_group_19070f888a8ded9fa0a9c0468a97a80f);
+        
+    
+            var icon_8f52c575b3d4d1c7acaae8e62bad73c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_141b91eff3a7da0c30b77d36e972f956.setIcon(icon_8f52c575b3d4d1c7acaae8e62bad73c9);
+        
+    
+        var popup_c9f08450f4196b8a77b2d8764da98616 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_414bd9371509bd5bdeadf28224403d29 = $(`<div id="html_414bd9371509bd5bdeadf28224403d29" style="width: 100.0%; height: 100.0%;">             <b>Cross Beach Training</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Arthur Monteiro de Paiva, 1006 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_c9f08450f4196b8a77b2d8764da98616.setContent(html_414bd9371509bd5bdeadf28224403d29);
+            
+        
+
+        marker_141b91eff3a7da0c30b77d36e972f956.bindPopup(popup_c9f08450f4196b8a77b2d8764da98616)
+        ;
+
+        
+    
+    
+            var marker_b7c6d335106fecf43abe38548f152a15 = L.marker(
+                [-7.0730634, -34.8400795],
+                {}
+            ).addTo(feature_group_19070f888a8ded9fa0a9c0468a97a80f);
+        
+    
+            var icon_9288bb64b473ce3e4620373ffc160728 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_b7c6d335106fecf43abe38548f152a15.setIcon(icon_9288bb64b473ce3e4620373ffc160728);
+        
+    
+        var popup_f8cc0e787d0f05736b7a4b49f713accc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2a6ae2e80da7eb91e96315b294747c54 = $(`<div id="html_2a6ae2e80da7eb91e96315b294747c54" style="width: 100.0%; height: 100.0%;">             <b>Studio Venus - cross training</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: R. Dr. Damasquins Ramos Maciel, 100 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_f8cc0e787d0f05736b7a4b49f713accc.setContent(html_2a6ae2e80da7eb91e96315b294747c54);
+            
+        
+
+        marker_b7c6d335106fecf43abe38548f152a15.bindPopup(popup_f8cc0e787d0f05736b7a4b49f713accc)
+        ;
+
+        
+    
+    
+            var marker_4f7a8e0f496f97c634c4b731afee6af6 = L.marker(
+                [-7.0692775, -34.8441296],
+                {}
+            ).addTo(feature_group_19070f888a8ded9fa0a9c0468a97a80f);
+        
+    
+            var icon_acf1e643db3e1f4c0fc48509f001b37c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_4f7a8e0f496f97c634c4b731afee6af6.setIcon(icon_acf1e643db3e1f4c0fc48509f001b37c);
+        
+    
+        var popup_18c9bea02180e35bf8c708ce3722b498 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_365a6945c38542dd519cc2498b8044f2 = $(`<div id="html_365a6945c38542dd519cc2498b8044f2" style="width: 100.0%; height: 100.0%;">             <b>BOXDELAS - Academia para mulheres - Bessa</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: R. Tertuliano Castro, 670 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_18c9bea02180e35bf8c708ce3722b498.setContent(html_365a6945c38542dd519cc2498b8044f2);
+            
+        
+
+        marker_4f7a8e0f496f97c634c4b731afee6af6.bindPopup(popup_18c9bea02180e35bf8c708ce3722b498)
+        ;
+
+        
+    
+    
+            var marker_6674413c5ff3343aeec79cad97fe33b5 = L.marker(
+                [-7.0616628, -34.8429915],
+                {}
+            ).addTo(feature_group_19070f888a8ded9fa0a9c0468a97a80f);
+        
+    
+            var icon_494e11c14bb9c69c55bd451b8c276153 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_6674413c5ff3343aeec79cad97fe33b5.setIcon(icon_494e11c14bb9c69c55bd451b8c276153);
+        
+    
+        var popup_acf9e9bb30ec7c0db340ff0b7f14aa56 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_25ea45769795517eea421e1615833e30 = $(`<div id="html_25ea45769795517eea421e1615833e30" style="width: 100.0%; height: 100.0%;">             <b>M1 Cross Fight</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: Av. Pres. Afonso Pena, 1441 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_acf9e9bb30ec7c0db340ff0b7f14aa56.setContent(html_25ea45769795517eea421e1615833e30);
+            
+        
+
+        marker_6674413c5ff3343aeec79cad97fe33b5.bindPopup(popup_acf9e9bb30ec7c0db340ff0b7f14aa56)
+        ;
+
+        
+    
+    
+            var marker_b96855652d507509083ca9ba3b6a2909 = L.marker(
+                [-7.0671257, -34.8428306],
+                {}
+            ).addTo(feature_group_19070f888a8ded9fa0a9c0468a97a80f);
+        
+    
+            var icon_21f922defb001c28a8911765d9888c11 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_b96855652d507509083ca9ba3b6a2909.setIcon(icon_21f922defb001c28a8911765d9888c11);
+        
+    
+        var popup_c7295706201cde9b9b5048a17449cca2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_16733f3946e6310a3947d844c3c1d3d6 = $(`<div id="html_16733f3946e6310a3947d844c3c1d3d6" style="width: 100.0%; height: 100.0%;">             <b>Academia de Cordel do Vale do Paraíba</b><br>             Tipo: Lazer/Fitness (gym)<br>             Endereço: R. Pres. Venceslau Braz, 397 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_c7295706201cde9b9b5048a17449cca2.setContent(html_16733f3946e6310a3947d844c3c1d3d6);
+            
+        
+
+        marker_b96855652d507509083ca9ba3b6a2909.bindPopup(popup_c7295706201cde9b9b5048a17449cca2)
+        ;
+
+        
+    
+    
+            feature_group_19070f888a8ded9fa0a9c0468a97a80f.addTo(map_904a46692ec468399404d4f7fdf4da81);
+        
+    
+            var feature_group_0607ca83d7fff4861bede3680433f70a = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_7825f1ae9572fc126f8986d9d5798fd4 = L.marker(
+                [-7.0618478, -34.8421353],
+                {}
+            ).addTo(feature_group_0607ca83d7fff4861bede3680433f70a);
+        
+    
+            var icon_daf6f6633aff4c37552f6aecbbf7851a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_7825f1ae9572fc126f8986d9d5798fd4.setIcon(icon_daf6f6633aff4c37552f6aecbbf7851a);
+        
+    
+        var popup_3db36bc0eff2b3dcdf1c85f2b4310500 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e7a1f2ca928c0120b23bfa3f6ba24b5a = $(`<div id="html_e7a1f2ca928c0120b23bfa3f6ba24b5a" style="width: 100.0%; height: 100.0%;">             <b>Barril 21</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Arthur Monteiro de Paiva, 1497 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_3db36bc0eff2b3dcdf1c85f2b4310500.setContent(html_e7a1f2ca928c0120b23bfa3f6ba24b5a);
+            
+        
+
+        marker_7825f1ae9572fc126f8986d9d5798fd4.bindPopup(popup_3db36bc0eff2b3dcdf1c85f2b4310500)
+        ;
+
+        
+    
+    
+            var marker_cfdc411fd945caf8f1ed25b2ce7aecbf = L.marker(
+                [-7.0669333, -34.8403022],
+                {}
+            ).addTo(feature_group_0607ca83d7fff4861bede3680433f70a);
+        
+    
+            var icon_61bb49b6635b2836c14b81fd9245e0b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_cfdc411fd945caf8f1ed25b2ce7aecbf.setIcon(icon_61bb49b6635b2836c14b81fd9245e0b3);
+        
+    
+        var popup_9f86af3f8c25cf4f4b158a0c977cd51d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b044dfee923e49f21cce5b85de741203 = $(`<div id="html_b044dfee923e49f21cce5b85de741203" style="width: 100.0%; height: 100.0%;">             <b>Cantinho Regional</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Pres. Nilo Peçanha, 68 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_9f86af3f8c25cf4f4b158a0c977cd51d.setContent(html_b044dfee923e49f21cce5b85de741203);
+            
+        
+
+        marker_cfdc411fd945caf8f1ed25b2ce7aecbf.bindPopup(popup_9f86af3f8c25cf4f4b158a0c977cd51d)
+        ;
+
+        
+    
+    
+            var marker_0d428571ae070604982154ca391dd2f8 = L.marker(
+                [-7.0657079, -34.8398035],
+                {}
+            ).addTo(feature_group_0607ca83d7fff4861bede3680433f70a);
+        
+    
+            var icon_a2343600872120461b7e9c1b9474f09a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_0d428571ae070604982154ca391dd2f8.setIcon(icon_a2343600872120461b7e9c1b9474f09a);
+        
+    
+        var popup_2d25c49589f030d5bd1e672fa1c18d59 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2bc12c4a8fa3b51cfd1e4757c22e874d = $(`<div id="html_2bc12c4a8fa3b51cfd1e4757c22e874d" style="width: 100.0%; height: 100.0%;">             <b>Bessa Grill</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Arthur Monteiro de Paiva, 1190 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_2d25c49589f030d5bd1e672fa1c18d59.setContent(html_2bc12c4a8fa3b51cfd1e4757c22e874d);
+            
+        
+
+        marker_0d428571ae070604982154ca391dd2f8.bindPopup(popup_2d25c49589f030d5bd1e672fa1c18d59)
+        ;
+
+        
+    
+    
+            var marker_7c62e180f0b312e40dd71cb06df79875 = L.marker(
+                [-7.0653671, -34.8409817],
+                {}
+            ).addTo(feature_group_0607ca83d7fff4861bede3680433f70a);
+        
+    
+            var icon_366a360e2f4f392f0e17b72ffff5370c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_7c62e180f0b312e40dd71cb06df79875.setIcon(icon_366a360e2f4f392f0e17b72ffff5370c);
+        
+    
+        var popup_157aad97015f286a90fd6020f73b36d7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e9963c1997c99a88e86bcca5399dc756 = $(`<div id="html_e9963c1997c99a88e86bcca5399dc756" style="width: 100.0%; height: 100.0%;">             <b>Minerim Trem Bão - Restaurante Mineiro João Pessoa</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Pres. Afonso Pena, 963 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_157aad97015f286a90fd6020f73b36d7.setContent(html_e9963c1997c99a88e86bcca5399dc756);
+            
+        
+
+        marker_7c62e180f0b312e40dd71cb06df79875.bindPopup(popup_157aad97015f286a90fd6020f73b36d7)
+        ;
+
+        
+    
+    
+            var marker_7176104df8a533f73e36f3e2e0bbeebd = L.marker(
+                [-7.067423199999999, -34.8409661],
+                {}
+            ).addTo(feature_group_0607ca83d7fff4861bede3680433f70a);
+        
+    
+            var icon_547b3ad161bc974390c01d294c2ac7c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_7176104df8a533f73e36f3e2e0bbeebd.setIcon(icon_547b3ad161bc974390c01d294c2ac7c9);
+        
+    
+        var popup_dc821acfd07f9d082e6962f1816c3d71 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_440f1abbb93d26920e86a5633e2fd9d3 = $(`<div id="html_440f1abbb93d26920e86a5633e2fd9d3" style="width: 100.0%; height: 100.0%;">             <b>Panela’s di Barro</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Pres. Nilo Peçanha, 159 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_dc821acfd07f9d082e6962f1816c3d71.setContent(html_440f1abbb93d26920e86a5633e2fd9d3);
+            
+        
+
+        marker_7176104df8a533f73e36f3e2e0bbeebd.bindPopup(popup_dc821acfd07f9d082e6962f1816c3d71)
+        ;
+
+        
+    
+    
+            var marker_6c1d5939ef1af3101259997600714468 = L.marker(
+                [-7.0670331, -34.8406492],
+                {}
+            ).addTo(feature_group_0607ca83d7fff4861bede3680433f70a);
+        
+    
+            var icon_5f99400c9a38773754fbd7c19fe35196 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_6c1d5939ef1af3101259997600714468.setIcon(icon_5f99400c9a38773754fbd7c19fe35196);
+        
+    
+        var popup_503ce759cdbe2c4aad878e1e8e580bd6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a04092808902a27d9812c1c06f5ea161 = $(`<div id="html_a04092808902a27d9812c1c06f5ea161" style="width: 100.0%; height: 100.0%;">             <b>Alex Restaurante Bessa</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Pres. Nilo Peçanha, 100 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_503ce759cdbe2c4aad878e1e8e580bd6.setContent(html_a04092808902a27d9812c1c06f5ea161);
+            
+        
+
+        marker_6c1d5939ef1af3101259997600714468.bindPopup(popup_503ce759cdbe2c4aad878e1e8e580bd6)
+        ;
+
+        
+    
+    
+            var marker_a6e8d9eee288fdfca7f9eb974397e985 = L.marker(
+                [-7.0699592, -34.8439662],
+                {}
+            ).addTo(feature_group_0607ca83d7fff4861bede3680433f70a);
+        
+    
+            var icon_586b569cde4bbab4f1df340782474d48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_a6e8d9eee288fdfca7f9eb974397e985.setIcon(icon_586b569cde4bbab4f1df340782474d48);
+        
+    
+        var popup_8f2d1c0d48440ac8aa88486b1ddbf01a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3c2249d2522bd9c6cc4767f151cbe6ba = $(`<div id="html_3c2249d2522bd9c6cc4767f151cbe6ba" style="width: 100.0%; height: 100.0%;">             <b>Bistrô do Matta</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: R. Tertuliano Castro, 594 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_8f2d1c0d48440ac8aa88486b1ddbf01a.setContent(html_3c2249d2522bd9c6cc4767f151cbe6ba);
+            
+        
+
+        marker_a6e8d9eee288fdfca7f9eb974397e985.bindPopup(popup_8f2d1c0d48440ac8aa88486b1ddbf01a)
+        ;
+
+        
+    
+    
+            var marker_d747f68b72529ac4506e28203eba92a7 = L.marker(
+                [-7.0691266, -34.8466361],
+                {}
+            ).addTo(feature_group_0607ca83d7fff4861bede3680433f70a);
+        
+    
+            var icon_3eaa9831a3bdc44f1161726fa44b11bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_d747f68b72529ac4506e28203eba92a7.setIcon(icon_3eaa9831a3bdc44f1161726fa44b11bb);
+        
+    
+        var popup_0d683820848adc4bd18a29ed40561316 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_73309dc897545bc0737bc71f6b0495a2 = $(`<div id="html_73309dc897545bc0737bc71f6b0495a2" style="width: 100.0%; height: 100.0%;">             <b>Black Sweet</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Pres. Café Filho, 954 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_0d683820848adc4bd18a29ed40561316.setContent(html_73309dc897545bc0737bc71f6b0495a2);
+            
+        
+
+        marker_d747f68b72529ac4506e28203eba92a7.bindPopup(popup_0d683820848adc4bd18a29ed40561316)
+        ;
+
+        
+    
+    
+            var marker_96bd1155181f618fd1d91277135ad6ea = L.marker(
+                [-7.0671645, -34.8487786],
+                {}
+            ).addTo(feature_group_0607ca83d7fff4861bede3680433f70a);
+        
+    
+            var icon_f9ff7a5d06f0aa8b61912fb99c0d6f67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_96bd1155181f618fd1d91277135ad6ea.setIcon(icon_f9ff7a5d06f0aa8b61912fb99c0d6f67);
+        
+    
+        var popup_eb8465976113b342b01f446bc6a1b18b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_599b6aa4b0c42c6eabc0bee4c53ced4d = $(`<div id="html_599b6aa4b0c42c6eabc0bee4c53ced4d" style="width: 100.0%; height: 100.0%;">             <b>Tempero De Casa</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: R. Maurício de Alençar Cavalcante - Jardim America, Cabedelo<br>             </div>`)[0];
+                popup_eb8465976113b342b01f446bc6a1b18b.setContent(html_599b6aa4b0c42c6eabc0bee4c53ced4d);
+            
+        
+
+        marker_96bd1155181f618fd1d91277135ad6ea.bindPopup(popup_eb8465976113b342b01f446bc6a1b18b)
+        ;
+
+        
+    
+    
+            var marker_97862a17aa2f3fef510ea96c6ed737ab = L.marker(
+                [-7.0652808, -34.8479868],
+                {}
+            ).addTo(feature_group_0607ca83d7fff4861bede3680433f70a);
+        
+    
+            var icon_a3201fd5fc62209e822d8064fa129a25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_97862a17aa2f3fef510ea96c6ed737ab.setIcon(icon_a3201fd5fc62209e822d8064fa129a25);
+        
+    
+        var popup_3c3f20f81df59a593cc9f2dfba0ab3db = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_594cb7e20064d3ed1da4657dcd74b89b = $(`<div id="html_594cb7e20064d3ed1da4657dcd74b89b" style="width: 100.0%; height: 100.0%;">             <b>RESTAURANTE DONA JAMPA</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Rua Presidente Arthur Bernardes, 800 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_3c3f20f81df59a593cc9f2dfba0ab3db.setContent(html_594cb7e20064d3ed1da4657dcd74b89b);
+            
+        
+
+        marker_97862a17aa2f3fef510ea96c6ed737ab.bindPopup(popup_3c3f20f81df59a593cc9f2dfba0ab3db)
+        ;
+
+        
+    
+    
+            var marker_c6b93c409eac8fcd374b04fc5ccf6bd8 = L.marker(
+                [-7.065304299999999, -34.8401056],
+                {}
+            ).addTo(feature_group_0607ca83d7fff4861bede3680433f70a);
+        
+    
+            var icon_6e39ce9779190cb26b234a9820b49214 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_c6b93c409eac8fcd374b04fc5ccf6bd8.setIcon(icon_6e39ce9779190cb26b234a9820b49214);
+        
+    
+        var popup_742122d5841e4bcbfefe6a0bb34ac374 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5810b6d9faea5d081cd74ab879d0a907 = $(`<div id="html_5810b6d9faea5d081cd74ab879d0a907" style="width: 100.0%; height: 100.0%;">             <b>Bessa Prime SushiBar e Restaurante</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Arthur Monteiro de Paiva, 1001-1219 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_742122d5841e4bcbfefe6a0bb34ac374.setContent(html_5810b6d9faea5d081cd74ab879d0a907);
+            
+        
+
+        marker_c6b93c409eac8fcd374b04fc5ccf6bd8.bindPopup(popup_742122d5841e4bcbfefe6a0bb34ac374)
+        ;
+
+        
+    
+    
+            var marker_d832c1e45492537ca037b39ff5ba498e = L.marker(
+                [-7.063487599999999, -34.8459829],
+                {}
+            ).addTo(feature_group_0607ca83d7fff4861bede3680433f70a);
+        
+    
+            var icon_5319fa4387222b87a523a2bccfa31396 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_d832c1e45492537ca037b39ff5ba498e.setIcon(icon_5319fa4387222b87a523a2bccfa31396);
+        
+    
+        var popup_9e5bdb9e3eeb7f9cbfc1bb840df830a9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_de7dfe3326969a5832c27ef250d7689c = $(`<div id="html_de7dfe3326969a5832c27ef250d7689c" style="width: 100.0%; height: 100.0%;">             <b>El sabor restaurante e marmitaria</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: R. Pres. Washington Luís, 338 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_9e5bdb9e3eeb7f9cbfc1bb840df830a9.setContent(html_de7dfe3326969a5832c27ef250d7689c);
+            
+        
+
+        marker_d832c1e45492537ca037b39ff5ba498e.bindPopup(popup_9e5bdb9e3eeb7f9cbfc1bb840df830a9)
+        ;
+
+        
+    
+    
+            var marker_fe5dfda3d39b79f9c7e351ef700e9650 = L.marker(
+                [-7.0683707, -34.84600229999999],
+                {}
+            ).addTo(feature_group_0607ca83d7fff4861bede3680433f70a);
+        
+    
+            var icon_abb13ddd32eb37aaa57e14a216d54fd3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_fe5dfda3d39b79f9c7e351ef700e9650.setIcon(icon_abb13ddd32eb37aaa57e14a216d54fd3);
+        
+    
+        var popup_9e076998ecc13ab1ca83c95c969f2a81 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c8c297db2723e6fc269a25370ca4e20a = $(`<div id="html_c8c297db2723e6fc269a25370ca4e20a" style="width: 100.0%; height: 100.0%;">             <b>Nô Picanha Churrascaria e Festas</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Av. Pres. Nilo Peçanha, 692 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_9e076998ecc13ab1ca83c95c969f2a81.setContent(html_c8c297db2723e6fc269a25370ca4e20a);
+            
+        
+
+        marker_fe5dfda3d39b79f9c7e351ef700e9650.bindPopup(popup_9e076998ecc13ab1ca83c95c969f2a81)
+        ;
+
+        
+    
+    
+            var marker_b22403e762a1ea3964a1b4e426a90179 = L.marker(
+                [-7.0648804, -34.8405934],
+                {}
+            ).addTo(feature_group_0607ca83d7fff4861bede3680433f70a);
+        
+    
+            var icon_31f4716afee5ab43502b8d00bc9daf63 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_b22403e762a1ea3964a1b4e426a90179.setIcon(icon_31f4716afee5ab43502b8d00bc9daf63);
+        
+    
+        var popup_4e77c3ab7027052b0a8da21991ccc1f1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b59cb85a54aa3b1c75bc182face9bf1d = $(`<div id="html_b59cb85a54aa3b1c75bc182face9bf1d" style="width: 100.0%; height: 100.0%;">             <b>Restaurante JK - Petiscaria e Lanchonete</b><br>             Tipo: Alimentação (restaurant)<br>             Endereço: Golden Flats Próximo ao Bessa Grill - Av. Pres. Delfim Moreira, 35 - Bessa, João Pessoa<br>             </div>`)[0];
+                popup_4e77c3ab7027052b0a8da21991ccc1f1.setContent(html_b59cb85a54aa3b1c75bc182face9bf1d);
+            
+        
+
+        marker_b22403e762a1ea3964a1b4e426a90179.bindPopup(popup_4e77c3ab7027052b0a8da21991ccc1f1)
+        ;
+
+        
+    
+    
+            feature_group_0607ca83d7fff4861bede3680433f70a.addTo(map_904a46692ec468399404d4f7fdf4da81);
+        
+    
+            var layer_control_7a3351d68360689e820281d7673f2931_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_7bb9bf32aeb6e973cc9cfdc3752f6527,
+                },
+                overlays :  {
+                    "Pr\u00f3ximos: Sa\u00fade" : feature_group_d8513f45f8f3eb38d49b70b92a252d2e,
+                    "Pr\u00f3ximos: Educa\u00e7\u00e3o" : feature_group_51152d289acec3e4832b69c122c6d306,
+                    "Pr\u00f3ximos: Com\u00e9rcio" : feature_group_068d4373fd7b865fe0ef1ecf116fae73,
+                    "Pr\u00f3ximos: Servi\u00e7os" : feature_group_26abbfff5fbe89e3bc5bf44e00bffc84,
+                    "Pr\u00f3ximos: Lazer/Fitness" : feature_group_19070f888a8ded9fa0a9c0468a97a80f,
+                    "Pr\u00f3ximos: Alimenta\u00e7\u00e3o" : feature_group_0607ca83d7fff4861bede3680433f70a,
+                },
+            };
+            let layer_control_7a3351d68360689e820281d7673f2931 = L.control.layers(
+                layer_control_7a3351d68360689e820281d7673f2931_layers.base_layers,
+                layer_control_7a3351d68360689e820281d7673f2931_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_904a46692ec468399404d4f7fdf4da81);
+
+        
+</script>
+</html>
